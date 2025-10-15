@@ -90,11 +90,13 @@ export function getLocalizedRoute(
 
 	// Special case: root route
 	if (normalized === "") {
+		// Use getRelativeLocaleUrl to include base path
+		const result = getRelativeLocaleUrl(locale, "/");
 		// If there's a fragment, make sure to include it
 		if (fragment) {
-			return locale === defaultLocale ? "/" + fragment : `/${locale}/` + fragment;
+			return result + fragment;
 		}
-		return locale === defaultLocale ? "/" : `/${locale}/`;
+		return result;
 	}
 
 	const defaultTranslations = routeTranslations[assumedBaseLocale];
@@ -120,18 +122,14 @@ export function getLocalizedRoute(
 		routePath = normalized;
 	}
 
-	// Insert locale prefix if not default
-	if (locale !== defaultLocale) {
-		routePath = `${locale}/${routePath}`;
-	}
+	// Use getRelativeLocaleUrl to include base path correctly
+	const result = getRelativeLocaleUrl(locale, routePath);
 
-	// Combine the route path with the fragment
-	// If there's a fragment, ensure there's exactly one slash before it
+	// Combine with fragment if present
 	if (fragment) {
-		return `/${routePath.replace(/\\/g, "/")}/` + fragment;
-	} else {
-		return `/${routePath.replace(/\\/g, "/")}/`;
+		return result + fragment;
 	}
+	return result;
 }
 
 // Module-level cache for dynamic route translations
