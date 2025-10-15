@@ -70,8 +70,8 @@ async function runResetSite() {
       command: 'npm run update-articles-full'
     },
     {
-      name: '生成文章',
-      command: 'npm run generate-articles'
+      name: '生成文章（仅1篇测试）',
+      command: 'npm run generate-articles -- -c 1'
     },
     {
       name: '同步配置到模板',
@@ -85,14 +85,15 @@ async function runResetSite() {
       name: '生成新主题方向',
       command: 'npm run generate-new-topics'
     },
-    {
-      name: '生成15篇定时发布文章',
-      command: 'npm run generate-articles -- -s -k 25 -c 15'
-    },
-    {
-      name: '设置文章定时发布',
-      command: 'npm run schedule-articles'
-    },
+    // 跳过定时发布文章生成（测试模式）
+    // {
+    //   name: '生成15篇定时发布文章',
+    //   command: 'npm run generate-articles -- -s -k 25 -c 15'
+    // },
+    // {
+    //   name: '设置文章定时发布',
+    //   command: 'npm run schedule-articles'
+    // },
     {
       name: '生成AI图标',
       command: 'npm run generate-ai-favicon'
