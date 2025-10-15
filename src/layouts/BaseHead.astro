@@ -1,0 +1,67 @@
+---
+import Seo from "@components/seo/Seo.astro";
+import GoogleAnalytics from "@components/GoogleAnalytics.astro";
+import siteSettings from "@config/siteSettings.json";
+import { type CollectionEntry } from "astro:content";
+import { ClientRouter } from "astro:transitions";
+
+export interface Props {
+	type?: "blog" | "general" | undefined;
+	title: string;
+	description: string;
+	image?: ImageMetadata;
+	postFrontmatter?: CollectionEntry<"blog">["data"];
+	authors?: CollectionEntry<"authors">[];
+	noindex?: boolean;
+}
+
+const {
+	type = "general",
+	title,
+	description,
+	image,
+	authors,
+	postFrontmatter,
+	noindex = false,
+} = Astro.props as Props;
+
+import interVariable from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2";
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" initial-scale="1.0" />
+
+<!-- local font preload for better performance -->
+<link rel="preload" href={interVariable} as="font" type="font/woff2" crossorigin="anonymous" />
+
+<!-- Favicons. Generated from https://realfavicongenerator.net/ -->
+<link rel="icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#2d89ef" />
+<meta name="theme-color" content="#ffffff" />
+
+<!-- other -->
+<meta name="generator" content={Astro.generator} />
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<Seo
+	type={type}
+	title={title}
+	description={description}
+	image={image}
+	authors={authors}
+	postFrontmatter={postFrontmatter}
+	noindex={noindex}
+/>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9790385864704031" crossorigin="anonymous"></script>
+
+<!-- Google Analytics -->
+<GoogleAnalytics />
+
+<!-- no fallback as I saw issues with firefox fallback -->
+{siteSettings.useViewTransitions && <ClientRouter fallback="none" />}

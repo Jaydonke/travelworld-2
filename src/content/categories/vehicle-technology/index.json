@@ -1,0 +1,21 @@
+{
+  "id": "vehicle-technology",
+  "name": "Vehicle Technology",
+  "description": "Explore the latest innovations in vehicle technology.",
+  "shortDescription": "Innovations in automotive technology.",
+  "icon": "🔍",
+  "color": "#8A2BE2",
+  "aboutContent": "This category highlights the latest developments in automotive technology and how they impact vehicle performance.",
+  "detailedDescription": "Discover the cutting-edge technologies that are transforming the automotive industry, including AI, connectivity, and advanced safety features.",
+  "popularTopics": [
+    "latest vehicle technology",
+    "innovations in automotive",
+    "AI in vehicles"
+  ],
+  "seoKeywords": "vehicle technology, automotive innovations, tech trends, car technology updates",
+  "keywords": [
+    "latest automotive technology",
+    "current vehicle innovations",
+    "best tech in cars"
+  ]
+}

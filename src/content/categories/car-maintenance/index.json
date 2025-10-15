@@ -1,0 +1,21 @@
+{
+  "id": "car-maintenance",
+  "name": "Car Maintenance",
+  "description": "Essential tips and guides to keep your vehicle in top shape.",
+  "shortDescription": "Car care and maintenance tips.",
+  "icon": "🔧",
+  "color": "#FFA500",
+  "aboutContent": "This category provides valuable information on how to maintain and care for your vehicle effectively.",
+  "detailedDescription": "Find tips and guides on car maintenance, from routine checks to troubleshooting common issues, ensuring your vehicle stays in great condition.",
+  "popularTopics": [
+    "car maintenance tips",
+    "vehicle troubleshooting",
+    "seasonal car care"
+  ],
+  "seoKeywords": "car maintenance, vehicle care, troubleshooting tips, auto repair",
+  "keywords": [
+    "car care tips",
+    "vehicle maintenance guide",
+    "troubleshooting vehicle issues"
+  ]
+}

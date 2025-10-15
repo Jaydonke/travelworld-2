@@ -1,0 +1,58 @@
+---
+// 延迟加载优化组件 - 提升性能和SEO
+---
+
+<script>
+  // 图片延迟加载
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target as HTMLImageElement;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+            img.classList.add('loaded');
+            observer.unobserve(img);
+          }
+        }
+      });
+    }, {
+      rootMargin: '50px 0px',
+      threshold: 0.01
+    });
+
+    // 观察所有延迟加载的图片
+    document.addEventListener('DOMContentLoaded', () => {
+      const lazyImages = document.querySelectorAll('img[data-src]');
+      lazyImages.forEach(img => imageObserver.observe(img));
+    });
+  }
+
+  // 预加载关键资源
+  const preloadLinks = () => {
+    const links = document.querySelectorAll('a[href^="/articles/"]');
+    links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        const preloadLink = document.createElement('link');
+        preloadLink.rel = 'prefetch';
+        preloadLink.href = (link as HTMLAnchorElement).href;
+        document.head.appendChild(preloadLink);
+      }, { once: true });
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', preloadLinks);
+</script>
+
+<style>
+  /* 图片加载动画 */
+  img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  img.loaded {
+    opacity: 1;
+  }
+</style>

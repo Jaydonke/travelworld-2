@@ -1,0 +1,27 @@
+// 全面的表格修复函数（添加到脚本末尾）
+// 在 return content; 之前添加以下代码：
+
+  // 13. 最终的全面表格修复
+  // 移除表格行末尾的 |**
+  content = content.replace(/\|\s*\*\*$/gm, '|');
+
+  // 移除独立的 |** 行
+  content = content.replace(/^\s*\|\*\*\s*$/gm, '');
+
+  // 移除表格行之间的空行
+  content = content.replace(/(^\|[^\n]*\|$(?:\n^\s*$\n)?)+/gm, (tableBlock) => {
+    const lines = tableBlock.split('\n').filter(line => line.trim() !== '');
+    if (lines.length < 2) return tableBlock;
+
+    const isTable = lines.every(line => line.includes('|'));
+    if (!isTable) return tableBlock;
+
+    // 重建表格，确保行之间没有空行
+    return lines.join('\n');
+  });
+
+  // 修复多余的空列
+  content = content.replace(/^(\|[^|\n]*)\|\s*\|([^|\n]*\|.*)$/gm, '$1|$2');
+
+  // 确保表格后有适当的空行
+  content = content.replace(/(\|[^\n]+\|\n)([^\n\|])/g, '$1\n$2');

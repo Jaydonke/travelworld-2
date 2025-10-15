@@ -1,0 +1,101 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "Support";
+const description = "Get help with PopZic's resources and services.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="site-container">
+    <div class="mx-auto max-w-3xl pt-24 md:pt-36 pb-12">
+      <h1 class="h1 text-center mb-8">{title}</h1>
+      
+      <div class="space-y-8">
+        <!-- Quick Links -->
+        <section class="grid md:grid-cols-2 gap-6">
+          <a href="/contact" class="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">📧 Contact Us</h3>
+            <p class="text-gray-600 dark:text-gray-400">Send us a message for general inquiries</p>
+          </a>
+          
+          <a href="#faq" class="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-2">❓ FAQ</h3>
+            <p class="text-gray-600 dark:text-gray-400">Find answers to common questions</p>
+          </a>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-6">Contact Information</h2>
+          <div class="space-y-4">
+            <div>
+              <p class="font-semibold">General Support</p>
+              <a href="mailto:support@Vehivio.com" class="text-blue-600 hover:underline">support@Vehivio.com</a>
+            </div>
+            <div>
+              <p class="font-semibold">Technical Issues</p>
+              <a href="mailto:tech@Vehivio.com" class="text-blue-600 hover:underline">tech@Vehivio.com</a>
+            </div>
+            <div>
+              <p class="font-semibold">Business Inquiries</p>
+              <a href="mailto:partnerships@rwacrazy.com" class="text-blue-600 hover:underline">partnerships@rwacrazy.com</a>
+            </div>
+          </div>
+          <p class="mt-6 text-sm text-gray-600 dark:text-gray-400">
+            Response time: 24-48 hours (Monday-Friday)
+          </p>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq">
+          <h2 class="text-2xl font-semibold mb-6">Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-semibold mb-2">How do I subscribe to the newsletter?</h3>
+              <p class="text-gray-600 dark:text-gray-400">Enter your email in the subscription box on our homepage or any article page.</p>
+            </div>
+            
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-semibold mb-2">Can I republish your content?</h3>
+              <p class="text-gray-600 dark:text-gray-400">Yes, with proper attribution under Creative Commons CC BY 4.0.</p>
+            </div>
+            
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-semibold mb-2">How often do you publish new content?</h3>
+              <p class="text-gray-600 dark:text-gray-400">We publish new articles 2-3 times per week.</p>
+            </div>
+            
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-semibold mb-2">Do you accept guest posts?</h3>
+              <p class="text-gray-600 dark:text-gray-400">Yes! Send your pitch to <a href="mailto:content@Vehivio.com" class="text-blue-600 hover:underline">content@Vehivio.com</a></p>
+            </div>
+            
+            <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-semibold mb-2">How do I report a technical issue?</h3>
+              <p class="text-gray-600 dark:text-gray-400">Email us at <a href="mailto:tech@Vehivio.com" class="text-blue-600 hover:underline">tech@Vehivio.com</a> with details about the issue.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h2 class="text-2xl font-semibold mb-6">Helpful Resources</h2>
+          <div class="grid md:grid-cols-2 gap-4">
+            <a href="/legal/privacy" class="block p-4 border border-gray-200 dark:border-gray-700 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition">
+              Privacy Policy
+            </a>
+            <a href="/legal/terms" class="block p-4 border border-gray-200 dark:border-gray-700 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition">
+              Terms of Use
+            </a>
+            <a href="/contact" class="block p-4 border border-gray-200 dark:border-gray-700 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition">
+              Contact Form
+            </a>
+            <a href="/legal" class="block p-4 border border-gray-200 dark:border-gray-700 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition">
+              All Legal Pages
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

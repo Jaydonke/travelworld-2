@@ -1,0 +1,21 @@
+{
+  "id": "traffic-safety",
+  "name": "Traffic Safety",
+  "description": "Learn about traffic safety measures and best practices.",
+  "shortDescription": "Focus on traffic safety insights.",
+  "icon": "🚦",
+  "color": "#FF69B4",
+  "aboutContent": "This category covers traffic safety initiatives, guidelines, and tips to promote safer roads.",
+  "detailedDescription": "Stay informed about traffic safety measures, best practices, and how to reduce accidents on the road for all types of vehicles.",
+  "popularTopics": [
+    "traffic safety tips",
+    "accident prevention",
+    "autonomous vehicle safety"
+  ],
+  "seoKeywords": "traffic safety, road safety tips, accident prevention, vehicle safety standards",
+  "keywords": [
+    "current traffic safety measures",
+    "best practices for road safety",
+    "how to improve traffic safety"
+  ]
+}

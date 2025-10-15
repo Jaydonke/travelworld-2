@@ -1,0 +1,21 @@
+{
+  "id": "car-reviews",
+  "name": "Car Reviews",
+  "description": "In-depth reviews and comparisons of the latest car models.",
+  "shortDescription": "Your guide to car reviews.",
+  "icon": "🚗",
+  "color": "#FFD700",
+  "aboutContent": "This category features comprehensive reviews of various car models, including performance, features, and user experiences.",
+  "detailedDescription": "Find detailed reviews that help you decide which car is right for you. From electric vehicles to hybrids and traditional cars, we cover them all.",
+  "popularTopics": [
+    "latest car reviews",
+    "best SUVs",
+    "electric car reviews"
+  ],
+  "seoKeywords": "car reviews, vehicle comparisons, automotive ratings, car buying guide",
+  "keywords": [
+    "latest car reviews",
+    "best vehicle comparisons",
+    "car performance analysis"
+  ]
+}

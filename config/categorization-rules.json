@@ -1,0 +1,1594 @@
+{
+  "ai-theme": {
+    "name": "AI & Technology Theme",
+    "description": "AI tools and technology related topics",
+    "categories": {
+      "ai-automation": {
+        "keywords": [
+          "automation",
+          "workflow",
+          "zapier",
+          "voice ai",
+          "sheets automation",
+          "streamline",
+          "automate",
+          "scheduling",
+          "data cleaning"
+        ],
+        "description": "AI Automation Tools and Workflows"
+      },
+      "ai-tools": {
+        "keywords": [
+          "tools",
+          "comfyui",
+          "transcription",
+          "summarization",
+          "prompt library",
+          "research assistant",
+          "competitor monitoring",
+          "knowledge base"
+        ],
+        "description": "AI Tools and Applications"
+      },
+      "ai-business": {
+        "keywords": [
+          "business",
+          "market analysis",
+          "customer support",
+          "validation",
+          "product idea",
+          "competitive",
+          "dashboard",
+          "intelligence"
+        ],
+        "description": "Business AI Applications"
+      },
+      "ai-development": {
+        "keywords": [
+          "development",
+          "rapid prototyping",
+          "user story",
+          "ux analysis",
+          "no-code",
+          "coding",
+          "programming",
+          "technical"
+        ],
+        "description": "AI Development and Technology"
+      },
+      "ai-content": {
+        "keywords": [
+          "content",
+          "scriptwriting",
+          "video",
+          "brainstorming",
+          "writing",
+          "social media",
+          "content creation",
+          "calendar"
+        ],
+        "description": "AI Content Creation"
+      },
+      "ai-analysis": {
+        "keywords": [
+          "analysis",
+          "data dashboard",
+          "knowledge graph",
+          "decisions",
+          "insights",
+          "analytics",
+          "research",
+          "forecasts"
+        ],
+        "description": "AI Analysis and Insights"
+      },
+      "productivity": {
+        "keywords": [
+          "productivity",
+          "learning",
+          "education",
+          "personalized"
+        ],
+        "description": "Productivity and Learning"
+      }
+    },
+    "defaultCategory": "ai-tools"
+  },
+  "travel-theme": {
+    "name": "Travel & Adventure Theme",
+    "description": "Travel and adventure related topics",
+    "categories": {
+      "destinations": {
+        "keywords": [
+          "destination",
+          "city",
+          "country",
+          "place",
+          "visit",
+          "travel to",
+          "guide",
+          "tourist",
+          "sightseeing",
+          "attractions"
+        ],
+        "description": "Travel Destinations"
+      },
+      "planning": {
+        "keywords": [
+          "planning",
+          "itinerary",
+          "budget",
+          "booking",
+          "reservation",
+          "preparation",
+          "checklist",
+          "tips",
+          "advice"
+        ],
+        "description": "Travel Planning"
+      },
+      "accommodation": {
+        "keywords": [
+          "hotel",
+          "accommodation",
+          "lodging",
+          "airbnb",
+          "hostel",
+          "resort",
+          "stay",
+          "booking"
+        ],
+        "description": "Accommodation Guide"
+      },
+      "food-travel": {
+        "keywords": [
+          "food",
+          "cuisine",
+          "restaurant",
+          "local food",
+          "street food",
+          "dining",
+          "culinary",
+          "taste",
+          "flavors"
+        ],
+        "description": "Food Travel"
+      },
+      "adventure": {
+        "keywords": [
+          "adventure",
+          "outdoor",
+          "hiking",
+          "climbing",
+          "diving",
+          "extreme",
+          "sports",
+          "activities"
+        ],
+        "description": "Adventure Activities"
+      },
+      "culture": {
+        "keywords": [
+          "culture",
+          "history",
+          "museum",
+          "tradition",
+          "local",
+          "heritage",
+          "customs",
+          "festivals"
+        ],
+        "description": "Cultural Experience"
+      },
+      "travel-tips": {
+        "keywords": [
+          "tips",
+          "advice",
+          "guide",
+          "how to",
+          "travel hacks",
+          "experience",
+          "recommendations"
+        ],
+        "description": "Travel Tips"
+      }
+    },
+    "defaultCategory": "destinations"
+  },
+  "cooking-theme": {
+    "name": "Cooking & Food Theme",
+    "description": "Cooking and food related topics",
+    "categories": {
+      "recipes": {
+        "keywords": [
+          "recipe",
+          "cooking",
+          "ingredients",
+          "preparation",
+          "method",
+          "dish",
+          "meal",
+          "homemade",
+          "kitchen"
+        ],
+        "description": "Recipe Collection"
+      },
+      "techniques": {
+        "keywords": [
+          "technique",
+          "skills",
+          "method",
+          "cooking tips",
+          "how to cook",
+          "culinary skills",
+          "preparation",
+          "kitchen skills"
+        ],
+        "description": "Cooking Techniques"
+      },
+      "ingredients": {
+        "keywords": [
+          "ingredients",
+          "fresh",
+          "seasonal",
+          "organic",
+          "quality",
+          "selection",
+          "shopping",
+          "market"
+        ],
+        "description": "Ingredient Guide"
+      },
+      "cuisines": {
+        "keywords": [
+          "cuisine",
+          "italian",
+          "chinese",
+          "japanese",
+          "french",
+          "mexican",
+          "indian",
+          "thai",
+          "regional"
+        ],
+        "description": "World Cuisines"
+      },
+      "healthy-eating": {
+        "keywords": [
+          "healthy",
+          "nutrition",
+          "diet",
+          "wellness",
+          "balanced",
+          "vitamins",
+          "minerals",
+          "organic"
+        ],
+        "description": "Healthy Eating"
+      },
+      "baking": {
+        "keywords": [
+          "baking",
+          "bread",
+          "cake",
+          "pastry",
+          "dessert",
+          "oven",
+          "flour",
+          "yeast"
+        ],
+        "description": "Baking & Desserts"
+      },
+      "food-tips": {
+        "keywords": [
+          "tips",
+          "advice",
+          "guide",
+          "food hacks",
+          "storage",
+          "preservation",
+          "kitchen organization"
+        ],
+        "description": "Food Tips"
+      }
+    },
+    "defaultCategory": "recipes"
+  },
+  "business-theme": {
+    "name": "Business & Entrepreneurship Theme",
+    "description": "Business and entrepreneurship related topics",
+    "categories": {
+      "startup": {
+        "keywords": [
+          "startup",
+          "entrepreneur",
+          "business idea",
+          "founding",
+          "venture",
+          "innovation",
+          "launch"
+        ],
+        "description": "Startup Guide"
+      },
+      "marketing": {
+        "keywords": [
+          "marketing",
+          "advertising",
+          "promotion",
+          "branding",
+          "social media",
+          "seo",
+          "content marketing"
+        ],
+        "description": "Marketing"
+      },
+      "finance": {
+        "keywords": [
+          "finance",
+          "investment",
+          "funding",
+          "money",
+          "budget",
+          "accounting",
+          "profit",
+          "revenue"
+        ],
+        "description": "Business Finance"
+      },
+      "management": {
+        "keywords": [
+          "management",
+          "leadership",
+          "team",
+          "operations",
+          "strategy",
+          "planning",
+          "organization"
+        ],
+        "description": "Business Management"
+      },
+      "productivity": {
+        "keywords": [
+          "productivity",
+          "efficiency",
+          "tools",
+          "workflow",
+          "optimization",
+          "time management"
+        ],
+        "description": "Work Efficiency"
+      }
+    },
+    "defaultCategory": "startup"
+  },
+  "modern-travel-theme": {
+    "name": "Modern Travel Trends Theme",
+    "description": "Modern travel trends and innovative experiences",
+    "categories": {
+      "wellness-escapes": {
+        "keywords": [
+          "wellness",
+          "retreats",
+          "coolcations",
+          "escape",
+          "heat",
+          "refreshing",
+          "inner peace",
+          "renewal",
+          "celestial",
+          "me-mooning",
+          "workout holidays"
+        ],
+        "description": "Wellness Retreats and Cool Escapes"
+      },
+      "mindful-travel": {
+        "keywords": [
+          "slow travel",
+          "mindful",
+          "exploration",
+          "jomo",
+          "shoulder season",
+          "bleisure",
+          "experiential travel",
+          "nostalgications",
+          "memories"
+        ],
+        "description": "Mindful Travel and Experiences"
+      },
+      "adventure-nature": {
+        "keywords": [
+          "adventure travel",
+          "wildlife safaris",
+          "nature",
+          "hot air balloon",
+          "monsoon getaways",
+          "outdoor",
+          "natural phenomena",
+          "mystery destinations"
+        ],
+        "description": "Adventure and Nature Experiences"
+      },
+      "cultural-immersion": {
+        "keywords": [
+          "vintage voyaging",
+          "timeless",
+          "festival-centric",
+          "set-jetting",
+          "movie sites",
+          "tv sites",
+          "cultural",
+          "heritage",
+          "traditions"
+        ],
+        "description": "Cultural Immersion Travel"
+      },
+      "specialty-tourism": {
+        "keywords": [
+          "noctourism",
+          "nighttime travel",
+          "night-sky tourism",
+          "stargazing",
+          "phenomena tourism",
+          "strange",
+          "unknown",
+          "astronomy",
+          "celestial"
+        ],
+        "description": "Specialty Theme Tourism"
+      },
+      "budget-family": {
+        "keywords": [
+          "budget",
+          "family-friendly",
+          "island escapes",
+          "affordable",
+          "kids",
+          "children",
+          "family vacation",
+          "economic",
+          "deals"
+        ],
+        "description": "Budget-Friendly Family Travel"
+      },
+      "hidden-gems": {
+        "keywords": [
+          "detour destinations",
+          "hidden gems",
+          "off the beaten path",
+          "secret",
+          "undiscovered",
+          "unique",
+          "unexplored",
+          "local"
+        ],
+        "description": "Hidden Gems Exploration"
+      }
+    },
+    "defaultCategory": "mindful-travel"
+  },
+  "food-cook-theme": {
+    "name": "Food & Cook Theme",
+    "description": "Professional food and cooking theme, covering from basic recipes to advanced culinary techniques",
+    "categories": {
+      "quick-recipes": {
+        "keywords": [
+          "quick",
+          "easy",
+          "simple",
+          "fast",
+          "minute",
+          "leftover",
+          "bowl",
+          "simple",
+          "delicious",
+          "dinner",
+          "breakfast",
+          "lunch",
+          "meal"
+        ],
+        "description": "Quick Recipes"
+      },
+      "comfort-food": {
+        "keywords": [
+          "comfort",
+          "pasta",
+          "mac and cheese",
+          "soup",
+          "stew",
+          "roast",
+          "ultimate",
+          "classic",
+          "traditional",
+          "homestyle",
+          "hearty"
+        ],
+        "description": "Comfort Food Classics"
+      },
+      "healthy-nutrition": {
+        "keywords": [
+          "healthy",
+          "nutrition",
+          "gut health",
+          "functional foods",
+          "prebiotic",
+          "probiotic",
+          "wellness",
+          "brain",
+          "natural",
+          "nutritious"
+        ],
+        "description": "Healthy Nutrition"
+      },
+      "cooking-techniques": {
+        "keywords": [
+          "cooking",
+          "technique",
+          "method",
+          "water-based",
+          "slow cooking",
+          "baking",
+          "flavor pairing",
+          "crunch factor",
+          "master",
+          "guide",
+          "tips"
+        ],
+        "description": "Cooking Techniques"
+      },
+      "beverages-drinks": {
+        "keywords": [
+          "mocktail",
+          "latte",
+          "hot chocolate",
+          "drinks",
+          "sleepy",
+          "brown sugar",
+          "bombs",
+          "beverage",
+          "liquid"
+        ],
+        "description": "Beverages & Drinks"
+      },
+      "specialty-ingredients": {
+        "keywords": [
+          "mushrooms",
+          "cottage cheese",
+          "feta",
+          "salmon",
+          "ingredients",
+          "functional",
+          "specialty",
+          "unique",
+          "special"
+        ],
+        "description": "Specialty Ingredients"
+      },
+      "global-flavors": {
+        "keywords": [
+          "global",
+          "international",
+          "snacks",
+          "flavors",
+          "treats",
+          "miso",
+          "retro",
+          "cultural",
+          "world",
+          "ethnic"
+        ],
+        "description": "Global Flavors"
+      },
+      "food-trends": {
+        "keywords": [
+          "trend",
+          "viral",
+          "pancake cereal",
+          "nature's cereal",
+          "pesto eggs",
+          "sustainable packaging",
+          "nootropics",
+          "bombs",
+          "mini"
+        ],
+        "description": "Food Trends"
+      }
+    },
+    "defaultCategory": "quick-recipes"
+  },
+  "personal-finance-theme": {
+    "name": "Personal Finance & Money Management Theme",
+    "description": "Personal finance, budget management and financial planning professional theme",
+    "categories": {
+      "budgeting-savings": {
+        "keywords": [
+          "budget",
+          "budgeting",
+          "saving",
+          "savings",
+          "money management",
+          "personal budget",
+          "expense tracking",
+          "spending tracker",
+          "financial goals",
+          "revenge saving",
+          "loud budgeting",
+          "gen z"
+        ],
+        "description": "Budget Planning & Savings"
+      },
+      "debt-management": {
+        "keywords": [
+          "debt",
+          "debt collection",
+          "debt snowball",
+          "student loan",
+          "loan repayment",
+          "debt management",
+          "debt payoff",
+          "debt relief",
+          "collection automation"
+        ],
+        "description": "Debt Management"
+      },
+      "digital-banking": {
+        "keywords": [
+          "digital bank",
+          "mobile banking",
+          "online banking",
+          "banking app",
+          "fintech",
+          "digital wallet",
+          "payment",
+          "remittance",
+          "money transfer"
+        ],
+        "description": "Digital Banking Services"
+      },
+      "investment-crypto": {
+        "keywords": [
+          "crypto",
+          "cryptocurrency",
+          "stablecoins",
+          "investment",
+          "momentum",
+          "effortless crypto",
+          "bitcoin",
+          "blockchain",
+          "digital currency",
+          "trading"
+        ],
+        "description": "Investment & Cryptocurrency"
+      },
+      "credit-insurance": {
+        "keywords": [
+          "credit monitoring",
+          "credit score",
+          "credit alert",
+          "insurance",
+          "rent insurance",
+          "coverage",
+          "benefits",
+          "financial protection"
+        ],
+        "description": "Credit & Insurance"
+      },
+      "ai-financial-tools": {
+        "keywords": [
+          "ai coaching",
+          "financial coaching",
+          "personalized ai",
+          "ai-driven",
+          "financial automation",
+          "smart finance",
+          "ai financial"
+        ],
+        "description": "AI Financial Tools"
+      },
+      "real-estate-housing": {
+        "keywords": [
+          "homebuying",
+          "housing market",
+          "real estate",
+          "mortgage",
+          "home purchase",
+          "property",
+          "housing gridlock",
+          "home buying",
+          "real estate market"
+        ],
+        "description": "Real Estate & Housing"
+      },
+      "taxes-financial-planning": {
+        "keywords": [
+          "tax",
+          "tax cuts",
+          "tax savings",
+          "financial planning",
+          "financial freedom",
+          "retirement",
+          "financial goals",
+          "wealth building",
+          "money moves"
+        ],
+        "description": "Tax & Financial Planning"
+      },
+      "financial-products": {
+        "keywords": [
+          "bnpl",
+          "buy now pay later",
+          "financial products",
+          "financial services",
+          "creator tipping",
+          "proxy apps",
+          "financial apps",
+          "fintech products"
+        ],
+        "description": "Financial Products & Services"
+      },
+      "economic-trends": {
+        "keywords": [
+          "inflation",
+          "interest rates",
+          "economic",
+          "financial stress",
+          "market trends",
+          "economic impact",
+          "financial news",
+          "money trends",
+          "economic analysis"
+        ],
+        "description": "Economic Trends Analysis"
+      }
+    },
+    "defaultCategory": "budgeting-savings"
+  },
+  "flexnestly-fitness-theme": {
+    "name": "FlexNestly Fitness Theme",
+    "description": "Comprehensive fitness and training theme for athletes and fitness enthusiasts",
+    "categories": {
+      "strength-training": {
+        "keywords": [
+          "weightlifting",
+          "strength",
+          "resistance",
+          "muscle",
+          "power",
+          "barbell",
+          "dumbbell",
+          "kettlebell",
+          "core",
+          "abs",
+          "back",
+          "deadlift",
+          "squat",
+          "bench",
+          "strengthening"
+        ],
+        "description": "Strength Training & Weightlifting"
+      },
+      "cardio-endurance": {
+        "keywords": [
+          "cardio",
+          "running",
+          "cycling",
+          "swimming",
+          "hiit",
+          "interval",
+          "endurance",
+          "aerobic",
+          "stamina",
+          "marathon",
+          "elliptical",
+          "treadmill"
+        ],
+        "description": "Cardio & Endurance Training"
+      },
+      "recovery-flexibility": {
+        "keywords": [
+          "recovery",
+          "stretching",
+          "flexibility",
+          "mobility",
+          "foam rolling",
+          "massage",
+          "ice bath",
+          "rest",
+          "sleep",
+          "yoga",
+          "pilates",
+          "rehabilitation"
+        ],
+        "description": "Recovery & Flexibility"
+      },
+      "sports-performance": {
+        "keywords": [
+          "sports",
+          "athletic",
+          "performance",
+          "football",
+          "basketball",
+          "soccer",
+          "tennis",
+          "golf",
+          "baseball",
+          "training",
+          "agility",
+          "speed"
+        ],
+        "description": "Sports Performance"
+      },
+      "fitness-tech": {
+        "keywords": [
+          "wearable",
+          "fitness tech",
+          "tracker",
+          "smartwatch",
+          "app",
+          "vr",
+          "biofeedback",
+          "monitoring",
+          "device",
+          "technology",
+          "smart",
+          "sensor",
+          "mobile"
+        ],
+        "description": "Fitness Technology & Gear"
+      },
+      "home-workouts": {
+        "keywords": [
+          "home",
+          "bodyweight",
+          "micro-workout",
+          "no equipment",
+          "apartment",
+          "online",
+          "tutorial",
+          "video",
+          "minimal",
+          "quick",
+          "busy"
+        ],
+        "description": "Home Workouts & Training"
+      },
+      "nutrition-fuel": {
+        "keywords": [
+          "nutrition",
+          "protein",
+          "supplement",
+          "pre-workout",
+          "post-workout",
+          "meal prep",
+          "diet",
+          "fuel",
+          "hydration",
+          "clean eating",
+          "macros"
+        ],
+        "description": "Sports Nutrition & Fuel"
+      },
+      "specialized-training": {
+        "keywords": [
+          "adaptive",
+          "senior",
+          "older adult",
+          "beginner",
+          "women",
+          "youth",
+          "chronic",
+          "rehabilitation",
+          "specialized",
+          "modified",
+          "accessible"
+        ],
+        "description": "Specialized Training Programs"
+      },
+      "mental-fitness": {
+        "keywords": [
+          "motivation",
+          "mindset",
+          "mental",
+          "focus",
+          "discipline",
+          "goals",
+          "meditation",
+          "visualization",
+          "psychology",
+          "wellness",
+          "mind-body"
+        ],
+        "description": "Mental Fitness & Motivation"
+      },
+      "fitness-trends": {
+        "keywords": [
+          "trend",
+          "challenge",
+          "social media",
+          "gamification",
+          "community",
+          "group fitness",
+          "bootcamp",
+          "crossfit",
+          "new",
+          "innovative"
+        ],
+        "description": "Fitness Trends & Challenges"
+      }
+    },
+    "defaultCategory": "strength-training"
+  },
+  "health-wellness-theme": {
+    "name": "Health & Wellness",
+    "description": "Health, wellness, fitness, and medical topics",
+    "categories": {
+      "nutrition": {
+        "keywords": [
+          "nutrition",
+          "diet",
+          "food",
+          "supplement",
+          "vitamin",
+          "nutrient",
+          "grocery",
+          "detox",
+          "fasting",
+          "digestive",
+          "fiber",
+          "electrolyte",
+          "okra"
+        ],
+        "description": "Nutrition & Diet"
+      },
+      "fitness": {
+        "keywords": [
+          "fitness",
+          "exercise",
+          "workout",
+          "training",
+          "gym",
+          "sport",
+          "recovery",
+          "cryotherapy",
+          "body sculpt"
+        ],
+        "description": "Fitness & Exercise"
+      },
+      "wellness": {
+        "keywords": [
+          "wellness",
+          "health",
+          "healthy",
+          "lifestyle",
+          "longevity",
+          "wellbeing",
+          "relaxation",
+          "aesthetic",
+          "spa"
+        ],
+        "description": "General Wellness"
+      },
+      "mental-health": {
+        "keywords": [
+          "mental",
+          "mood",
+          "mind",
+          "meditation",
+          "stress",
+          "anxiety",
+          "therapy",
+          "phototherapy"
+        ],
+        "description": "Mental Health"
+      },
+      "medical-tech": {
+        "keywords": [
+          "monitoring",
+          "wearable",
+          "smart",
+          "tech",
+          "tracking",
+          "assistant",
+          "patch",
+          "device",
+          "real-time"
+        ],
+        "description": "Health Technology"
+      },
+      "treatments": {
+        "keywords": [
+          "therapy",
+          "treatment",
+          "IV",
+          "nad",
+          "lymphatic",
+          "drainage",
+          "personalized",
+          "medical"
+        ],
+        "description": "Treatments & Therapies"
+      },
+      "alternative": {
+        "keywords": [
+          "alternative",
+          "natural",
+          "holistic",
+          "non-invasive",
+          "sustainable",
+          "organic"
+        ],
+        "description": "Alternative Medicine"
+      },
+      "beverages": {
+        "keywords": [
+          "drink",
+          "beverage",
+          "water",
+          "hydration",
+          "non-alcoholic",
+          "powder"
+        ],
+        "description": "Healthy Beverages"
+      },
+      "community": {
+        "keywords": [
+          "community",
+          "space",
+          "social",
+          "group",
+          "focused"
+        ],
+        "description": "Health Communities"
+      }
+    },
+    "defaultCategory": "wellness"
+  },
+  "nestforgey-diy-theme": {
+    "name": "NestForgey DIY & Home Improvement Theme",
+    "description": "DIY projects, home renovations, and creative improvement ideas",
+    "categories": {
+      "diy-projects": {
+        "keywords": [
+          "diy",
+          "tutorial",
+          "build",
+          "create",
+          "craft",
+          "handmade",
+          "project",
+          "make",
+          "construct",
+          "step-by-step",
+          "instructions",
+          "how to",
+          "guide",
+          "barn door",
+          "sliding"
+        ],
+        "description": "DIY Projects"
+      },
+      "smart-storage": {
+        "keywords": [
+          "storage",
+          "organization",
+          "space-saving",
+          "declutter",
+          "shelving",
+          "closet",
+          "shelf",
+          "cabinet",
+          "organize",
+          "maximize",
+          "compact",
+          "stair storage",
+          "dividers",
+          "hacks"
+        ],
+        "description": "Smart Storage Solutions"
+      },
+      "home-renovation": {
+        "keywords": [
+          "renovation",
+          "remodel",
+          "upgrade",
+          "makeover",
+          "restoration",
+          "improvement",
+          "restore",
+          "transform",
+          "update",
+          "refresh",
+          "revamp",
+          "conversions",
+          "shed"
+        ],
+        "description": "Home Renovation"
+      },
+      "interior-design": {
+        "keywords": [
+          "design",
+          "decor",
+          "style",
+          "aesthetic",
+          "interior",
+          "decorating",
+          "theme",
+          "color",
+          "layout",
+          "arrangement",
+          "entryway",
+          "minimalist",
+          "elegance",
+          "accent wall"
+        ],
+        "description": "Interior Design"
+      },
+      "furniture-hacks": {
+        "keywords": [
+          "furniture",
+          "desk",
+          "table",
+          "chair",
+          "bed",
+          "sofa",
+          "cabinet",
+          "hack",
+          "repurpose",
+          "upcycle",
+          "modify",
+          "dual-purpose",
+          "multi-purpose",
+          "modular"
+        ],
+        "description": "Furniture Hacks"
+      },
+      "sustainable-living": {
+        "keywords": [
+          "sustainable",
+          "eco-friendly",
+          "green",
+          "energy-saving",
+          "recycled",
+          "environmental",
+          "efficient",
+          "solar",
+          "insulation",
+          "conservation",
+          "energy",
+          "soundproofing",
+          "noise-reducing"
+        ],
+        "description": "Sustainable Living"
+      },
+      "smart-home": {
+        "keywords": [
+          "smart",
+          "automation",
+          "technology",
+          "digital",
+          "connected",
+          "IoT",
+          "sensor",
+          "control",
+          "wireless",
+          "app",
+          "smart home"
+        ],
+        "description": "Smart Home"
+      },
+      "outdoor-spaces": {
+        "keywords": [
+          "outdoor",
+          "backyard",
+          "patio",
+          "garden",
+          "deck",
+          "landscaping",
+          "yard",
+          "shed",
+          "exterior",
+          "landscape",
+          "lawn",
+          "indoor-outdoor"
+        ],
+        "description": "Outdoor Spaces"
+      },
+      "flooring-walls": {
+        "keywords": [
+          "flooring",
+          "floor",
+          "wall",
+          "wallpaper",
+          "paint",
+          "tile",
+          "carpet",
+          "panel",
+          "surface",
+          "finish",
+          "treatment",
+          "accent",
+          "replacement"
+        ],
+        "description": "Flooring & Walls"
+      },
+      "home-office": {
+        "keywords": [
+          "office",
+          "workspace",
+          "desk",
+          "productivity",
+          "work-from-home",
+          "study",
+          "professional",
+          "ergonomic",
+          "remote",
+          "setup",
+          "floating desk"
+        ],
+        "description": "Home Office"
+      }
+    },
+    "defaultCategory": "diy-projects"
+  },
+  "green-garden-theme": {
+    "name": "Green Garden Theme",
+    "description": "Gardening, sustainable living, and eco-friendly practices",
+    "categories": {
+      "urban-gardening": {
+        "keywords": [
+          "urban",
+          "balcony",
+          "micro",
+          "city",
+          "small space",
+          "apartment",
+          "container",
+          "rooftop",
+          "vertical",
+          "indoor"
+        ],
+        "description": "Urban Gardening & Small Spaces"
+      },
+      "sustainable-gardening": {
+        "keywords": [
+          "sustainable",
+          "eco-friendly",
+          "organic",
+          "permaculture",
+          "climate-smart",
+          "water-saving",
+          "low-water",
+          "drought-resistant",
+          "rainwater",
+          "composting",
+          "mulching",
+          "no-dig",
+          "conservation"
+        ],
+        "description": "Sustainable & Eco-Friendly Gardening"
+      },
+      "vegetable-gardening": {
+        "keywords": [
+          "vegetable",
+          "veggie",
+          "edible",
+          "food",
+          "harvest",
+          "crop",
+          "tomato",
+          "lettuce",
+          "herbs",
+          "kitchen garden",
+          "raised bed"
+        ],
+        "description": "Vegetable & Herb Gardening"
+      },
+      "garden-design": {
+        "keywords": [
+          "design",
+          "landscape",
+          "layout",
+          "planning",
+          "aesthetic",
+          "beautiful",
+          "ornamental",
+          "border",
+          "pathway",
+          "zones",
+          "sensory",
+          "themed"
+        ],
+        "description": "Garden Design & Landscaping"
+      },
+      "plant-care": {
+        "keywords": [
+          "care",
+          "maintenance",
+          "pruning",
+          "watering",
+          "fertilizing",
+          "pest",
+          "disease",
+          "soil",
+          "planting",
+          "growing",
+          "cultivation",
+          "propagation"
+        ],
+        "description": "Plant Care & Maintenance"
+      },
+      "specialty-gardens": {
+        "keywords": [
+          "mushroom",
+          "succulent",
+          "cactus",
+          "orchid",
+          "native",
+          "wildflower",
+          "pollinator",
+          "butterfly",
+          "bee",
+          "bug-friendly",
+          "habitat",
+          "restoration"
+        ],
+        "description": "Specialty Gardens & Plants"
+      },
+      "garden-technology": {
+        "keywords": [
+          "smart",
+          "sensor",
+          "automation",
+          "technology",
+          "app",
+          "monitoring",
+          "irrigation",
+          "greenhouse",
+          "hydroponic",
+          "aeroponic",
+          "LED"
+        ],
+        "description": "Garden Technology & Innovation"
+      },
+      "seasonal-gardening": {
+        "keywords": [
+          "seasonal",
+          "spring",
+          "summer",
+          "fall",
+          "winter",
+          "autumn",
+          "planting calendar",
+          "schedule",
+          "timing",
+          "frost",
+          "heat",
+          "climate"
+        ],
+        "description": "Seasonal Gardening Tips"
+      },
+      "diy-projects": {
+        "keywords": [
+          "diy",
+          "build",
+          "create",
+          "homemade",
+          "craft",
+          "project",
+          "planter",
+          "trellis",
+          "compost bin",
+          "greenhouse",
+          "self-watering"
+        ],
+        "description": "DIY Garden Projects"
+      },
+      "garden-basics": {
+        "keywords": [
+          "beginner",
+          "basics",
+          "introduction",
+          "guide",
+          "how-to",
+          "tips",
+          "getting started",
+          "fundamental",
+          "essential",
+          "learn"
+        ],
+        "description": "Gardening Basics & Guides"
+      }
+    }
+  },
+  "optinook-marketing-theme": {
+    "name": "OptiNook Digital Marketing Theme",
+    "description": "Digital marketing strategies, SEO insights, and growth-driven content solutions",
+    "categories": {
+      "seo-strategy": {
+        "keywords": [
+          "seo",
+          "search",
+          "optimization",
+          "serp",
+          "keyword",
+          "ranking",
+          "google",
+          "algorithm",
+          "semantic",
+          "clustering",
+          "backlink",
+          "meta",
+          "schema",
+          "crawl",
+          "index"
+        ],
+        "description": "SEO & Search Strategy"
+      },
+      "content-marketing": {
+        "keywords": [
+          "content",
+          "writing",
+          "blog",
+          "article",
+          "copywriting",
+          "storytelling",
+          "editorial",
+          "calendar",
+          "engagement",
+          "viral",
+          "shareable",
+          "evergreen",
+          "pillar"
+        ],
+        "description": "Content Marketing"
+      },
+      "social-media": {
+        "keywords": [
+          "social",
+          "media",
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin",
+          "tiktok",
+          "youtube",
+          "influencer",
+          "engagement",
+          "community",
+          "hashtag",
+          "viral",
+          "stories"
+        ],
+        "description": "Social Media Marketing"
+      },
+      "paid-advertising": {
+        "keywords": [
+          "ads",
+          "advertising",
+          "ppc",
+          "google ads",
+          "facebook ads",
+          "campaign",
+          "cpc",
+          "cpm",
+          "retargeting",
+          "remarketing",
+          "bidding",
+          "ad copy",
+          "landing page",
+          "conversion"
+        ],
+        "description": "Paid Advertising & PPC"
+      },
+      "email-marketing": {
+        "keywords": [
+          "email",
+          "newsletter",
+          "automation",
+          "drip",
+          "campaign",
+          "subscriber",
+          "list",
+          "segmentation",
+          "open rate",
+          "click rate",
+          "deliverability",
+          "nurture",
+          "funnel"
+        ],
+        "description": "Email Marketing"
+      },
+      "analytics-data": {
+        "keywords": [
+          "analytics",
+          "data",
+          "metrics",
+          "kpi",
+          "tracking",
+          "measurement",
+          "google analytics",
+          "heatmap",
+          "dashboard",
+          "reporting",
+          "insights",
+          "performance",
+          "roi",
+          "attribution"
+        ],
+        "description": "Analytics & Data"
+      },
+      "conversion-optimization": {
+        "keywords": [
+          "conversion",
+          "optimization",
+          "cro",
+          "landing page",
+          "a/b testing",
+          "split test",
+          "funnel",
+          "checkout",
+          "cart",
+          "form",
+          "ux",
+          "user experience",
+          "bounce rate"
+        ],
+        "description": "Conversion Optimization"
+      },
+      "marketing-automation": {
+        "keywords": [
+          "automation",
+          "workflow",
+          "tool",
+          "software",
+          "crm",
+          "integration",
+          "zapier",
+          "api",
+          "efficiency",
+          "streamline",
+          "process",
+          "scale",
+          "personalization"
+        ],
+        "description": "Marketing Automation"
+      },
+      "brand-strategy": {
+        "keywords": [
+          "brand",
+          "branding",
+          "identity",
+          "positioning",
+          "messaging",
+          "voice",
+          "tone",
+          "logo",
+          "design",
+          "reputation",
+          "awareness",
+          "loyalty",
+          "trust"
+        ],
+        "description": "Brand Strategy"
+      },
+      "growth-hacking": {
+        "keywords": [
+          "growth",
+          "hacking",
+          "viral",
+          "scaling",
+          "startup",
+          "acquisition",
+          "retention",
+          "referral",
+          "product-market fit",
+          "mvp",
+          "lean",
+          "agile",
+          "experiment"
+        ],
+        "description": "Growth Hacking"
+      }
+    },
+    "defaultCategory": "content-marketing"
+  }
+}

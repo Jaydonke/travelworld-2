@@ -1,0 +1,31 @@
+---
+import { articlesHandler } from "@/lib/handlers/articles";
+
+const articles = articlesHandler.allArticles();
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handler Debug</title>
+</head>
+<body>
+    <h1>Articles Handler Debug</h1>
+    
+    <h2>Total from handler: {articles.length}</h2>
+    
+    <h3>Articles List:</h3>
+    <ol>
+        {articles.map((article, index) => (
+            <li>
+                <strong>{index + 1}. {article.data.title}</strong><br/>
+                ID: {article.id}<br/>
+                Published: {article.data.publishedTime || article.data.pubDate}<br/>
+                Categories: {JSON.stringify(article.data.categories || article.data.category)}<br/>
+                Draft: {article.data.isDraft || article.data.draft || 'false'}<br/>
+                <hr/>
+            </li>
+        ))}
+    </ol>
+</body>
+</html>

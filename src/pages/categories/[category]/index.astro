@@ -1,0 +1,215 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { SITE } from "@/lib/config";
+import { articlesHandler } from "@/lib/handlers/articles";
+import { categoriesHandler } from "@/lib/handlers/categories";
+import PostCard from "@/components/PostCard/PostCard.astro";
+
+export const getStaticPaths = (async () => {
+  const allCategories = categoriesHandler.allCategories();
+  const allArticles = articlesHandler.allArticles();
+
+  return allCategories.map((category) => {
+    const filteredArticles = allArticles.filter((article) => {
+      const articleCategories = article.data.categories || 
+                              (article.data.category ? [article.data.category] : []);
+      return articleCategories.includes(category.id);
+    }).sort((a, b) => {
+      const dateA = new Date(a.data.publishedTime || a.data.pubDate || '');
+      const dateB = new Date(b.data.publishedTime || b.data.pubDate || '');
+      return dateB.getTime() - dateA.getTime();
+    });
+    
+    return {
+      params: { category: category.id },
+      props: { 
+        category,
+        articles: filteredArticles,
+        totalCount: filteredArticles.length
+      },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { category, articles, totalCount } = Astro.props;
+
+// SEO优化的标题和描述
+const seoTitle = `${category.data.name} Articles - ${totalCount} Posts | ${SITE.title}`;
+const seoDescription = category.data.description || 
+  `Browse ${totalCount} articles about ${category.data.name}. Expert insights, tutorials, and guides on ${category.data.name.toLowerCase()}.`;
+
+// 结构化数据
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `${category.data.name} Articles`,
+  "description": seoDescription,
+  "url": `${SITE.url}/categories/${category.id}`,
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": SITE.title,
+    "url": SITE.url
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": SITE.url
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Categories",
+        "item": `${SITE.url}/categories`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": category.data.name,
+        "item": `${SITE.url}/categories/${category.id}`
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": articles.slice(0, 10).map((article, index) => ({
+      "@type": "Article",
+      "position": index + 1,
+      "name": article.data.title,
+      "url": `${SITE.url}/blog/${article.id}`,
+      "description": article.data.description,
+      "datePublished": article.data.publishedTime || article.data.pubDate
+    }))
+  }
+};
+---
+
+<BaseLayout 
+  title={seoTitle} 
+  description={seoDescription}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  
+  <section class="site-container">
+    <div class="mx-auto max-w-6xl pt-24 md:pt-36 pb-12">
+      <!-- Breadcrumbs for SEO -->
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center space-x-2 text-sm text-gray-600">
+          <li>
+            <a href="/" class="hover:text-primary-600 transition-colors">Home</a>
+          </li>
+          <li>
+            <span class="mx-2">/</span>
+          </li>
+          <li>
+            <a href="/categories" class="hover:text-primary-600 transition-colors">Categories</a>
+          </li>
+          <li>
+            <span class="mx-2">/</span>
+          </li>
+          <li>
+            <span class="text-gray-900 font-semibold">{category.data.name}</span>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Category Header -->
+      <div class="text-center mb-12">
+        <h1 class="h1 mb-4">
+          {category.data.name}
+          <span class="text-gray-500 text-3xl font-normal ml-2">({totalCount})</span>
+        </h1>
+        {category.data.description && (
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            {category.data.description}
+          </p>
+        )}
+        <hr class="bg-primary-600/50 mx-auto mt-6 max-w-[30%] rounded-full border-none pt-1" />
+      </div>
+
+      <!-- Articles Grid -->
+      {articles.length > 0 ? (
+        <>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {articles.map((article) => (
+              <article class="group">
+                <PostCard post={article} showDescription={true} />
+              </article>
+            ))}
+          </div>
+
+          <!-- Category SEO Content -->
+          <div class="mt-16 prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold mb-4">About {category.data.name}</h2>
+            <p class="text-gray-600 mb-6">
+              Explore our comprehensive collection of {category.data.name.toLowerCase()} articles, 
+              featuring expert insights, practical tutorials, and in-depth guides. 
+              Our {totalCount} posts in this category cover everything you need to know about {category.data.name.toLowerCase()}.
+            </p>
+            
+            {articles.length > 5 && (
+              <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-4">Popular Topics in {category.data.name}</h3>
+                <div class="flex flex-wrap gap-2">
+                  {articles.slice(0, 8).map(article => (
+                    <a 
+                      href={`/blog/${article.id}`}
+                      class="inline-block px-3 py-1 bg-gray-100 hover:bg-primary-100 rounded-full text-sm text-gray-700 hover:text-primary-700 transition-colors"
+                    >
+                      {article.data.title.split(':')[0].substring(0, 30)}...
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+              <h3 class="text-xl font-semibold mb-3">Need More Information?</h3>
+              <p class="text-gray-600 mb-4">
+                Have questions about {category.data.name.toLowerCase()} or want to suggest a topic? 
+                We'd love to hear from you!
+              </p>
+              <a 
+                href="/contact" 
+                class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors"
+              >
+                Contact Us
+                <span class="ml-2">→</span>
+              </a>
+            </div>
+          </div>
+        </>
+      ) : (
+        <div class="text-center py-12">
+          <p class="text-gray-500 text-lg">No articles found in this category yet.</p>
+          <a href="/categories" class="mt-4 inline-block text-primary-600 hover:underline">
+            ← Browse other categories
+          </a>
+        </div>
+      )}
+
+      <!-- Related Categories -->
+      <div class="mt-16 pt-8 border-t border-gray-200">
+        <h2 class="text-2xl font-bold mb-6">Explore Other Categories</h2>
+        <div class="flex flex-wrap gap-3">
+          {categoriesHandler.allCategories()
+            .filter(c => c.id !== category.id)
+            .slice(0, 6)
+            .map(relatedCat => (
+              <a 
+                href={`/categories/${relatedCat.id}`}
+                class="inline-block px-4 py-2 bg-white border border-gray-300 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-all"
+              >
+                {relatedCat.data.name}
+              </a>
+            ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

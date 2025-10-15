@@ -1,0 +1,65 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "Terms of Use";
+const description = "These terms govern the use of our website and services. By accessing or using PopZic, you agree to comply with these terms.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="site-container">
+    <div class="mx-auto max-w-3xl pt-24 md:pt-36 pb-12">
+      <h1 class="h1 text-center mb-8">{title}</h1>
+      
+      <div class="space-y-8 text-gray-700 dark:text-gray-300">
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
+          <p>By accessing PopZic, you agree to these Terms of Use. If you disagree with any part, please do not use our services.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">2. Use of Content</h2>
+          <p class="mb-4">You may use our content for:</p>
+          <ul class="list-disc ml-6 space-y-2">
+            <li>Personal, non-commercial purposes</li>
+            <li>Educational purposes with attribution</li>
+            <li>Commercial purposes with written permission</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">3. Prohibited Uses</h2>
+          <ul class="list-disc ml-6 space-y-2">
+            <li>Violating any laws or regulations</li>
+            <li>Transmitting harmful or offensive content</li>
+            <li>Attempting unauthorized access</li>
+            <li>Copying content without attribution</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">4. Intellectual Property</h2>
+          <p>All content on PopZic is protected by copyright. See our License page for usage details.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">5. Disclaimer</h2>
+          <p>PopZic provides content "as is" without warranties. We are not liable for any damages from using our services.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">6. Changes to Terms</h2>
+          <p>We may update these terms at any time. Continued use constitutes acceptance of new terms.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">7. Contact</h2>
+          <p>Questions about terms: <a href="mailto:legal@Vehivio.com" class="text-blue-600 hover:underline">legal@Vehivio.com</a></p>
+        </section>
+
+        <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
+          <p class="text-sm text-gray-500 dark:text-gray-400">Effective: January 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

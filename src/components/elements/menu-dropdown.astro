@@ -1,0 +1,23 @@
+---
+import Menu from "@/assets/svgs/menu.astro";
+---
+
+<div class="dropdown">
+  <button
+    tabindex="0"
+    role="button"
+    class="btn btn-ghost btn-circle"
+    aria-label="Menu"
+  >
+    <Menu />
+  </button>
+
+  <ul
+    tabindex="0"
+    class="menu dropdown-content z-50 bg-base-100 rounded-box w-56 shadow"
+  >
+    <li><a href="/" aria-label="Homepage">Home</a></li>
+    <li><a href="/articles" aria-label="Articles Page">Articles</a></li>
+    <li><a href="/about" aria-label="About Page">About</a></li>
+  </ul>
+</div>

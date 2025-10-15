@@ -1,0 +1,22 @@
+---
+import { SITE } from "@/lib/config";
+
+// Only load Google Analytics in production and if the ID is set
+const shouldLoadGA = import.meta.env.PROD && SITE.googleAnalyticsId;
+---
+
+{shouldLoadGA && (
+  <>
+    <!-- Google Analytics -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.googleAnalyticsId}`}></script>
+    <script is:inline define:vars={{ gaId: SITE.googleAnalyticsId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId, {
+        page_title: document.title,
+        page_location: window.location.href,
+      });
+    </script>
+  </>
+)}

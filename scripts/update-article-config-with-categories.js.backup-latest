@@ -1,0 +1,556 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import OpenAI from 'openai';
+import dotenv from 'dotenv';
+
+// Get current directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load environment variables
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+// Read config.txt
+function readConfigFile() {
+  const configPath = path.join(__dirname, '..', 'config.txt');
+
+  // Check if config.txt exists
+  if (!fs.existsSync(configPath)) {
+    throw new Error('config.txt not found. Please create a config.txt file with theme, domain, and siteName on separate lines.');
+  }
+
+  const content = fs.readFileSync(configPath, 'utf-8').trim();
+  const lines = content.split('\n').map(line => line.trim());
+
+  if (lines.length < 3 || !lines[0] || !lines[1] || !lines[2]) {
+    throw new Error('config.txt must contain theme, domain, and siteName on separate lines.');
+  }
+
+  return {
+    theme: lines[0],
+    domain: lines[1],
+    siteName: lines[2]
+  };
+}
+
+// Read categories from config.template.js
+function readCategories() {
+  const configPath = path.join(__dirname, '..', 'config.template.js');
+  const content = fs.readFileSync(configPath, 'utf-8');
+  
+  // Extract categories array from CURRENT_WEBSITE_CONTENT
+  const match = content.match(/"categories":\s*\[([\s\S]*?)\]/);
+  if (match) {
+    // Parse the categories array
+    const categoriesStr = '[' + match[1] + ']';
+    try {
+      // Clean up the string and parse it
+      const cleanedStr = categoriesStr.replace(/"/g, '"').replace(/,\s*$/, '');
+      const categories = JSON.parse(cleanedStr);
+      return categories;
+    } catch (e) {
+      // Fallback: extract categories manually
+      const categoryMatches = match[1].matchAll(/"([^"]+)"/g);
+      return Array.from(categoryMatches, m => m[1]);
+    }
+  }
+
+  // If extraction fails, throw error instead of using hardcoded defaults
+  throw new Error('Could not extract categories from config.template.js. Please ensure CURRENT_WEBSITE_CONTENT.categories exists.');
+}
+
+// Generate the prompt for articles and category info
+function generatePrompt(themeInfo, categories) {
+  const articleTemplate = {
+    enabled: true,
+    articles: []
+  };
+
+  const categoryInfoTemplate = {};
+  
+  // Example structures
+  const exampleArticle = {
+    topic: "Example Article Title",
+    keywords: ["primary keyword phrase", "long tail search query", "how to guide keywords", "specific topic keywords"],
+    category: "category-from-list"
+  };
+
+  const exampleCategoryInfo = {
+    "category-slug": {
+      name: "Category Name",
+      description: "Full description of the category and its scope.",
+      shortDescription: "Brief one-line description.",
+      icon: "📚",
+      color: "#hex-color",
+      aboutContent: "Content for the about section of this category.",
+      detailedDescription: "Detailed description for SEO and category pages.",
+      popularTopics: ["Topic 1", "Topic 2", "Topic 3"],
+      seoKeywords: "comma, separated, keywords, for, seo",
+      keywords: ["individual", "keyword", "array", "for", "tagging"]
+    }
+  };
+
+  return `You are a content strategist specializing in ${themeInfo.theme}. 
+Generate content configuration for a website called ${themeInfo.siteName} (${themeInfo.domain}).
+
+IMPORTANT: Return ONLY valid JSON, no markdown, no comments, no explanations.
+
+Available categories to use and define:
+${JSON.stringify(categories, null, 2)}
+
+Return a JSON object with exactly this structure:
+{
+  "articleConfig": ${JSON.stringify(articleTemplate, null, 2)},
+  "categoryInfo": ${JSON.stringify(categoryInfoTemplate, null, 2)}
+}
+
+Where:
+1. articleConfig.articles contains exactly 25 unique article objects with structure: ${JSON.stringify(exampleArticle, null, 2)}
+2. categoryInfo contains an entry for EACH category in the list above with structure: ${JSON.stringify(exampleCategoryInfo, null, 2)}
+
+Requirements for Articles:
+- Each topic must be unique and engaging for ${themeInfo.theme} audience
+- Topics should be diverse, covering different aspects of ${themeInfo.theme}
+- IMPORTANT: Do NOT include any year numbers (2023, 2024, 2025, etc.) in topics or keywords - use terms like "current", "latest", "modern" instead
+- Each topic must have exactly 4 HIGH-QUALITY SEO keywords following these strict rules:
+  * MUST be 2-4 words long (NO single words allowed)
+  * Include search intent words like "best", "how to", "guide", "review", "comparison", "tips"
+  * Be specific to the article topic, not generic
+  * Target actual search queries people use
+  * NO YEARS or specific dates in keywords
+  * Examples of good keyword patterns: "best action movies", "streaming service comparison", "beginner guide tips"
+  * BAD examples (NEVER USE): single words, year numbers, overly generic terms
+- Category MUST be one from the provided list
+- Focus on timeless, evergreen content that won't become outdated
+- Include beginner guides, deep dives, comparisons, and analysis articles
+- Each article must be completely different from the examples shown
+
+Requirements for Category Info:
+- Create an entry for EVERY category in the provided list
+- Each category must have a unique emoji icon that represents it well
+- Colors should be vibrant hex colors that fit the category theme
+- Descriptions should be relevant to ${themeInfo.theme}
+- Popular topics should reflect actual trending topics in that category
+- Keywords should be 2-4 word phrases (NOT single words), diverse and SEO-friendly
+- Make sure the content is appropriate for ${themeInfo.theme} context
+
+Color suggestions: Use appropriate vibrant hex colors that fit each category theme
+
+Return ONLY the JSON object, nothing else.`;
+}
+
+// Clean GPT response to extract valid JSON
+function cleanGPTResponse(response) {
+  let cleaned = response.trim();
+  
+  // Remove markdown code blocks if present
+  cleaned = cleaned.replace(/```json\s*/gi, '');
+  cleaned = cleaned.replace(/```\s*/g, '');
+  
+  // Remove any non-JSON content before the first {
+  const jsonStart = cleaned.indexOf('{');
+  if (jsonStart > 0) {
+    cleaned = cleaned.substring(jsonStart);
+  }
+  
+  // Remove any non-JSON content after the last }
+  const jsonEnd = cleaned.lastIndexOf('}');
+  if (jsonEnd > -1 && jsonEnd < cleaned.length - 1) {
+    cleaned = cleaned.substring(0, jsonEnd + 1);
+  }
+  
+  return cleaned;
+}
+
+// Generate configuration using GPT
+async function generateConfigurations(themeInfo, categories) {
+  try {
+    console.log('Generating article and category configurations for:', themeInfo.theme);
+    console.log('Using categories:', categories);
+    
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: "You are a content strategist. Return ONLY valid JSON, no markdown, no explanations."
+        },
+        {
+          role: "user",
+          content: generatePrompt(themeInfo, categories)
+        }
+      ],
+      temperature: 0.8,
+      max_tokens: 12000,
+    });
+
+    const content = response.choices[0].message.content;
+    const cleanedContent = cleanGPTResponse(content);
+    
+    // Parse and validate the JSON
+    const result = JSON.parse(cleanedContent);
+    
+    // Validate structure
+    if (!result.articleConfig || !result.categoryInfo) {
+      throw new Error('Invalid response structure: missing articleConfig or categoryInfo');
+    }
+    
+    // Validate articles
+    if (!result.articleConfig.articles || !Array.isArray(result.articleConfig.articles)) {
+      throw new Error('Invalid response structure: missing articles array');
+    }
+    
+    if (result.articleConfig.articles.length !== 25) {
+      console.warn(`Expected 25 articles, got ${result.articleConfig.articles.length}. Adjusting...`);
+    }
+    
+    // Validate each article
+    result.articleConfig.articles = result.articleConfig.articles.map((article, index) => {
+      if (!article.topic || !article.keywords || !article.category) {
+        throw new Error(`Article ${index + 1} missing required fields`);
+      }
+      
+      // Ensure category is valid
+      if (!categories.includes(article.category)) {
+        console.warn(`Invalid category "${article.category}" for article "${article.topic}". Using first category.`);
+        article.category = categories[0];
+      }
+      
+      // Ensure exactly 4 keywords
+      if (!Array.isArray(article.keywords)) {
+        article.keywords = [];
+      }
+      if (article.keywords.length > 4) {
+        article.keywords = article.keywords.slice(0, 4);
+      }
+      while (article.keywords.length < 4) {
+        article.keywords.push(themeInfo.theme.toLowerCase());
+      }
+      
+      return article;
+    });
+    
+    // Ensure exactly 25 articles
+    while (result.articleConfig.articles.length < 25) {
+      result.articleConfig.articles.push({
+        topic: `${themeInfo.theme} Article ${result.articleConfig.articles.length + 1}`,
+        keywords: [themeInfo.theme.toLowerCase(), "guide", "tips", "trends"],
+        category: categories[0]
+      });
+    }
+    
+    if (result.articleConfig.articles.length > 25) {
+      result.articleConfig.articles = result.articleConfig.articles.slice(0, 25);
+    }
+    
+    // Validate category info
+    for (const category of categories) {
+      if (!result.categoryInfo[category]) {
+        console.warn(`Missing category info for "${category}". Generating default...`);
+        result.categoryInfo[category] = {
+          name: category.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+          description: `Explore ${category} in the world of ${themeInfo.theme}.`,
+          shortDescription: `All about ${category}.`,
+          icon: "📂",
+          color: "#666666",
+          aboutContent: `Content related to ${category}.`,
+          detailedDescription: `Detailed information about ${category} in ${themeInfo.theme}.`,
+          popularTopics: ["Topic 1", "Topic 2", "Topic 3"],
+          seoKeywords: `${category}, ${themeInfo.theme.toLowerCase()}, entertainment`,
+          keywords: [category, themeInfo.theme.toLowerCase(), "entertainment"]
+        };
+      }
+    }
+    
+    return result;
+  } catch (error) {
+    console.error('Error generating config:', error);
+    throw error;
+  }
+}
+
+// Update config.template.js with new configurations
+function updateConfigTemplate(articleConfig, categoryInfo) {
+  const configPath = path.join(__dirname, '..', 'config.template.js');
+  
+  // Create config-backups directory if it doesn't exist
+  const backupDir = path.join(__dirname, '..', 'config-backups');
+  if (!fs.existsSync(backupDir)) {
+    fs.mkdirSync(backupDir, { recursive: true });
+  }
+  
+  // Backup current file
+  const timestamp = new Date().toISOString().replace(/:/g, '-').split('.')[0];
+  const backupPath = path.join(backupDir, `config.template.js.backup-full-${timestamp}.js`);
+  fs.copyFileSync(configPath, backupPath);
+  console.log(`Backup created: ${backupPath}`);
+  
+  // Read current config
+  let content = fs.readFileSync(configPath, 'utf-8');
+  
+  // Update ARTICLE_GENERATION_CONFIG
+  const newArticleConfig = `export const ARTICLE_GENERATION_CONFIG = ${JSON.stringify(articleConfig, null, 2)};`;
+  
+  // Replace ARTICLE_GENERATION_CONFIG section
+  const articleStartMarker = 'export const ARTICLE_GENERATION_CONFIG = {';
+  const articleStartIndex = content.indexOf(articleStartMarker);
+  
+  if (articleStartIndex === -1) {
+    throw new Error('Could not find ARTICLE_GENERATION_CONFIG in config.template.js');
+  }
+  
+  // Find the matching closing brace for ARTICLE_GENERATION_CONFIG
+  let braceCount = 0;
+  let articleEndIndex = articleStartIndex + articleStartMarker.length;
+  let foundEnd = false;
+  
+  for (let i = articleEndIndex; i < content.length; i++) {
+    if (content[i] === '{') braceCount++;
+    if (content[i] === '}') {
+      if (braceCount === 0) {
+        // Check if this is followed by a semicolon
+        let j = i + 1;
+        while (j < content.length && /\s/.test(content[j])) j++;
+        if (content[j] === ';') {
+          articleEndIndex = j + 1;
+        } else {
+          articleEndIndex = i + 1;
+        }
+        foundEnd = true;
+        break;
+      }
+      braceCount--;
+    }
+  }
+  
+  if (!foundEnd) {
+    throw new Error('Could not find end of ARTICLE_GENERATION_CONFIG');
+  }
+  
+  // Replace the ARTICLE_GENERATION_CONFIG section
+  content = content.substring(0, articleStartIndex) + newArticleConfig + content.substring(articleEndIndex);
+  
+  // Update CATEGORY_INFO
+  const newCategoryInfo = `export const CATEGORY_INFO = ${JSON.stringify(categoryInfo, null, 2)};`;
+  
+  // Find and replace CATEGORY_INFO section
+  const categoryStartMarker = 'export const CATEGORY_INFO = {';
+  const categoryStartIndex = content.indexOf(categoryStartMarker);
+  
+  if (categoryStartIndex === -1) {
+    // If CATEGORY_INFO doesn't exist, add it after CURRENT_SOCIAL_LINKS
+    const socialLinksEnd = content.indexOf('export const CURRENT_SOCIAL_LINKS');
+    if (socialLinksEnd !== -1) {
+      // Find the end of CURRENT_SOCIAL_LINKS
+      let socialEndIndex = content.indexOf('];', socialLinksEnd) + 2;
+      while (socialEndIndex < content.length && /\s/.test(content[socialEndIndex])) socialEndIndex++;
+      if (content[socialEndIndex] === ';') socialEndIndex++;
+      
+      content = content.substring(0, socialEndIndex) + '\n\n// Category metadata\n' + newCategoryInfo + content.substring(socialEndIndex);
+    }
+  } else {
+    // Find the matching closing brace for CATEGORY_INFO
+    braceCount = 0;
+    let categoryEndIndex = categoryStartIndex + categoryStartMarker.length;
+    foundEnd = false;
+    
+    for (let i = categoryEndIndex; i < content.length; i++) {
+      if (content[i] === '{') braceCount++;
+      if (content[i] === '}') {
+        if (braceCount === 0) {
+          // Check if this is followed by a semicolon
+          let j = i + 1;
+          while (j < content.length && /\s/.test(content[j])) j++;
+          if (content[j] === ';') {
+            categoryEndIndex = j + 1;
+          } else {
+            categoryEndIndex = i + 1;
+          }
+          foundEnd = true;
+          break;
+        }
+        braceCount--;
+      }
+    }
+    
+    if (!foundEnd) {
+      throw new Error('Could not find end of CATEGORY_INFO');
+    }
+    
+    // Replace the CATEGORY_INFO section
+    content = content.substring(0, categoryStartIndex) + newCategoryInfo + content.substring(categoryEndIndex);
+  }
+  
+  // Write updated config
+  fs.writeFileSync(configPath, content, 'utf-8');
+  console.log('config.template.js updated with new configurations');
+}
+
+// Limit articles to maximum 25 in config file
+function limitArticlesToMax25() {
+  const configPath = path.join(__dirname, '..', 'config.template.js');
+  let content = fs.readFileSync(configPath, 'utf-8');
+  
+  // Find ARTICLE_GENERATION_CONFIG section
+  const startMarker = 'export const ARTICLE_GENERATION_CONFIG = {';
+  const startIndex = content.indexOf(startMarker);
+  
+  if (startIndex === -1) {
+    console.log('ARTICLE_GENERATION_CONFIG not found, skipping article limit check');
+    return;
+  }
+  
+  // Extract the current configuration
+  let braceCount = 0;
+  let endIndex = startIndex + startMarker.length;
+  let foundEnd = false;
+  
+  for (let i = endIndex; i < content.length; i++) {
+    if (content[i] === '{') braceCount++;
+    if (content[i] === '}') {
+      if (braceCount === 0) {
+        let j = i + 1;
+        while (j < content.length && /\s/.test(content[j])) j++;
+        if (content[j] === ';') {
+          endIndex = j + 1;
+        } else {
+          endIndex = i + 1;
+        }
+        foundEnd = true;
+        break;
+      }
+      braceCount--;
+    }
+  }
+  
+  if (!foundEnd) {
+    console.log('Could not find end of ARTICLE_GENERATION_CONFIG, skipping article limit check');
+    return;
+  }
+  
+  // Extract and parse the config
+  const configText = content.substring(startIndex + startMarker.length - 1, endIndex - (content[endIndex-1] === ';' ? 1 : 0));
+  
+  try {
+    const config = JSON.parse(configText);
+    
+    if (!config.articles || !Array.isArray(config.articles)) {
+      console.log('No articles array found in config');
+      return;
+    }
+    
+    const currentCount = config.articles.length;
+    console.log(`Current articles count: ${currentCount}`);
+    
+    if (currentCount > 25) {
+      console.log(`Trimming articles from ${currentCount} to 25...`);
+      
+      // Keep only first 25 articles
+      config.articles = config.articles.slice(0, 25);
+      
+      // Recreate the config section
+      const newConfigSection = `export const ARTICLE_GENERATION_CONFIG = ${JSON.stringify(config, null, 2)};`;
+      
+      // Replace in content
+      content = content.substring(0, startIndex) + newConfigSection + content.substring(endIndex);
+      
+      // Write back to file
+      fs.writeFileSync(configPath, content, 'utf-8');
+      console.log(`✅ Articles limited to 25 (was ${currentCount})`);
+    } else {
+      console.log(`Articles count (${currentCount}) is within limit, no changes needed`);
+    }
+    
+  } catch (error) {
+    console.log('Error parsing config for article limit check:', error.message);
+  }
+}
+
+// Reset position tracking to allow regeneration of all articles
+function resetPositionTracking() {
+  const trackingPath = path.join(__dirname, '..', '.article-fingerprints.json');
+  
+  try {
+    let originalCount = 0;
+    
+    if (fs.existsSync(trackingPath)) {
+      // Read current tracking data to get count
+      try {
+        const content = fs.readFileSync(trackingPath, 'utf-8');
+        const trackingData = JSON.parse(content);
+        
+        if (trackingData.processedPositions !== undefined) {
+          originalCount = trackingData.processedPositions.length;
+        } else if (trackingData.fingerprints) {
+          originalCount = Object.keys(trackingData.fingerprints).length;
+        }
+      } catch (parseError) {
+        console.log('Note: Existing tracking file was corrupted, will be reset');
+      }
+      
+      // Always delete the file for complete reset
+      fs.unlinkSync(trackingPath);
+    }
+    
+    if (originalCount > 0) {
+      console.log(`✅ Position tracking reset successfully (cleared ${originalCount} processed positions)`);
+    } else {
+      console.log('✅ Position tracking reset successfully (file was empty or non-existent)');
+    }
+    
+  } catch (error) {
+    console.log(`⚠️ Error resetting position tracking: ${error.message}`);
+  }
+}
+
+// Main function
+async function main() {
+  try {
+    console.log('Reading configuration...');
+    const themeInfo = readConfigFile();
+    console.log('Theme info:', themeInfo);
+    
+    console.log('\nReading categories from config.template.js...');
+    const categories = readCategories();
+    console.log('Found categories:', categories);
+    
+    console.log('\nGenerating article and category configurations...');
+    const { articleConfig, categoryInfo } = await generateConfigurations(themeInfo, categories);
+    
+    console.log(`\nGenerated ${articleConfig.articles.length} article topics`);
+    console.log('Sample articles:');
+    articleConfig.articles.slice(0, 3).forEach((article, i) => {
+      console.log(`${i + 1}. ${article.topic} (${article.category})`);
+    });
+    
+    console.log(`\nGenerated info for ${Object.keys(categoryInfo).length} categories`);
+    console.log('Categories with info:', Object.keys(categoryInfo));
+    
+    console.log('\nUpdating config.template.js...');
+    updateConfigTemplate(articleConfig, categoryInfo);
+    
+    console.log('\nChecking and limiting articles to maximum 25...');
+    limitArticlesToMax25();
+    
+    console.log('\nResetting position tracking to allow regeneration...');
+    resetPositionTracking();
+    
+    console.log('\n✅ Article and category configurations updated successfully!');
+    console.log('Run "npm run sync-config-template" to sync changes to the website');
+    console.log('💡 All articles will be regenerated on next run due to position tracking reset');
+    
+  } catch (error) {
+    console.error('\n❌ Error:', error.message);
+    if (error.response) {
+      console.error('API Response:', error.response.data);
+    }
+    process.exit(1);
+  }
+}
+
+main();

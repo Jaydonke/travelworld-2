@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+const allArticles = await getCollection("blog");
+const visibleArticles = await getCollection("blog", ({ data, id }) => {
+    if (id.startsWith('en/')) {
+      return false;
+    }
+    return data.isDraft !== true && data.draft !== true;
+});
+
+const now = new Date();
+const publishedArticles = await getCollection("blog", ({ data, id }) => {
+    if (id.startsWith('en/')) {
+      return false;
+    }
+    return data.isDraft !== true && data.draft !== true && new Date(data.publishedTime || data.pubDate) < now;
+});
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articles Debug</title>
+</head>
+<body>
+    <h1>Articles Debug Page</h1>
+    
+    <h2>All Articles (raw): {allArticles.length}</h2>
+    <ul>
+        {allArticles.map(article => (
+            <li>{article.id} - {article.data.title}</li>
+        ))}
+    </ul>
+    
+    <h2>Visible Articles (no draft, no en): {visibleArticles.length}</h2>
+    <ul>
+        {visibleArticles.map(article => (
+            <li>{article.id} - {article.data.title} - Published: {article.data.publishedTime}</li>
+        ))}
+    </ul>
+    
+    <h2>Published Articles (past date only): {publishedArticles.length}</h2>
+    <ul>
+        {publishedArticles.map(article => (
+            <li>{article.id} - {article.data.title}</li>
+        ))}
+    </ul>
+</body>
+</html>

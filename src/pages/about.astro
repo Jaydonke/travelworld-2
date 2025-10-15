@@ -1,0 +1,196 @@
+---
+import BaseLayout from "@/layouts/base.astro";
+import { getEntry } from "astro:content";
+import { PAGES_CONFIG } from "@/lib/config";
+
+const entry = await getEntry("views", "about");
+
+if (!entry) {
+  return Astro.redirect("/404");
+}
+---
+
+<BaseLayout entry={entry}>
+  <div class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Hero Section -->
+      <div class="text-center mb-12">
+        <h1
+          class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+        >
+          {PAGES_CONFIG.about.title}
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          {PAGES_CONFIG.about.subtitle}
+        </p>
+      </div>
+
+      <!-- Mission Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">
+          Our Mission
+        </h2>
+        <div
+          class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-8 rounded-lg"
+        >
+          <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            {PAGES_CONFIG.about.mission}
+          </p>
+        </div>
+      </div>
+
+      <!-- What We Do Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">
+          {PAGES_CONFIG.about.whatWeDo.title}
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          {
+            PAGES_CONFIG.about.whatWeDo.services.map((service, index) => {
+              const colors = [
+                { bg: "bg-blue-100 dark:bg-blue-900", text: "text-blue-600" },
+                { bg: "bg-purple-100 dark:bg-purple-900", text: "text-purple-600" },
+                { bg: "bg-green-100 dark:bg-green-900", text: "text-green-600" }
+              ];
+              const color = colors[index] || colors[0];
+              
+              return (
+                <div class="text-center p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                  <div class={`w-16 h-16 ${color.bg} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                    <svg
+                      class={`w-8 h-8 ${color.text}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      {index === 0 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                        />
+                      )}
+                      {index === 1 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                        />
+                      )}
+                      {index === 2 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                      )}
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">
+                    {service.title}
+                  </h3>
+                  <p class="text-gray-600 dark:text-gray-400">
+                    {service.description}
+                  </p>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+
+      <!-- Our Values Section -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-gray-200">
+          {PAGES_CONFIG.about.ourValues.title}
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          {
+            PAGES_CONFIG.about.ourValues.values.map((value, index) => {
+              const colors = [
+                { bg: "bg-blue-100 dark:bg-blue-900", text: "text-blue-600" },
+                { bg: "bg-purple-100 dark:bg-purple-900", text: "text-purple-600" },
+                { bg: "bg-green-100 dark:bg-green-900", text: "text-green-600" },
+                { bg: "bg-orange-100 dark:bg-orange-900", text: "text-orange-600" }
+              ];
+              const color = colors[index] || colors[0];
+              
+              return (
+                <div class="flex items-start space-x-4">
+                  <div class={`flex-shrink-0 w-12 h-12 ${color.bg} rounded-lg flex items-center justify-center`}>
+                    <svg
+                      class={`w-6 h-6 ${color.text}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      {index === 0 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      )}
+                      {index === 1 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                      )}
+                      {index === 2 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"
+                        />
+                      )}
+                      {index === 3 && (
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                      )}
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
+                      {value.title}
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                      {value.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })
+          }
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div
+        class="text-center bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg"
+      >
+        <h2 class="text-3xl font-bold mb-4">{PAGES_CONFIG.about.callToAction.title}</h2>
+        <p class="text-xl mb-6 opacity-90">
+          {PAGES_CONFIG.about.callToAction.description}
+        </p>
+        <a
+          href={PAGES_CONFIG.about.callToAction.buttonLink}
+          class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+        >
+          {PAGES_CONFIG.about.callToAction.buttonText}
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,73 @@
+---
+import CategoryCloud from "@components/CategoryCloud/CategoryCloud.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { categoriesHandler } from "@/lib/handlers/categories";
+import { articlesHandler } from "@/lib/handlers/articles";
+import { UI_CONFIG } from "@/lib/config";
+
+// 获取所有分类和文章统计
+const allCategories = categoriesHandler.allCategories();
+const allArticles = articlesHandler.allArticles();
+
+// 为每个分类计算文章数量
+const categoriesWithCount = allCategories.map(category => {
+	const articleCount = allArticles.filter(article => {
+		const articleCategories = article.data.categories || 
+								(article.data.category ? [article.data.category] : []);
+		return articleCategories.includes(category.id);
+	}).length;
+	
+	return {
+		...category,
+		count: articleCount
+	};
+}).filter(cat => cat.count > 0); // 只显示有文章的分类
+
+// 从配置获取页面标题和描述
+const { title, description, subtitle } = UI_CONFIG.categoriesPage;
+---
+
+<BaseLayout title={title} description={description}>
+	<section class="site-container">
+		<div class="mx-auto max-w-6xl pt-24 md:pt-36 pb-12">
+			<h1 class="h1 text-center mb-2">{title}</h1>
+			<p class="text-center text-lg text-gray-600 mb-8">{subtitle}</p>
+			<hr class="bg-primary-600/50 mx-auto mt-4 mb-12 max-w-[30%] rounded-full border-none pt-1" />
+			
+			<!-- Categories Grid -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				{categoriesWithCount.map(category => (
+					<a 
+						href={`/categories/${category.id}`}
+						class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 hover:border-primary-500"
+					>
+						<div class="flex flex-col h-full">
+							<h2 class="text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+								{category.data.name}
+							</h2>
+							{category.data.description && (
+								<p class="text-gray-600 dark:text-gray-400 text-sm mb-4 flex-grow">
+									{category.data.description}
+								</p>
+							)}
+							<div class="flex items-center justify-between mt-auto">
+								<span class="text-sm text-gray-500 dark:text-gray-400">
+									{category.count} {category.count === 1 ? 'article' : 'articles'}
+								</span>
+								<span class="text-primary-600 group-hover:translate-x-1 transition-transform">
+									→
+								</span>
+							</div>
+						</div>
+					</a>
+				))}
+			</div>
+			
+			{categoriesWithCount.length === 0 && (
+				<div class="text-center py-12">
+					<p class="text-gray-500">No categories found.</p>
+				</div>
+			)}
+		</div>
+	</section>
+</BaseLayout>

@@ -1,0 +1,158 @@
+{
+  "theme": "blogging-monetization",
+  "categories": {
+    "affiliate-marketing": {
+      "title": "Affiliate Marketing",
+      "path": "affiliate-marketing",
+      "description": "Learn how to monetize your blog through affiliate partnerships",
+      "keywords": [
+        "affiliate",
+        "commission",
+        "partner",
+        "referral",
+        "amazon",
+        "associate",
+        "link",
+        "product",
+        "recommendation"
+      ]
+    },
+    "audience-growth": {
+      "title": "Audience Growth",
+      "path": "audience-growth",
+      "description": "Strategies to grow and engage your blog audience",
+      "keywords": [
+        "audience",
+        "traffic",
+        "visitors",
+        "growth",
+        "engagement",
+        "community",
+        "followers",
+        "subscribers"
+      ]
+    },
+    "blog-monetization": {
+      "title": "Blog Monetization",
+      "path": "blog-monetization",
+      "description": "Strategies to generate income from your blog",
+      "keywords": [
+        "monetize",
+        "revenue",
+        "income",
+        "earnings",
+        "profit",
+        "money",
+        "ads",
+        "sponsored"
+      ]
+    },
+    "blogging-tools": {
+      "title": "Blogging Tools",
+      "path": "blogging-tools",
+      "description": "Essential tools and resources for bloggers",
+      "keywords": [
+        "tools",
+        "software",
+        "apps",
+        "plugins",
+        "resources",
+        "platform",
+        "hosting",
+        "wordpress"
+      ]
+    },
+    "content-strategy": {
+      "title": "Content Strategy",
+      "path": "content-strategy",
+      "description": "Plan and create content that engages your audience",
+      "keywords": [
+        "content",
+        "strategy",
+        "planning",
+        "editorial",
+        "calendar",
+        "topics",
+        "writing",
+        "blog",
+        "post",
+        "article"
+      ]
+    },
+    "email-marketing": {
+      "title": "Email Marketing",
+      "path": "email-marketing",
+      "description": "Build and monetize your email list",
+      "keywords": [
+        "email",
+        "newsletter",
+        "list",
+        "subscribers",
+        "campaign",
+        "mailchimp",
+        "convertkit",
+        "autoresponder"
+      ]
+    },
+    "general": {
+      "title": "General",
+      "path": "general",
+      "description": "General blogging tips and advice",
+      "keywords": [
+        "blog",
+        "blogging",
+        "tips",
+        "advice",
+        "guide",
+        "tutorial",
+        "how-to"
+      ]
+    },
+    "growth-hacking": {
+      "title": "Growth Hacking",
+      "path": "growth-hacking",
+      "description": "Innovative strategies for rapid growth",
+      "keywords": [
+        "growth",
+        "hack",
+        "viral",
+        "scale",
+        "rapid",
+        "innovative",
+        "experiment",
+        "optimization"
+      ]
+    },
+    "marketing-automation": {
+      "title": "Marketing Automation",
+      "path": "marketing-automation",
+      "description": "Automate your marketing processes",
+      "keywords": [
+        "automation",
+        "automate",
+        "workflow",
+        "zapier",
+        "integration",
+        "efficiency",
+        "process",
+        "system"
+      ]
+    },
+    "seo-optimization": {
+      "title": "SEO Optimization",
+      "path": "seo-optimization",
+      "description": "Improve your blog visibility in search engines",
+      "keywords": [
+        "seo",
+        "search",
+        "google",
+        "ranking",
+        "keywords",
+        "optimization",
+        "organic",
+        "backlinks",
+        "serp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+---
+import { formatPosts, getAllPosts } from "@js/blogUtils";
+import { getLocaleFromUrl } from "@js/localeUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const posts = await getAllPosts(currLocale);
+const recentPosts = formatPosts(posts, { limit: 3 });
+
+const allPostsNoFilter = await getAllPosts(currLocale);
+const formattedNoLimit = formatPosts(posts, { limit: undefined });
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page Debug</title>
+</head>
+<body>
+    <h1>Home Page Debug</h1>
+    
+    <h2>Current Locale: {currLocale || "default"}</h2>
+    
+    <h2>All Posts (getAllPosts): {posts.length}</h2>
+    <ul>
+        {posts.slice(0, 5).map(post => (
+            <li>
+                {post.data.title}<br/>
+                publishedTime: {post.data.publishedTime}<br/>
+                pubDate: {post.data.pubDate}<br/>
+            </li>
+        ))}
+    </ul>
+    
+    <h2>Recent Posts (formatPosts with limit:3): {recentPosts.length}</h2>
+    <ul>
+        {recentPosts.map(post => (
+            <li>
+                {post.data.title}<br/>
+                Date: {post.data.publishedTime || post.data.pubDate}
+            </li>
+        ))}
+    </ul>
+    
+    <h2>All Formatted Posts (no limit): {formattedNoLimit.length}</h2>
+</body>
+</html>

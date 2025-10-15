@@ -1,0 +1,9 @@
+{
+  "currentTheme": "vehivio-theme",
+  "fallbackTheme": "electric-vehicles",
+  "themeSettings": {
+    "enableSmartCategorization": true,
+    "enableManualOverride": true,
+    "logCategoryDecisions": true
+  }
+}

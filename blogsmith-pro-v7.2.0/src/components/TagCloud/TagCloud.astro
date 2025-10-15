@@ -1,0 +1,30 @@
+---
+import { countItems, getAllPosts, sortByValue } from "@js/blogUtils";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { tagify } from "@js/textUtils";
+
+import { getLocalizedRoute } from "@/js/translationUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const posts = await getAllPosts(currLocale);
+const allTags = posts.map((post) => post.data.tags).flat();
+const countedTags = countItems(allTags);
+const processedTags = sortByValue(countedTags);
+
+interface Props {
+	showCount?: boolean;
+}
+
+const { showCount = false } = Astro.props as Props;
+---
+
+<div class="flex flex-wrap justify-center gap-4">
+	{
+		processedTags.map(([tag, count]) => (
+			<a href={getLocalizedRoute(currLocale, `/tags/${tag}/`)} class="button button--outline">
+				#{tagify(tag)}
+				{showCount && <span class="text-xs opacity-70">({count})</span>}
+			</a>
+		))
+	}
+</div>

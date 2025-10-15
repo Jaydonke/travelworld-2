@@ -1,0 +1,41 @@
+---
+import Button from "@components/Button/Button.astro";
+---
+
+<section id="newsletter" class="group not-content relative my-12 rounded-lg p-1">
+	<div
+		class="group absolute -inset-1 transform-gpu rounded-lg bg-gradient-to-r from-indigo-600 to-sky-600 opacity-30 blur transition duration-700 group-hover:opacity-100 group-hover:duration-200"
+	>
+	</div>
+	<div class="bg-base-800 relative rounded-md px-4 py-16 md:px-6">
+		<div class="mx-auto max-w-lg">
+			<h3 class="text-base-100 w-full text-center text-2xl font-semibold">In the know</h3>
+			<p class="text-base-100 mt-2 text-center opacity-90">
+				Subscribe to get my newest posts straight to your inbox.
+			</p>
+			<form
+				id="newsletter-form"
+				name="newsletter-form"
+				class="xs:flex-row mt-4 flex flex-col gap-3"
+			>
+				<label for="newsletter-email" class="description text-base-100 mb-1 hidden">Email*</label>
+				<input
+					type="email"
+					class="form__input focus:ring-offset-base-800"
+					name="email"
+					id="newsletter-email"
+					inputmode="email"
+					placeholder="Email"
+					required
+				/>
+
+				<Button variant="primary" type="submit" class="focus:ring-offset-base-800">
+					Subscribe
+				</Button>
+			</form>
+			<p class="text-base-100 mt-3 text-center text-xs opacity-90">
+				I won't send you spam. Unsubscribe at any time.
+			</p>
+		</div>
+	</div>
+</section>

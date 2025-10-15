@@ -1,0 +1,71 @@
+---
+import Category from "@components/Category/Category.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { categorify, formatDate, humanize, slugify } from "@js/textUtils";
+import { Image } from "astro:assets";
+import { type CollectionEntry } from "astro:content";
+
+import { getLocalizedRoute } from "@/js/translationUtils";
+
+interface Props {
+	post: CollectionEntry<"blog">;
+	showDescription?: boolean;
+	class?: string;
+	rest?: any; // catch-all for any additional parameters, such as "aria-label"
+}
+
+const { post, showDescription = false, class: className, ...rest } = Astro.props as Props;
+const { title, description, pubDate, heroImage, categories } = post.data;
+
+const currLocale = getLocaleFromUrl(Astro.url);
+---
+
+<div class=`flex flex-col ${className}` {...rest}>
+	<a href={getLocalizedRoute(currLocale, `/blog/${post.id}/`)}>
+		<p class="sr-only">{title}</p>
+		<div class="border-base-100 shrink-0 justify-center border sm:justify-normal">
+			<figure class="aspect-[374/195] overflow-hidden rounded-md">
+				<Image
+					src={heroImage}
+					alt={`cover for ${title}`}
+					height={700}
+					quality="high"
+					class="h-full w-full rounded-md object-cover transition-all duration-500 hover:scale-[1.02]"
+					transition:name={`blog-image-${post.id}`}
+				/>
+			</figure>
+		</div>
+	</a>
+	<div class="w-full">
+		<div class="mt-1 flex w-full flex-wrap justify-between">
+			<!-- categories -->
+			<div class="flex items-center gap-3">
+				<div class="flex flex-wrap items-center gap-x-2 text-sm">
+					{categories.map((category) => <Category category={category} />)}
+				</div>
+			</div>
+
+			<!-- published date -->
+			<div class="text-xs opacity-70 xl:text-sm">
+				<div class="flex">
+					<p class="whitespace-nowrap">{formatDate(pubDate, currLocale)}</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- title -->
+		<div class="mt-1">
+			<a
+				href={getLocalizedRoute(currLocale, `/blog/${post.id}/`)}
+				class="hover:text-primary-700 transition"
+			>
+				<h2 class="inline text-lg font-semibold lg:text-xl">
+					{title}
+				</h2>
+			</a>
+		</div>
+
+		<!-- description -->
+		{showDescription && <p class="description mt-1 text-sm lg:text-base">{description}</p>}
+	</div>
+</div>

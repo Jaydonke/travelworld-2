@@ -1,0 +1,331 @@
+---
+interface Props {
+  apps: Array<{
+    id: string;
+    name: string;
+    ageRequirement: string;
+    primaryUse: string;
+    safetyFeatures: string;
+    privacyLevel: string;
+    contentType: string;
+  }>;
+}
+
+const { apps } = Astro.props;
+---
+
+<div class="social-apps-comparison">
+  <div class="overflow-x-auto">
+    <table
+      class="w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700"
+    >
+      <thead class="bg-gray-50 dark:bg-gray-700">
+        <tr>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            App
+          </th>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            Age Requirement
+          </th>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            Primary Use
+          </th>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            Safety Features
+          </th>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            Privacy Level
+          </th>
+          <th
+            class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider border-b border-gray-200 dark:border-gray-600"
+          >
+            Content Type
+          </th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200 dark:divide-gray-600">
+        {
+          apps.map((app, index) => (
+            <tr
+              class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 cursor-pointer"
+              onclick={`toggleRowDetails('${app.id}')`}
+            >
+              <td class="px-4 py-4 whitespace-nowrap">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">
+                    {app.name.charAt(0)}
+                  </div>
+                  <div class="ml-3">
+                    <div class="text-sm font-medium text-gray-900 dark:text-white">
+                      {app.name}
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="px-4 py-4 whitespace-nowrap">
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+                  {app.ageRequirement}
+                </span>
+              </td>
+              <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">
+                {app.primaryUse}
+              </td>
+              <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">
+                <div class="max-w-xs truncate" title={app.safetyFeatures}>
+                  {app.safetyFeatures}
+                </div>
+              </td>
+              <td class="px-4 py-4 whitespace-nowrap">
+                <span
+                  class={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                    app.privacyLevel === "Very High"
+                      ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                      : app.privacyLevel === "High"
+                        ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                        : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
+                  }`}
+                >
+                  {app.privacyLevel}
+                </span>
+              </td>
+              <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">
+                {app.contentType}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Detailed View Modal -->
+  <div
+    id="comparison-modal"
+    class="fixed inset-0 bg-black bg-opacity-50 hidden z-50"
+  >
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div
+        class="bg-white dark:bg-gray-800 rounded-lg shadow-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3
+              id="modal-title"
+              class="text-lg font-semibold text-gray-900 dark:text-white"
+            >
+              App Details
+            </h3>
+            <button
+              onclick="closeModal()"
+              class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="modal-content" class="space-y-4">
+            <!-- Content will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleRowDetails(appId) {
+    const appData = {
+      instagram: {
+        name: "Instagram",
+        ageRequirement: "13+",
+        primaryUse: "Photo/Video Sharing",
+        safetyFeatures: "Private accounts, comment filtering",
+        privacyLevel: "High",
+        contentType: "Visual content",
+      },
+      tiktok: {
+        name: "TikTok",
+        ageRequirement: "13+",
+        primaryUse: "Short Videos",
+        safetyFeatures: "Family pairing, restricted mode",
+        privacyLevel: "Medium",
+        contentType: "Video content",
+      },
+      snapchat: {
+        name: "Snapchat",
+        ageRequirement: "13+",
+        primaryUse: "Messaging",
+        safetyFeatures: "Self-destructing messages",
+        privacyLevel: "High",
+        contentType: "Temporary content",
+      },
+      discord: {
+        name: "Discord",
+        ageRequirement: "13+",
+        primaryUse: "Communities",
+        safetyFeatures: "Server moderation, verification",
+        privacyLevel: "Medium",
+        contentType: "Text/Voice",
+      },
+      whatsapp: {
+        name: "WhatsApp",
+        ageRequirement: "16+",
+        primaryUse: "Messaging",
+        safetyFeatures: "End-to-end encryption",
+        privacyLevel: "Very High",
+        contentType: "Text/Voice/Video",
+      },
+      youtube: {
+        name: "YouTube",
+        ageRequirement: "13+",
+        primaryUse: "Video Content",
+        safetyFeatures: "Restricted mode, age filters",
+        privacyLevel: "Medium",
+        contentType: "Video content",
+      },
+      reddit: {
+        name: "Reddit",
+        ageRequirement: "13+",
+        primaryUse: "Forums",
+        safetyFeatures: "Subreddit moderation",
+        privacyLevel: "Medium",
+        contentType: "Text/Media",
+      },
+      pinterest: {
+        name: "Pinterest",
+        ageRequirement: "13+",
+        primaryUse: "Visual Discovery",
+        safetyFeatures: "Content filtering",
+        privacyLevel: "High",
+        contentType: "Visual content",
+      },
+      twitter: {
+        name: "Twitter/X",
+        ageRequirement: "13+",
+        primaryUse: "Microblogging",
+        safetyFeatures: "Muting, blocking",
+        privacyLevel: "Medium",
+        contentType: "Text/Media",
+      },
+      bereal: {
+        name: "BeReal",
+        ageRequirement: "13+",
+        primaryUse: "Authentic Sharing",
+        safetyFeatures: "Time-limited posts",
+        privacyLevel: "High",
+        contentType: "Photo content",
+      },
+    };
+
+    const app = appData[appId];
+    if (!app) return;
+
+    const modal = document.getElementById("comparison-modal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalContent = document.getElementById("modal-content");
+
+    if (modal && modalTitle && modalContent) {
+      modalTitle.textContent = `${app.name} - Detailed Information`;
+
+      modalContent.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="space-y-4">
+            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Age Requirement</h4>
+              <p class="text-gray-600 dark:text-gray-300">${app.ageRequirement}</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Primary Use</h4>
+              <p class="text-gray-600 dark:text-gray-300">${app.primaryUse}</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Content Type</h4>
+              <p class="text-gray-600 dark:text-gray-300">${app.contentType}</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Safety Features</h4>
+              <p class="text-gray-600 dark:text-gray-300">${app.safetyFeatures}</p>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+              <h4 class="font-semibold text-gray-900 dark:text-white mb-2">Privacy Level</h4>
+              <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                app.privacyLevel === "Very High"
+                  ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                  : app.privacyLevel === "High"
+                    ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                    : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
+              }">
+                ${app.privacyLevel}
+              </span>
+            </div>
+          </div>
+        </div>
+      `;
+
+      modal.classList.remove("hidden");
+    }
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("comparison-modal");
+    if (modal) {
+      modal.classList.add("hidden");
+    }
+  }
+
+  // Close modal when clicking outside
+  document.addEventListener("click", (e) => {
+    const modal = document.getElementById("comparison-modal");
+    if (modal && e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close modal with Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+</script>
+
+<style>
+  .social-apps-comparison table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .social-apps-comparison th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .social-apps-comparison tr:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+  }
+</style>
+

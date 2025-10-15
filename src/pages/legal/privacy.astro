@@ -1,0 +1,66 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const title = "Privacy Policy";
+const description = "Learn how PopZic collects, uses, and protects your personal information.";
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="site-container">
+    <div class="mx-auto max-w-3xl pt-24 md:pt-36 pb-12">
+      <h1 class="h1 text-center mb-8">{title}</h1>
+      
+      <div class="space-y-8 text-gray-700 dark:text-gray-300">
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">1. Information We Collect</h2>
+          <p class="mb-4">We collect information you provide directly to us, such as when you:</p>
+          <ul class="list-disc ml-6 space-y-2">
+            <li>Subscribe to our newsletter</li>
+            <li>Contact us through our forms</li>
+            <li>Comment on our articles</li>
+            <li>Create an account</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">2. How We Use Your Information</h2>
+          <ul class="list-disc ml-6 space-y-2">
+            <li>To provide and improve our services</li>
+            <li>To send you newsletters (with your consent)</li>
+            <li>To respond to your inquiries</li>
+            <li>To analyze website usage</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">3. Data Protection</h2>
+          <p>We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">4. Your Rights</h2>
+          <ul class="list-disc ml-6 space-y-2">
+            <li>Access your personal data</li>
+            <li>Correct inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Opt-out of marketing communications</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">5. Cookies</h2>
+          <p>We use cookies to improve your experience. You can control cookies through your browser settings.</p>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">6. Contact Us</h2>
+          <p>For privacy-related questions: <a href="mailto:privacy@Vehivio.com" class="text-blue-600 hover:underline">privacy@Vehivio.com</a></p>
+        </section>
+
+        <div class="pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
+          <p class="text-sm text-gray-500 dark:text-gray-400">Last Updated: January 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

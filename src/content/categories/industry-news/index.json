@@ -1,0 +1,21 @@
+{
+  "id": "industry-news",
+  "name": "Industry News",
+  "description": "Stay updated with the latest news and trends in the automotive industry.",
+  "shortDescription": "Latest automotive industry news.",
+  "icon": "📰",
+  "color": "#FF4500",
+  "aboutContent": "This category provides the latest news, trends, and developments in the automotive industry.",
+  "detailedDescription": "Get insights into the automotive world with updates on new technologies, market trends, and industry events that shape the future of transportation.",
+  "popularTopics": [
+    "latest automotive trends",
+    "industry innovations",
+    "vehicle technology news"
+  ],
+  "seoKeywords": "automotive news, industry updates, car technology, transportation trends",
+  "keywords": [
+    "latest industry news",
+    "current automotive trends",
+    "vehicle technology updates"
+  ]
+}

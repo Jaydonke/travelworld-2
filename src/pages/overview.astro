@@ -1,0 +1,88 @@
+---
+import { getLocaleFromUrl } from "@js/localeUtils";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { getLocalizedRoute } from "@/js/translationUtils";
+import { SITE, OVERVIEW_CONFIG, CATEGORY_INFO, PAGES_CONFIG } from "@/lib/config";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+
+// styles
+const overview__heading = "mt-6 mb-2 text-lg font-semibold";
+const overview__link = "hover:text-primary-600 transition";
+
+// Get overview config from PAGES_CONFIG or fallback to OVERVIEW_CONFIG
+const overviewData = PAGES_CONFIG?.overview || OVERVIEW_CONFIG || {};
+
+// Get title and description from config
+const title = overviewData.title || 'Overview';
+const description = overviewData.description || `The various content of ${SITE.title}`;
+
+// Get footer content from config
+const footerTagline = overviewData.footerTagline || `${SITE.title} - ${SITE.tagline}`;
+const footerDescription = overviewData.footerDescription || SITE.description;
+const footerFocus = overviewData.footerFocus || (SITE.theme?.category ? `Focus: ${SITE.theme.category}` : '');
+
+// Get section names from config
+const sections = overviewData.sections || {
+	blog: 'Content',
+	info: 'Info',
+	legal: 'Legal',
+	popularCategories: 'Popular Categories'
+};
+
+// Get categories dynamically
+const categories = SITE.categories || [];
+const categoryLinks = categories.slice(0, 4).map(catId => ({
+	href: `/categories/${catId}`,
+	name: CATEGORY_INFO[catId]?.name || catId.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+}));
+---
+
+<BaseLayout title={title} description={description}>
+	<div class="site-container">
+		<div class="mx-auto max-w-3xl pt-24 md:pt-36">
+			<h1 class="h1 text-center">{title}</h1>
+			<p class="description mt-2 text-center">{description}</p>
+			<hr class="bg-primary-600/50 mx-auto mt-4 max-w-[30%] rounded-full border-none pt-1" />
+			<div class="xs:grid-cols-2 mx-auto mt-10 grid gap-4 text-center md:grid-cols-3">
+				<!-- Main Content -->
+				<div class="flex flex-col">
+					<h3 class={overview__heading}>{sections.blog}</h3>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/")}>Home</a>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/blog")}>All Articles</a>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/categories")}>Categories</a>
+				</div>
+
+				<!-- Info -->
+				<div class="flex flex-col">
+					<h3 class={overview__heading}>{sections.info}</h3>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/contact")}>Contact</a>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/support")}>Support</a>
+				</div>
+
+				<!-- Legal & Policies -->
+				<div class="flex flex-col">
+					<h3 class={overview__heading}>{sections.legal}</h3>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/privacy")}>Privacy Policy</a>
+					<a class={overview__link} href={getLocalizedRoute(currLocale, "/terms")}>Terms of Service</a>
+				</div>
+
+			</div>
+
+			<!-- Site Info Footer -->
+			<div class="mt-12 text-center opacity-70">
+				<p class="text-sm">
+					<strong>{footerTagline.split(' - ')[0]}</strong>{footerTagline.includes(' - ') ? ` - ${footerTagline.split(' - ').slice(1).join(' - ')}` : ''}
+				</p>
+				<p class="text-xs mt-2">
+					{footerDescription}
+				</p>
+				{footerFocus && (
+					<p class="text-xs mt-1">
+						{footerFocus}
+					</p>
+				)}
+			</div>
+		</div>
+	</div>
+</BaseLayout>
