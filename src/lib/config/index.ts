@@ -5,11 +5,11 @@ export const SITE = {
   "description": "Explore breathtaking destinations and unforgettable experiences in travel and adventure.",
   "tagline": "Your world of adventure awaits!",
   "author": "TravelWorld Team",
-  "url": "https://TravelWorld.com",
+  "url": "https://Jaydonke.github.io/travelworld",
   "locale": "en-US",
   "dir": "ltr",
   "charset": "UTF-8",
-  "basePath": "/",
+  "basePath": "/travelworld",
   "postsPerPage": 5,
   "googleAnalyticsId": "",
   "theme": {

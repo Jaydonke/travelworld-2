@@ -5,6 +5,8 @@ import { SITE } from "@/lib/config";
 import { articlesHandler } from "@/lib/handlers/articles";
 import { categoriesHandler } from "@/lib/handlers/categories";
 import PostCard from "@/components/PostCard/PostCard.astro";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { getLocalizedRoute } from "@/js/translationUtils";
 
 export const getStaticPaths = (async () => {
   const allCategories = categoriesHandler.allCategories();
@@ -33,6 +35,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { category, articles, totalCount } = Astro.props;
+const currLocale = getLocaleFromUrl(Astro.url);
 
 // SEO优化的标题和描述
 const seoTitle = `${category.data.name} Articles - ${totalCount} Posts | ${SITE.title}`;
@@ -101,13 +104,13 @@ const structuredData = {
       <nav aria-label="Breadcrumb" class="mb-8">
         <ol class="flex items-center space-x-2 text-sm text-gray-600">
           <li>
-            <a href="/" class="hover:text-primary-600 transition-colors">Home</a>
+            <a href={getLocalizedRoute(currLocale, "/")} class="hover:text-primary-600 transition-colors">Home</a>
           </li>
           <li>
             <span class="mx-2">/</span>
           </li>
           <li>
-            <a href="/categories" class="hover:text-primary-600 transition-colors">Categories</a>
+            <a href={getLocalizedRoute(currLocale, "/categories")} class="hover:text-primary-600 transition-colors">Categories</a>
           </li>
           <li>
             <span class="mx-2">/</span>
@@ -157,8 +160,8 @@ const structuredData = {
                 <h3 class="text-xl font-semibold mb-4">Popular Topics in {category.data.name}</h3>
                 <div class="flex flex-wrap gap-2">
                   {articles.slice(0, 8).map(article => (
-                    <a 
-                      href={`/blog/${article.id}`}
+                    <a
+                      href={getLocalizedRoute(currLocale, `/blog/${article.id}`)}
                       class="inline-block px-3 py-1 bg-gray-100 hover:bg-primary-100 rounded-full text-sm text-gray-700 hover:text-primary-700 transition-colors"
                     >
                       {article.data.title.split(':')[0].substring(0, 30)}...
@@ -171,11 +174,11 @@ const structuredData = {
             <div class="mt-8 p-6 bg-gray-50 rounded-lg">
               <h3 class="text-xl font-semibold mb-3">Need More Information?</h3>
               <p class="text-gray-600 mb-4">
-                Have questions about {category.data.name.toLowerCase()} or want to suggest a topic? 
+                Have questions about {category.data.name.toLowerCase()} or want to suggest a topic?
                 We'd love to hear from you!
               </p>
-              <a 
-                href="/contact" 
+              <a
+                href={getLocalizedRoute(currLocale, "/contact")}
                 class="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors"
               >
                 Contact Us
@@ -187,7 +190,7 @@ const structuredData = {
       ) : (
         <div class="text-center py-12">
           <p class="text-gray-500 text-lg">No articles found in this category yet.</p>
-          <a href="/categories" class="mt-4 inline-block text-primary-600 hover:underline">
+          <a href={getLocalizedRoute(currLocale, "/categories")} class="mt-4 inline-block text-primary-600 hover:underline">
             ← Browse other categories
           </a>
         </div>
@@ -201,8 +204,8 @@ const structuredData = {
             .filter(c => c.id !== category.id)
             .slice(0, 6)
             .map(relatedCat => (
-              <a 
-                href={`/categories/${relatedCat.id}`}
+              <a
+                href={getLocalizedRoute(currLocale, `/categories/${relatedCat.id}`)}
                 class="inline-block px-4 py-2 bg-white border border-gray-300 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition-all"
               >
                 {relatedCat.data.name}
