@@ -4,10 +4,13 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { categoriesHandler } from "@/lib/handlers/categories";
 import { articlesHandler } from "@/lib/handlers/articles";
 import { UI_CONFIG } from "@/lib/config";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { getLocalizedRoute } from "@/js/translationUtils";
 
 // 获取所有分类和文章统计
 const allCategories = categoriesHandler.allCategories();
 const allArticles = articlesHandler.allArticles();
+const currLocale = getLocaleFromUrl(Astro.url);
 
 // 为每个分类计算文章数量
 const categoriesWithCount = allCategories.map(category => {
@@ -37,8 +40,8 @@ const { title, description, subtitle } = UI_CONFIG.categoriesPage;
 			<!-- Categories Grid -->
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{categoriesWithCount.map(category => (
-					<a 
-						href={`/categories/${category.id}`}
+					<a
+						href={getLocalizedRoute(currLocale, `/categories/${category.id}`)}
 						class="group relative bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 hover:border-primary-500"
 					>
 						<div class="flex flex-col h-full">
