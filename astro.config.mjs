@@ -2,7 +2,7 @@ import mdx from "@astrojs/mdx";
 // import node from "@astrojs/node"; // GitHub Pages 不需要
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import keystatic from "@keystatic/astro";
+// import keystatic from "@keystatic/astro"; // GitHub Pages 静态模式不支持
 import compress from "@playform/compress";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
@@ -19,9 +19,9 @@ export default defineConfig({
 	// 	mode: 'standalone'
 	// }),
 	output: 'static', // 静态站点生成模式
-	redirects: {
-		"/admin": "/keystatic",
-	},
+	// redirects: { // 静态模式不支持服务端重定向
+	// 	"/admin": "/keystatic",
+	// },
 	// i18n configuration must match src/config/translationData.json.ts
 	i18n: {
 		defaultLocale: "en",
@@ -50,7 +50,7 @@ export default defineConfig({
 		mdx(),
 		react(),
 		icon(),
-		keystatic(),
+		// keystatic(), // 静态模式不支持 Keystatic
 		sitemap(),
 		compress({
 			HTML: true,
