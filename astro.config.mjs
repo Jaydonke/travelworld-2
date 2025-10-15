@@ -13,16 +13,12 @@ import { fileURLToPath, URL } from 'url';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://jaydonke.github.io",
-	base: "/adtrotemp-blog",
-	trailingSlash: 'always', // 确保所有 URL 都有尾部斜杠
+	// 不需要 base 路径，因为部署在根域名
 	// 取消 adapter 配置以支持静态导出到 GitHub Pages
 	// adapter: node({
 	// 	mode: 'standalone'
 	// }),
 	output: 'static', // 静态站点生成模式
-	build: {
-		format: 'directory' // 为每个页面创建目录，避免 .html 扩展名问题
-	},
 	// redirects: { // 静态模式不支持服务端重定向
 	// 	"/admin": "/keystatic",
 	// },
