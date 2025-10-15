@@ -1,15 +1,27 @@
 import type { Link } from "../types";
 
+// 动态获取 Astro 配置
+const getBaseUrl = () => {
+  if (import.meta.env.SITE && import.meta.env.BASE_URL) {
+    return `${import.meta.env.SITE}${import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL}`;
+  }
+  return "https://AutoMobility.com";
+};
+
+const getBasePath = () => {
+  return import.meta.env.BASE_URL || "/";
+};
+
 export const SITE = {
   "title": "AutoMobility",
   "description": "Your destination for the latest in automotive and mobility solutions.",
   "tagline": "Driving the future of transportation.",
   "author": "AutoMobility Team",
-  "url": "https://AutoMobility.com",
+  "url": getBaseUrl(),
   "locale": "en-US",
   "dir": "ltr",
   "charset": "UTF-8",
-  "basePath": "/",
+  "basePath": getBasePath(),
   "postsPerPage": 5,
   "googleAnalyticsId": "",
   "theme": {

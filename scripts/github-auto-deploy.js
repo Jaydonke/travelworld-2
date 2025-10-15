@@ -365,6 +365,34 @@ Co-Authored-By: AutoDeploy <autodeploy@example.com>`;
 }
 
 /**
+ * 启用 GitHub Pages
+ */
+function enableGitHubPages(ghPath, username, repoName) {
+  log('\n📄 启用 GitHub Pages...', 'cyan');
+
+  try {
+    // 使用 GitHub API 启用 Pages
+    exec(`${ghPath} api repos/${username}/${repoName}/pages -X POST -f build_type=workflow -f source[branch]=master`, {
+      silent: true
+    });
+
+    log('✅ GitHub Pages 已启用', 'green');
+    return true;
+
+  } catch (error) {
+    // 可能已经启用了，不算错误
+    if (error.message.includes('409')) {
+      log('✅ GitHub Pages 已经启用', 'green');
+      return true;
+    }
+
+    log(`⚠️  无法启用 GitHub Pages: ${error.message}`, 'yellow');
+    log('   请手动在仓库设置中启用 GitHub Pages', 'yellow');
+    return false;
+  }
+}
+
+/**
  * 等待 GitHub Actions 构建完成
  */
 async function waitForDeployment(ghPath, repoName, maxWaitMinutes = 10) {
@@ -440,7 +468,11 @@ export async function autoDeployToGitHub(siteName, index) {
     // 5. 推送到 GitHub
     initAndPushToGitHub(repoInfo.repoUrl, siteName);
 
-    // 6. 等待部署完成（可选，取消注释以启用）
+    // 6. 启用 GitHub Pages
+    const ghPath = checkGitHubCLI();
+    enableGitHubPages(ghPath, repoInfo.username, repoInfo.repoName);
+
+    // 7. 等待部署完成（可选，取消注释以启用）
     // log('\n⏳ 等待 GitHub Actions 部署完成...', 'cyan');
     // const deploySuccess = await waitForDeployment(ghPath, repoInfo.repoName, 5);
     // if (!deploySuccess) {
