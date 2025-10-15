@@ -11,7 +11,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { readWebsitesConfig, validateWebsiteConfig } from './utils/excel-reader.js';
 import { writeConfig, updateAstroConfig, writeAdsenseConfig, backupConfig } from './utils/config-writer.js';
-import { buildAndDeploy, deployToGitHub } from './deploy-to-github.js';
+import { autoDeployToGitHub } from './github-auto-deploy.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -176,18 +176,18 @@ async function processSingleWebsite(config, index, total) {
       log('\n⚠️  部分任务失败，但将继续部署', 'yellow');
     }
 
-    // 5. 部署到GitHub
-    log('\n📦 部署到GitHub...', 'cyan');
-    const deploySuccess = await deployToGitHub({
-      siteName: config.siteName,
-      domain: config.domain,
-      repoUrl: config.repoUrl || '',
-      branch: config.branch || 'main'
-    });
+    // 5. 自动部署到GitHub
+    log('\n📦 自动部署到GitHub...', 'cyan');
+    const deployResult = await autoDeployToGitHub(config.siteName, index);
 
-    if (!deploySuccess) {
-      throw new Error('GitHub部署失败');
+    if (!deployResult.success) {
+      throw new Error(`GitHub部署失败: ${deployResult.error}`);
     }
+
+    // 保存部署信息
+    log('\n📊 部署信息:', 'cyan');
+    log(`   仓库: ${deployResult.repoUrl}`, 'blue');
+    log(`   网站: ${deployResult.siteUrl}`, 'blue');
 
     const elapsedTime = ((Date.now() - startTime) / 1000 / 60).toFixed(1);
     log(`\n🎉 网站 "${config.siteName}" 生成并部署成功！`, 'green');
