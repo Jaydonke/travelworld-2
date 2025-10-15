@@ -1,44 +1,32 @@
 import type { Link } from "../types";
 
-// 动态获取 Astro 配置
-const getBaseUrl = () => {
-  if (import.meta.env.SITE && import.meta.env.BASE_URL) {
-    return `${import.meta.env.SITE}${import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL}`;
-  }
-  return "https://AutoMobility.com";
-};
-
-const getBasePath = () => {
-  return import.meta.env.BASE_URL || "/";
-};
-
 export const SITE = {
-  "title": "AutoMobility",
-  "description": "Your destination for the latest in automotive and mobility solutions.",
-  "tagline": "Driving the future of transportation.",
-  "author": "AutoMobility Team",
-  "url": getBaseUrl(),
+  "title": "TravelWorld",
+  "description": "Explore breathtaking destinations and unforgettable experiences in travel and adventure.",
+  "tagline": "Your world of adventure awaits!",
+  "author": "TravelWorld Team",
+  "url": "https://TravelWorld.com",
   "locale": "en-US",
   "dir": "ltr",
   "charset": "UTF-8",
-  "basePath": getBasePath(),
+  "basePath": "/",
   "postsPerPage": 5,
   "googleAnalyticsId": "",
   "theme": {
-    "name": "AutoMobility",
-    "category": "Automotive & Mobility",
-    "focus": "Innovating transportation solutions for a sustainable future.",
-    "targetAudience": "Automotive enthusiasts, industry professionals, and mobility advocates."
+    "name": "TravelWorld",
+    "category": "Travel & Adventure",
+    "focus": "Connecting travelers with the best adventures and travel tips.",
+    "targetAudience": "Travel enthusiasts, adventurers, and explorers."
   },
   "categories": [
-    "electric-vehicles",
-    "car-reviews",
-    "mobility-tech",
-    "sustainable-transport",
-    "auto-industry-news",
-    "driving-tips",
-    "car-maintenance",
-    "future-transportation"
+    "adventures",
+    "travel-tips",
+    "destinations",
+    "travel-gear",
+    "food-and-drink",
+    "culture",
+    "travel-stories",
+    "sustainable-travel"
   ],
   "robots": {
     "index": true,
@@ -48,7 +36,7 @@ export const SITE = {
   "schema": {
     "article": {
       "enabled": true,
-      "defaultAuthor": "AutoMobility Team"
+      "defaultAuthor": "TravelWorld Team"
     },
     "organization": {
       "enabled": true
@@ -59,23 +47,23 @@ export const SITE = {
   },
   "pages": {
     "about": {
-      "title": "About AutoMobility",
-      "subtitle": "Driving innovation in transportation.",
-      "mission": "To provide comprehensive insights and resources on automotive and mobility solutions.",
+      "title": "About TravelWorld",
+      "subtitle": "Your guide to global adventures.",
+      "mission": "To inspire and empower travelers to explore the world.",
       "whatWeDo": {
         "title": "What We Do",
         "services": [
           {
-            "title": "Vehicle Reviews",
-            "description": "In-depth reviews of the latest vehicles."
+            "title": "Travel Planning",
+            "description": "Personalized travel itineraries and advice."
           },
           {
-            "title": "Mobility Insights",
-            "description": "Analysis of emerging mobility trends."
+            "title": "Adventure Guides",
+            "description": "Expert guides to the best adventure spots."
           },
           {
-            "title": "Sustainability Initiatives",
-            "description": "Promoting eco-friendly transportation solutions."
+            "title": "Travel Community",
+            "description": "Connect with fellow travelers and share experiences."
           }
         ]
       },
@@ -83,20 +71,20 @@ export const SITE = {
         "title": "Our Values",
         "values": [
           {
-            "title": "Innovation",
-            "description": "Constantly pushing the boundaries of technology."
-          },
-          {
-            "title": "Sustainability",
-            "description": "Committed to a greener future."
+            "title": "Adventure",
+            "description": "We believe in seeking new experiences."
           },
           {
             "title": "Community",
-            "description": "Building a community of automotive enthusiasts."
+            "description": "Travel is better when shared."
           },
           {
-            "title": "Integrity",
-            "description": "Providing honest and unbiased information."
+            "title": "Sustainability",
+            "description": "We promote responsible travel practices."
+          },
+          {
+            "title": "Exploration",
+            "description": "Curiosity drives us to discover the world."
           }
         ]
       },
@@ -108,11 +96,11 @@ export const SITE = {
       }
     },
     "overview": {
-      "title": "What is Automotive & Mobility?",
-      "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
-      "footerTagline": "AutoMobility — Driving the future.",
-      "footerDescription": "Learn how innovation is shaping transportation.",
-      "footerFocus": "Focus: Advancing sustainable transportation.",
+      "title": "What is Travel & Adventure?",
+      "description": "Understanding the spirit of travel and adventure.",
+      "footerTagline": "TravelWorld — Your gateway to unforgettable experiences.",
+      "footerDescription": "Explore culture, nature, and adventure around the globe.",
+      "footerFocus": "Focus: Inspiring travelers to discover the world.",
       "sections": {
         "blog": "Articles",
         "info": "Resources",
@@ -121,7 +109,7 @@ export const SITE = {
     },
     "support": {
       "title": "Help & Support",
-      "description": "Get assistance with Automotive & Mobility.",
+      "description": "Get assistance with Travel & Adventure",
       "subtitle": "Expert guidance for your journey.",
       "quickActions": [
         {
@@ -139,59 +127,59 @@ export const SITE = {
         {
           "id": "getting-started",
           "title": "Getting Started",
-          "description": "Learn the basics of automotive and mobility.",
-          "email": "learn@AutoMobility.com",
+          "description": "Learn the basics of travel planning.",
+          "email": "learn@TravelWorld.com",
           "icon": "rocket"
         },
         {
           "id": "content",
           "title": "Content Questions",
-          "description": "Content help regarding articles and resources.",
-          "email": "content@AutoMobility.com",
+          "description": "Ask about our travel content.",
+          "email": "content@TravelWorld.com",
           "icon": "pencil"
         },
         {
           "id": "community",
           "title": "Community Support",
-          "description": "Support from fellow automotive enthusiasts.",
-          "email": "community@AutoMobility.com",
+          "description": "Engage with our travel community.",
+          "email": "community@TravelWorld.com",
           "icon": "users"
         },
         {
           "id": "partnerships",
           "title": "Partnerships & Press",
-          "description": "Business inquiries related to partnerships.",
-          "email": "partnerships@AutoMobility.com",
+          "description": "Business inquiries regarding our services.",
+          "email": "partnerships@TravelWorld.com",
           "icon": "handshake"
         }
       ],
       "contactChannels": {
         "title": "Contact Channels",
-        "description": "Choose the best way to reach our team.",
+        "description": "Choose the best way to reach our team",
         "channels": [
           {
             "title": "General Support",
             "description": "General questions",
             "detail": "Response within 24–48 hours",
-            "action": "support@AutoMobility.com"
+            "action": "support@TravelWorld.com"
           },
           {
             "title": "Content Inquiries",
-            "description": "Content questions",
+            "description": "Questions about our articles",
             "detail": "Response within 2–3 business days",
-            "action": "content@AutoMobility.com"
+            "action": "content@TravelWorld.com"
           },
           {
             "title": "Business & Partnerships",
-            "description": "Business inquiries",
+            "description": "Inquiries about business opportunities",
             "detail": "Response within 3–5 business days",
-            "action": "partnerships@AutoMobility.com"
+            "action": "partnerships@TravelWorld.com"
           },
           {
             "title": "Technical Issues",
-            "description": "Technical help",
+            "description": "Help with technical problems",
             "detail": "Response within 24 hours",
-            "action": "tech@AutoMobility.com"
+            "action": "tech@TravelWorld.com"
           }
         ]
       },
@@ -200,11 +188,11 @@ export const SITE = {
         "items": [
           {
             "question": "How do I get started?",
-            "answer": "Start by exploring our resources on the website."
+            "answer": "Start by exploring our resources."
           },
           {
             "question": "Is this service free?",
-            "answer": "Yes, basic access is free for all users."
+            "answer": "Yes, basic access is free."
           },
           {
             "question": "How can I contribute?",
@@ -216,17 +204,17 @@ export const SITE = {
           },
           {
             "question": "How often is content updated?",
-            "answer": "We update our content regularly to ensure accuracy."
+            "answer": "We update content regularly."
           }
         ]
       }
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "Terms and conditions for using AutoMobility's website and services.",
-      "subtitle": "By using AutoMobility.com, you agree to these terms.",
+      "description": "Terms and conditions for using TravelWorld's website and services.",
+      "subtitle": "By using TravelWorld.com, you agree to these terms.",
       "lastUpdated": "January 2025",
-      "introduction": "Welcome to AutoMobility. These Terms of Service govern your use of our website.",
+      "introduction": "Welcome to TravelWorld. These Terms of Service govern your use of our website.",
       "sections": [
         {
           "id": "acceptance",
@@ -304,16 +292,16 @@ export const SITE = {
         {
           "id": "contact",
           "title": "10. Contact Information",
-          "content": "Contact legal@AutoMobility.com for questions."
+          "content": "Contact legal@TravelWorld.com for questions."
         }
       ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Learn how AutoMobility collects, uses, and protects your personal information.",
+      "description": "Learn how TravelWorld collects, uses, and protects your personal information.",
       "subtitle": "Your privacy and data security are our priorities.",
       "lastUpdated": "January 2025",
-      "introduction": "AutoMobility is committed to protecting your privacy.",
+      "introduction": "TravelWorld is committed to protecting your privacy.",
       "sections": [
         {
           "id": "information-collect",
@@ -389,7 +377,7 @@ export const SITE = {
         {
           "id": "contact",
           "title": "9. Contact Us",
-          "content": "Contact privacy@AutoMobility.com with questions."
+          "content": "Contact privacy@TravelWorld.com with questions."
         }
       ]
     }
@@ -546,194 +534,184 @@ export const SOCIAL_LINKS: Link[] = [
 
 // Category Information
 export const CATEGORY_INFO = {
-  "electric-vehicles": {
-    "name": "Electric Vehicles",
-    "description": "Explore the latest in electric vehicle technology, reviews, and tips for EV owners.",
-    "shortDescription": "Latest news and reviews for electric vehicles.",
-    "icon": "⚡",
-    "color": "#00FF00",
-    "aboutContent": "This category covers everything related to electric vehicles, from comprehensive reviews to how-to guides on maximizing your EV's performance.",
-    "detailedDescription": "Dive into the world of electric vehicles with in-depth reviews, comparisons, and tips to help you make informed decisions. Stay updated on the latest trends in the EV market.",
+  "adventures": {
+    "name": "Adventures",
+    "description": "Dive into thrilling adventures and extreme sports that get your adrenaline pumping.",
+    "shortDescription": "Explore thrilling adventure activities and experiences.",
+    "icon": "🏞️",
+    "color": "#ff5722",
+    "aboutContent": "Adventures are at the heart of travel for many. From mountain climbing to scuba diving, this category covers a wide range of activities that appeal to adrenaline junkies and nature lovers alike. Discover the best locations, safety tips, and personal stories that inspire your next adventure.",
+    "detailedDescription": "This category features articles on adventure sports, thrilling activities, and unique experiences around the globe. Readers will find guides, comparisons, and tips that enhance their adventure travel experiences, ensuring they are well-prepared for their journeys.",
     "popularTopics": [
-      "Electric SUVs",
-      "Charging Tips",
-      "EV Comparisons"
+      "Top 10 Thrilling Adventure Activities",
+      "The Most Scenic Road Trips",
+      "The Best National Parks for Wildlife Viewing"
     ],
-    "seoKeywords": "electric vehicles, EV reviews, charging tips, sustainable transportation",
+    "seoKeywords": "adventure travel, extreme sports, outdoor activities, adventure tips",
     "keywords": [
-      "electric cars",
-      "EV technology",
-      "latest EV news",
-      "electric vehicle reviews"
+      "adventure activities",
+      "thrilling adventures",
+      "outdoor experiences"
     ]
   },
-  "car-reviews": {
-    "name": "Car Reviews",
-    "description": "Detailed reviews and comparisons of the latest cars on the market.",
-    "shortDescription": "Honest reviews and comparisons of cars.",
-    "icon": "🚗",
-    "color": "#0000FF",
-    "aboutContent": "In this category, we provide thorough reviews of various cars, comparing their features, performance, and value.",
-    "detailedDescription": "Get insights into the latest car models with our comprehensive reviews and comparisons. Whether you're looking for electric, hybrid, or traditional vehicles, we've got you covered.",
+  "travel-tips": {
+    "name": "Travel Tips",
+    "description": "Practical advice and tips to make your travel experience smoother and more enjoyable.",
+    "shortDescription": "Get essential travel tips for a better journey.",
+    "icon": "✈️",
+    "color": "#2196f3",
+    "aboutContent": "Traveling can be daunting, but with the right tips and tricks, you can navigate your journeys with ease. This category provides practical advice, from packing efficiently to choosing the right accommodations, ensuring a stress-free travel experience.",
+    "detailedDescription": "Explore a variety of travel tips designed to help travelers of all kinds. Whether you're a seasoned globetrotter or planning your first trip, our articles offer insights on safety, budgeting, packing, and more to enhance your travel experience.",
     "popularTopics": [
-      "Electric Car Reviews",
-      "Hybrid Comparisons",
-      "SUV Reviews"
+      "How to Plan a Backpacking Trip",
+      "Traveling Solo: Tips for a Safe Experience",
+      "Troubleshooting Common Travel Issues"
     ],
-    "seoKeywords": "car reviews, vehicle comparisons, latest car models, automotive insights",
+    "seoKeywords": "travel advice, packing tips, travel guides, journey planning",
     "keywords": [
-      "car reviews",
-      "vehicle features",
-      "car comparisons",
-      "best cars"
+      "travel tips",
+      "how to travel",
+      "packing advice"
     ]
   },
-  "mobility-tech": {
-    "name": "Mobility Tech",
-    "description": "Discover the latest technology shaping the future of transportation.",
-    "shortDescription": "Innovations and trends in mobility technology.",
-    "icon": "🔧",
-    "color": "#FFA500",
-    "aboutContent": "This category focuses on technology innovations in the mobility sector, including autonomous vehicles, ride-sharing, and more.",
-    "detailedDescription": "Stay updated with the latest trends and technologies that are transforming how we move. From autonomous vehicles to smart transportation solutions, explore the future of mobility.",
-    "popularTopics": [
-      "Autonomous Vehicles",
-      "Ride-Sharing Innovations",
-      "Mobility Apps"
-    ],
-    "seoKeywords": "mobility technology, transportation innovations, autonomous vehicles, smart transport",
-    "keywords": [
-      "mobility tech",
-      "transportation innovations",
-      "future of mobility",
-      "latest tech trends"
-    ]
-  },
-  "sustainable-transport": {
-    "name": "Sustainable Transport",
-    "description": "Explore eco-friendly transportation options and innovations.",
-    "shortDescription": "Sustainable solutions for modern transport.",
+  "destinations": {
+    "name": "Destinations",
+    "description": "Discover the world’s most exciting and beautiful travel destinations.",
+    "shortDescription": "Explore top travel destinations worldwide.",
     "icon": "🌍",
-    "color": "#32CD32",
-    "aboutContent": "This category highlights sustainable transportation methods, including public transit, biking, and electric solutions.",
-    "detailedDescription": "Discover ways to reduce your carbon footprint with sustainable transport options. Learn about the latest innovations and practices that promote eco-friendly commuting.",
+    "color": "#4caf50",
+    "aboutContent": "From bustling cities to serene beaches, our destinations category showcases the best places to visit around the globe. Whether you're looking for adventure, relaxation, or culture, we provide detailed guides and recommendations to help you choose your next travel spot.",
+    "detailedDescription": "This category consists of articles that highlight various travel destinations, including popular cities, hidden gems, and must-visit spots. Readers will find inspiration and practical information to help them plan their trips and explore the world.",
     "popularTopics": [
-      "Public Transport Benefits",
-      "Electric Biking",
-      "Sustainable Commuting"
+      "The Best Hiking Trails in National Parks",
+      "The Most Scenic Road Trips",
+      "The Best Beach Destinations for Relaxation"
     ],
-    "seoKeywords": "sustainable transport, eco-friendly commuting, green transportation, public transit",
+    "seoKeywords": "travel destinations, places to visit, city guides, travel exploration",
     "keywords": [
-      "sustainable transport",
-      "eco-friendly options",
-      "green commuting",
-      "latest transport news"
+      "top travel destinations",
+      "best places to visit",
+      "popular travel spots"
     ]
   },
-  "auto-industry-news": {
-    "name": "Auto Industry News",
-    "description": "Stay informed about the latest happenings in the automotive industry.",
-    "shortDescription": "Latest news and trends in the automotive world.",
-    "icon": "📰",
-    "color": "#FF6347",
-    "aboutContent": "This category provides updates and insights on the automotive industry, including market trends and major developments.",
-    "detailedDescription": "Get the latest news on automotive innovations, industry shifts, and market trends. Stay informed about what's happening in the world of cars and transportation.",
+  "travel-gear": {
+    "name": "Travel Gear",
+    "description": "Reviews and recommendations for the best travel gear for all types of travelers.",
+    "shortDescription": "Find essential travel gear for your adventures.",
+    "icon": "🧳",
+    "color": "#ffc107",
+    "aboutContent": "The right gear can make or break your travel experience. Our travel gear category focuses on providing reviews, buying guides, and recommendations for essential travel equipment. From backpacks to tech gadgets, we cover everything you need for a hassle-free journey.",
+    "detailedDescription": "Find expert reviews, comparisons, and guides on the best travel gear in this category. We help travelers make informed decisions about the equipment they need, ensuring they are well-prepared for their adventures.",
     "popularTopics": [
-      "Market Trends",
-      "Industry Innovations",
-      "Electric Vehicle News"
+      "Essential Travel Gear for Outdoor Adventures",
+      "How to Choose the Right Travel Backpack",
+      "Travel Gear Reviews: Top Hiking Boots Tested"
     ],
-    "seoKeywords": "auto industry news, automotive trends, vehicle market, latest car developments",
+    "seoKeywords": "travel equipment, gear reviews, essential travel tools, packing lists",
     "keywords": [
-      "auto industry",
-      "latest news",
-      "automotive trends",
-      "market insights"
+      "travel gear",
+      "best travel equipment",
+      "essential travel tools"
     ]
   },
-  "driving-tips": {
-    "name": "Driving Tips",
-    "description": "Practical advice for safe and efficient driving.",
-    "shortDescription": "Essential tips for drivers of all levels.",
-    "icon": "🚦",
-    "color": "#FFD700",
-    "aboutContent": "This category offers valuable tips and guides for drivers to enhance their skills and safety on the road.",
-    "detailedDescription": "Learn how to drive safely and efficiently with our expert driving tips. From winter preparation to long road trip advice, find everything you need to become a better driver.",
+  "food-and-drink": {
+    "name": "Food and Drink",
+    "description": "Explore culinary delights and local flavors from around the world.",
+    "shortDescription": "Savor the best food and drink experiences while traveling.",
+    "icon": "🍽️",
+    "color": "#9c27b0",
+    "aboutContent": "Food is an integral part of any travel experience. In this category, we delve into local cuisines, street food, and gourmet dining options. Discover the best places to eat, drink, and enjoy unique culinary experiences wherever you go.",
+    "detailedDescription": "This category highlights articles focusing on food and drink recommendations, culinary experiences, and street food guides. Readers will learn about local flavors, food festivals, and the best restaurants to visit during their travels.",
     "popularTopics": [
-      "Winter Driving Tips",
-      "Road Trip Planning",
-      "Beginner Driving Tips"
+      "A Guide to the Best Street Food Around the World",
+      "The Best Cities for Food Lovers to Visit",
+      "Cultural Festivals Worth Traveling For"
     ],
-    "seoKeywords": "driving tips, safe driving, road trip advice, driving skills",
+    "seoKeywords": "culinary travel, food experiences, best restaurants, street food culture",
     "keywords": [
-      "driving tips",
-      "safe driving",
-      "road trip",
-      "driving advice"
+      "best street food",
+      "top culinary destinations",
+      "food lover travel"
     ]
   },
-  "car-maintenance": {
-    "name": "Car Maintenance",
-    "description": "Essential advice for keeping your vehicle in top condition.",
-    "shortDescription": "Guides and tips for vehicle maintenance.",
-    "icon": "🔧",
-    "color": "#8B4513",
-    "aboutContent": "This category covers everything related to car maintenance, helping you keep your vehicle running smoothly.",
-    "detailedDescription": "Find practical guides and tips for maintaining your vehicle. From routine checks to troubleshooting common issues, ensure your car stays in optimal condition.",
+  "culture": {
+    "name": "Culture",
+    "description": "Immerse yourself in local cultures and traditions around the globe.",
+    "shortDescription": "Experience the rich cultures of the world.",
+    "icon": "🎭",
+    "color": "#3f51b5",
+    "aboutContent": "Understanding and engaging with local cultures can enhance your travel experience. This category provides insights into cultural practices, festivals, and ways to connect with locals, ensuring that your travels go beyond the typical tourist experience.",
+    "detailedDescription": "Explore articles that focus on cultural immersion, local traditions, and festivals worldwide. Readers will find tips on how to engage with communities and appreciate the diversity of cultures during their travels.",
     "popularTopics": [
-      "Maintenance Tips",
-      "Troubleshooting Guides",
-      "New Owner Advice"
+      "Exploring Local Cultures: A Travel Guide",
+      "Cultural Festivals Worth Traveling For",
+      "How to Experience Local Culture While Traveling"
     ],
-    "seoKeywords": "car maintenance, vehicle upkeep, maintenance tips, troubleshooting car issues",
+    "seoKeywords": "cultural travel, local traditions, travel experiences, community engagement",
     "keywords": [
-      "car maintenance",
-      "vehicle care",
-      "maintenance advice",
-      "troubleshooting tips"
+      "local culture travel",
+      "cultural exploration guide",
+      "experiencing local cultures"
     ]
   },
-  "future-transportation": {
-    "name": "Future Transportation",
-    "description": "Explore visionary concepts and technologies shaping tomorrow's transport.",
-    "shortDescription": "Innovations that will define the future of transportation.",
-    "icon": "🚀",
-    "color": "#4682B4",
-    "aboutContent": "This category delves into the innovative concepts and technologies that will shape the future of transportation.",
-    "detailedDescription": "Stay ahead of the curve with insights into future transportation technologies and concepts. Explore trends and innovations that promise to redefine how we travel.",
+  "travel-stories": {
+    "name": "Travel Stories",
+    "description": "Read inspiring travel stories and personal experiences from fellow wanderers.",
+    "shortDescription": "Get inspired by real travel stories and adventures.",
+    "icon": "📖",
+    "color": "#e91e63",
+    "aboutContent": "Travel stories provide a personal glimpse into the lives and adventures of travelers. This category features narratives that inspire and inform, showcasing the beauty of exploration and the connections made along the way.",
+    "detailedDescription": "In this category, readers will find captivating travel stories that highlight unique experiences, encounters, and lessons learned on the road. These narratives aim to inspire others to embark on their own journeys and appreciate the diversity of travel.",
     "popularTopics": [
-      "Future Mobility Trends",
-      "Transportation Innovations",
-      "Smart Cities"
+      "Travel Stories: Unforgettable Encounters on the Road"
     ],
-    "seoKeywords": "future transportation, transportation innovations, mobility solutions, visionary transport",
+    "seoKeywords": "inspiring travel stories, personal travel experiences, traveler narratives, adventure tales",
     "keywords": [
-      "future transportation",
-      "transport trends",
-      "mobility innovations",
-      "latest transportation tech"
+      "travel stories",
+      "memorable travel experiences",
+      "inspiring travel tales"
+    ]
+  },
+  "sustainable-travel": {
+    "name": "Sustainable Travel",
+    "description": "Tips and insights on how to travel responsibly and sustainably.",
+    "shortDescription": "Discover ways to travel sustainably and responsibly.",
+    "icon": "🌱",
+    "color": "#8bc34a",
+    "aboutContent": "Sustainable travel is vital for preserving our planet and its cultures. This category focuses on providing readers with practical tips, insights, and trends in eco-friendly tourism to ensure that travel can be enjoyed responsibly.",
+    "detailedDescription": "Explore sustainable travel practices, eco-friendly tips, and the latest trends in responsible tourism. This category aims to educate travelers on how to minimize their impact and make a positive difference while exploring the world.",
+    "popularTopics": [
+      "Essential Tips for Eco-Friendly Travel",
+      "Sustainable Travel: Tips for Eco-Conscious Explorers",
+      "Expert Insights on the Future of Sustainable Travel"
+    ],
+    "seoKeywords": "eco-friendly travel, responsible tourism, sustainable practices, green travel tips",
+    "keywords": [
+      "sustainable travel tips",
+      "how to travel green",
+      "eco-conscious travel guide"
     ]
   }
 };
 
 // Site References
 export const SITE_REFERENCES = {
-  "homeTitle": "AutoMobility",
-  "homeDescription": "Your destination for Automotive & Mobility insights.",
-  "homeWelcome": "Welcome to AutoMobility",
-  "domain": "AutoMobility.com",
-  "generalEmail": "hello@AutoMobility.com",
-  "privacyEmail": "privacy@AutoMobility.com",
-  "legalEmail": "legal@AutoMobility.com",
-  "supportEmail": "support@AutoMobility.com",
-  "techEmail": "tech@AutoMobility.com",
-  "businessEmail": "partnerships@AutoMobility.com",
-  "contentEmail": "content@AutoMobility.com",
-  "faqSiteName": "AutoMobility",
-  "privacyCompanyStatement": "At AutoMobility, we are committed to protecting your privacy and securing your data.",
-  "privacyServiceDescription": "Automotive & Mobility education and resources",
-  "githubRepo": "https://github.com/automobility/automobility",
-  "liveDemoUrl": "https://AutoMobility.com"
+  "homeTitle": "TravelWorld",
+  "homeDescription": "Your destination for Travel & Adventure",
+  "homeWelcome": "Welcome to TravelWorld",
+  "domain": "TravelWorld.com",
+  "generalEmail": "hello@TravelWorld.com",
+  "privacyEmail": "privacy@TravelWorld.com",
+  "legalEmail": "legal@TravelWorld.com",
+  "supportEmail": "support@TravelWorld.com",
+  "techEmail": "tech@TravelWorld.com",
+  "businessEmail": "partnerships@TravelWorld.com",
+  "contentEmail": "content@TravelWorld.com",
+  "faqSiteName": "TravelWorld",
+  "privacyCompanyStatement": "At TravelWorld, we are committed to protecting your privacy and securing your data.",
+  "privacyServiceDescription": "Travel & Adventure education and resources",
+  "githubRepo": "https://github.com/travelworld/travelworld",
+  "liveDemoUrl": "https://TravelWorld.com"
 };
 
 // Hero Configuration
@@ -741,11 +719,11 @@ export const HERO_CONFIG = {};
 
 // Overview Configuration
 export const OVERVIEW_CONFIG = {
-  "title": "What is Automotive & Mobility?",
-  "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
-  "footerTagline": "AutoMobility — Driving the future.",
-  "footerDescription": "Learn how innovation is shaping transportation.",
-  "footerFocus": "Focus: Advancing sustainable transportation.",
+  "title": "What is Travel & Adventure?",
+  "description": "Understanding the spirit of travel and adventure.",
+  "footerTagline": "TravelWorld — Your gateway to unforgettable experiences.",
+  "footerDescription": "Explore culture, nature, and adventure around the globe.",
+  "footerFocus": "Focus: Inspiring travelers to discover the world.",
   "sections": {
     "blog": "Articles",
     "info": "Resources",
@@ -755,8 +733,8 @@ export const OVERVIEW_CONFIG = {
 
 // Newsletter Configuration
 export const NEWSLETTER_CONFIG = {
-  "title": "AutoMobility Newsletter",
-  "description": "Get weekly Automotive & Mobility insights and updates.",
+  "title": "TravelWorld Newsletter",
+  "description": "Get weekly Travel & Adventure insights and updates.",
   "emailPlaceholder": "Enter your email",
   "subscribeButton": "Subscribe",
   "privacyNote": "We respect your privacy. Unsubscribe anytime."
@@ -767,11 +745,11 @@ export const LEGAL_LINKS_CONFIG = {};
 
 // SEO Configuration
 export const SEO_CONFIG = {
-  "defaultTitle": "AutoMobility - Automotive & Mobility",
-  "titleTemplate": "%s | AutoMobility",
-  "defaultDescription": "Explore the cutting-edge of automotive technology and mobility solutions.",
-  "defaultImage": "/images/og/automobility-1200x630.jpg",
-  "twitterHandle": "@automobility",
+  "defaultTitle": "TravelWorld - Travel & Adventure",
+  "titleTemplate": "%s | TravelWorld",
+  "defaultDescription": "Discover the best travel destinations, tips, and experiences.",
+  "defaultImage": "/images/og/travelworld-1200x630.jpg",
+  "twitterHandle": "@travelworld",
   "locale": "en_US",
   "type": "website"
 };
@@ -792,8 +770,8 @@ export const IMAGE_CONFIG = {
   "lazyLoading": true,
   "placeholder": "blur",
   "paths": {
-    "og": "/images/og/automobility-1200x630.jpg",
-    "hero": "/images/hero/automobility-hero.png"
+    "og": "/images/og/travelworld-1200x630.jpg",
+    "hero": "/images/hero/travelworld-hero.png"
   }
 };
 
@@ -814,7 +792,7 @@ export const UI_CONFIG = {
     "showNewsletter": true,
     "showSocialLinks": true,
     "showCategories": true,
-    "copyrightText": "© 2025 AutoMobility. All rights reserved.",
+    "copyrightText": "© 2025 TravelWorld. All rights reserved.",
     "accessibilityNote": "Images include descriptive alt text; emoji have accessible labels."
   },
   "homepage": {
@@ -822,14 +800,14 @@ export const UI_CONFIG = {
     "showFeaturedPosts": true,
     "showCategories": true,
     "showLatestPosts": true,
-    "heroTitle": "Welcome to AutoMobility",
-    "heroSubtitle": "Explore the future of transportation.",
-    "heroImage": "/images/hero/automobility-hero.png",
-    "heroImageAlt": "Automotive & Mobility hero image"
+    "heroTitle": "Welcome to TravelWorld",
+    "heroSubtitle": "Embark on your next adventure.",
+    "heroImage": "/images/hero/travelworld-hero.png",
+    "heroImageAlt": "Travel & Adventure hero image"
   },
   "categoriesPage": {
     "title": "Content Categories",
-    "description": "Explore our categories of automotive and mobility content.",
+    "description": "Explore our categories",
     "subtitle": "Find what interests you"
   },
   "images": {
@@ -863,23 +841,23 @@ export const BRANDING_CONFIG = {
 // Pages Configuration (About, Overview, Support, Terms, Privacy, etc.)
 export const PAGES_CONFIG = {
   "about": {
-    "title": "About AutoMobility",
-    "subtitle": "Driving innovation in transportation.",
-    "mission": "To provide comprehensive insights and resources on automotive and mobility solutions.",
+    "title": "About TravelWorld",
+    "subtitle": "Your guide to global adventures.",
+    "mission": "To inspire and empower travelers to explore the world.",
     "whatWeDo": {
       "title": "What We Do",
       "services": [
         {
-          "title": "Vehicle Reviews",
-          "description": "In-depth reviews of the latest vehicles."
+          "title": "Travel Planning",
+          "description": "Personalized travel itineraries and advice."
         },
         {
-          "title": "Mobility Insights",
-          "description": "Analysis of emerging mobility trends."
+          "title": "Adventure Guides",
+          "description": "Expert guides to the best adventure spots."
         },
         {
-          "title": "Sustainability Initiatives",
-          "description": "Promoting eco-friendly transportation solutions."
+          "title": "Travel Community",
+          "description": "Connect with fellow travelers and share experiences."
         }
       ]
     },
@@ -887,20 +865,20 @@ export const PAGES_CONFIG = {
       "title": "Our Values",
       "values": [
         {
-          "title": "Innovation",
-          "description": "Constantly pushing the boundaries of technology."
-        },
-        {
-          "title": "Sustainability",
-          "description": "Committed to a greener future."
+          "title": "Adventure",
+          "description": "We believe in seeking new experiences."
         },
         {
           "title": "Community",
-          "description": "Building a community of automotive enthusiasts."
+          "description": "Travel is better when shared."
         },
         {
-          "title": "Integrity",
-          "description": "Providing honest and unbiased information."
+          "title": "Sustainability",
+          "description": "We promote responsible travel practices."
+        },
+        {
+          "title": "Exploration",
+          "description": "Curiosity drives us to discover the world."
         }
       ]
     },
@@ -912,11 +890,11 @@ export const PAGES_CONFIG = {
     }
   },
   "overview": {
-    "title": "What is Automotive & Mobility?",
-    "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
-    "footerTagline": "AutoMobility — Driving the future.",
-    "footerDescription": "Learn how innovation is shaping transportation.",
-    "footerFocus": "Focus: Advancing sustainable transportation.",
+    "title": "What is Travel & Adventure?",
+    "description": "Understanding the spirit of travel and adventure.",
+    "footerTagline": "TravelWorld — Your gateway to unforgettable experiences.",
+    "footerDescription": "Explore culture, nature, and adventure around the globe.",
+    "footerFocus": "Focus: Inspiring travelers to discover the world.",
     "sections": {
       "blog": "Articles",
       "info": "Resources",
@@ -925,7 +903,7 @@ export const PAGES_CONFIG = {
   },
   "support": {
     "title": "Help & Support",
-    "description": "Get assistance with Automotive & Mobility.",
+    "description": "Get assistance with Travel & Adventure",
     "subtitle": "Expert guidance for your journey.",
     "quickActions": [
       {
@@ -943,59 +921,59 @@ export const PAGES_CONFIG = {
       {
         "id": "getting-started",
         "title": "Getting Started",
-        "description": "Learn the basics of automotive and mobility.",
-        "email": "learn@AutoMobility.com",
+        "description": "Learn the basics of travel planning.",
+        "email": "learn@TravelWorld.com",
         "icon": "rocket"
       },
       {
         "id": "content",
         "title": "Content Questions",
-        "description": "Content help regarding articles and resources.",
-        "email": "content@AutoMobility.com",
+        "description": "Ask about our travel content.",
+        "email": "content@TravelWorld.com",
         "icon": "pencil"
       },
       {
         "id": "community",
         "title": "Community Support",
-        "description": "Support from fellow automotive enthusiasts.",
-        "email": "community@AutoMobility.com",
+        "description": "Engage with our travel community.",
+        "email": "community@TravelWorld.com",
         "icon": "users"
       },
       {
         "id": "partnerships",
         "title": "Partnerships & Press",
-        "description": "Business inquiries related to partnerships.",
-        "email": "partnerships@AutoMobility.com",
+        "description": "Business inquiries regarding our services.",
+        "email": "partnerships@TravelWorld.com",
         "icon": "handshake"
       }
     ],
     "contactChannels": {
       "title": "Contact Channels",
-      "description": "Choose the best way to reach our team.",
+      "description": "Choose the best way to reach our team",
       "channels": [
         {
           "title": "General Support",
           "description": "General questions",
           "detail": "Response within 24–48 hours",
-          "action": "support@AutoMobility.com"
+          "action": "support@TravelWorld.com"
         },
         {
           "title": "Content Inquiries",
-          "description": "Content questions",
+          "description": "Questions about our articles",
           "detail": "Response within 2–3 business days",
-          "action": "content@AutoMobility.com"
+          "action": "content@TravelWorld.com"
         },
         {
           "title": "Business & Partnerships",
-          "description": "Business inquiries",
+          "description": "Inquiries about business opportunities",
           "detail": "Response within 3–5 business days",
-          "action": "partnerships@AutoMobility.com"
+          "action": "partnerships@TravelWorld.com"
         },
         {
           "title": "Technical Issues",
-          "description": "Technical help",
+          "description": "Help with technical problems",
           "detail": "Response within 24 hours",
-          "action": "tech@AutoMobility.com"
+          "action": "tech@TravelWorld.com"
         }
       ]
     },
@@ -1004,11 +982,11 @@ export const PAGES_CONFIG = {
       "items": [
         {
           "question": "How do I get started?",
-          "answer": "Start by exploring our resources on the website."
+          "answer": "Start by exploring our resources."
         },
         {
           "question": "Is this service free?",
-          "answer": "Yes, basic access is free for all users."
+          "answer": "Yes, basic access is free."
         },
         {
           "question": "How can I contribute?",
@@ -1020,17 +998,17 @@ export const PAGES_CONFIG = {
         },
         {
           "question": "How often is content updated?",
-          "answer": "We update our content regularly to ensure accuracy."
+          "answer": "We update content regularly."
         }
       ]
     }
   },
   "terms": {
     "title": "Terms of Service",
-    "description": "Terms and conditions for using AutoMobility's website and services.",
-    "subtitle": "By using AutoMobility.com, you agree to these terms.",
+    "description": "Terms and conditions for using TravelWorld's website and services.",
+    "subtitle": "By using TravelWorld.com, you agree to these terms.",
     "lastUpdated": "January 2025",
-    "introduction": "Welcome to AutoMobility. These Terms of Service govern your use of our website.",
+    "introduction": "Welcome to TravelWorld. These Terms of Service govern your use of our website.",
     "sections": [
       {
         "id": "acceptance",
@@ -1108,16 +1086,16 @@ export const PAGES_CONFIG = {
       {
         "id": "contact",
         "title": "10. Contact Information",
-        "content": "Contact legal@AutoMobility.com for questions."
+        "content": "Contact legal@TravelWorld.com for questions."
       }
     ]
   },
   "privacy": {
     "title": "Privacy Policy",
-    "description": "Learn how AutoMobility collects, uses, and protects your personal information.",
+    "description": "Learn how TravelWorld collects, uses, and protects your personal information.",
     "subtitle": "Your privacy and data security are our priorities.",
     "lastUpdated": "January 2025",
-    "introduction": "AutoMobility is committed to protecting your privacy.",
+    "introduction": "TravelWorld is committed to protecting your privacy.",
     "sections": [
       {
         "id": "information-collect",
@@ -1193,7 +1171,7 @@ export const PAGES_CONFIG = {
       {
         "id": "contact",
         "title": "9. Contact Us",
-        "content": "Contact privacy@AutoMobility.com with questions."
+        "content": "Contact privacy@TravelWorld.com with questions."
       }
     ]
   }

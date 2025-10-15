@@ -1,6 +1,6 @@
 {
-  "currentTheme": "automobility-theme",
-  "fallbackTheme": "electric-vehicles",
+  "currentTheme": "travelworld-theme",
+  "fallbackTheme": "adventures",
   "themeSettings": {
     "enableSmartCategorization": true,
     "enableManualOverride": true,
