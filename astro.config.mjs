@@ -12,8 +12,8 @@ import { fileURLToPath, URL } from 'url';
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://jaydonke.github.io",
-	base: "/adtrotemp-blog", // GitHub Pages 子路径
+	site: "https://jaydonke.github.io/adtrotemp-blog",
+	// base: "/adtrotemp-blog", // 移除 base 以避免路由问题
 	// 取消 adapter 配置以支持静态导出到 GitHub Pages
 	// adapter: node({
 	// 	mode: 'standalone'
