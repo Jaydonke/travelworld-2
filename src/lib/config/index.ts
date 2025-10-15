@@ -1,11 +1,11 @@
 import type { Link } from "../types";
 
 export const SITE = {
-  "title": "Vehivio",
-  "description": "Your go-to resource for all things Automotive & Mobility, providing insights, reviews, and news.",
-  "tagline": "Driving Innovation Forward",
-  "author": "Vehivio Team",
-  "url": "https://Vehivio.com",
+  "title": "AutoMobility",
+  "description": "Your destination for the latest in automotive and mobility solutions.",
+  "tagline": "Driving the future of transportation.",
+  "author": "AutoMobility Team",
+  "url": "https://AutoMobility.com",
   "locale": "en-US",
   "dir": "ltr",
   "charset": "UTF-8",
@@ -13,20 +13,20 @@ export const SITE = {
   "postsPerPage": 5,
   "googleAnalyticsId": "",
   "theme": {
-    "name": "Vehivio",
+    "name": "AutoMobility",
     "category": "Automotive & Mobility",
     "focus": "Innovating transportation solutions for a sustainable future.",
-    "targetAudience": "Automotive enthusiasts, industry professionals, and consumers interested in mobility trends."
+    "targetAudience": "Automotive enthusiasts, industry professionals, and mobility advocates."
   },
   "categories": [
     "electric-vehicles",
-    "sustainable-mobility",
     "car-reviews",
-    "industry-news",
-    "autonomous-driving",
+    "mobility-tech",
+    "sustainable-transport",
+    "auto-industry-news",
+    "driving-tips",
     "car-maintenance",
-    "traffic-safety",
-    "vehicle-technology"
+    "future-transportation"
   ],
   "robots": {
     "index": true,
@@ -36,7 +36,7 @@ export const SITE = {
   "schema": {
     "article": {
       "enabled": true,
-      "defaultAuthor": "Vehivio Team"
+      "defaultAuthor": "AutoMobility Team"
     },
     "organization": {
       "enabled": true
@@ -47,23 +47,23 @@ export const SITE = {
   },
   "pages": {
     "about": {
-      "title": "About Vehivio",
-      "subtitle": "Driving the Future of Mobility",
-      "mission": "To empower individuals with knowledge and resources in the Automotive & Mobility sector.",
+      "title": "About AutoMobility",
+      "subtitle": "Driving innovation in transportation.",
+      "mission": "To provide comprehensive insights and resources on automotive and mobility solutions.",
       "whatWeDo": {
         "title": "What We Do",
         "services": [
           {
             "title": "Vehicle Reviews",
-            "description": "Comprehensive reviews on the latest vehicles."
+            "description": "In-depth reviews of the latest vehicles."
           },
           {
-            "title": "Industry Insights",
-            "description": "Stay updated with the latest trends and news."
+            "title": "Mobility Insights",
+            "description": "Analysis of emerging mobility trends."
           },
           {
-            "title": "Sustainability Resources",
-            "description": "Explore sustainable practices in mobility."
+            "title": "Sustainability Initiatives",
+            "description": "Promoting eco-friendly transportation solutions."
           }
         ]
       },
@@ -72,34 +72,34 @@ export const SITE = {
         "values": [
           {
             "title": "Innovation",
-            "description": "Leading the way in automotive technology."
+            "description": "Constantly pushing the boundaries of technology."
+          },
+          {
+            "title": "Sustainability",
+            "description": "Committed to a greener future."
+          },
+          {
+            "title": "Community",
+            "description": "Building a community of automotive enthusiasts."
           },
           {
             "title": "Integrity",
             "description": "Providing honest and unbiased information."
-          },
-          {
-            "title": "Community",
-            "description": "Building a network of automotive enthusiasts."
-          },
-          {
-            "title": "Sustainability",
-            "description": "Promoting eco-friendly mobility solutions."
           }
         ]
       },
       "callToAction": {
         "title": "Join Us",
-        "description": "Start your journey today in the world of Automotive & Mobility.",
+        "description": "Start your journey today",
         "buttonText": "Explore Resources",
         "buttonLink": "/blog"
       }
     },
     "overview": {
       "title": "What is Automotive & Mobility?",
-      "description": "Understanding the dynamics of Automotive & Mobility.",
-      "footerTagline": "Vehivio — Your trusted guide.",
-      "footerDescription": "Explore the future of transportation and mobility.",
+      "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
+      "footerTagline": "AutoMobility — Driving the future.",
+      "footerDescription": "Learn how innovation is shaping transportation.",
       "footerFocus": "Focus: Advancing sustainable transportation.",
       "sections": {
         "blog": "Articles",
@@ -127,29 +127,29 @@ export const SITE = {
         {
           "id": "getting-started",
           "title": "Getting Started",
-          "description": "Learn the basics of Automotive & Mobility.",
-          "email": "learn@Vehivio.com",
+          "description": "Learn the basics of automotive and mobility.",
+          "email": "learn@AutoMobility.com",
           "icon": "rocket"
         },
         {
           "id": "content",
           "title": "Content Questions",
-          "description": "Get help with our content.",
-          "email": "content@Vehivio.com",
+          "description": "Content help regarding articles and resources.",
+          "email": "content@AutoMobility.com",
           "icon": "pencil"
         },
         {
           "id": "community",
           "title": "Community Support",
-          "description": "Engage with our community.",
-          "email": "community@Vehivio.com",
+          "description": "Support from fellow automotive enthusiasts.",
+          "email": "community@AutoMobility.com",
           "icon": "users"
         },
         {
           "id": "partnerships",
           "title": "Partnerships & Press",
-          "description": "Inquiries related to business partnerships.",
-          "email": "partnerships@Vehivio.com",
+          "description": "Business inquiries related to partnerships.",
+          "email": "partnerships@AutoMobility.com",
           "icon": "handshake"
         }
       ],
@@ -161,25 +161,25 @@ export const SITE = {
             "title": "General Support",
             "description": "General questions",
             "detail": "Response within 24–48 hours",
-            "action": "support@Vehivio.com"
+            "action": "support@AutoMobility.com"
           },
           {
             "title": "Content Inquiries",
-            "description": "Questions about our content",
+            "description": "Content questions",
             "detail": "Response within 2–3 business days",
-            "action": "content@Vehivio.com"
+            "action": "content@AutoMobility.com"
           },
           {
             "title": "Business & Partnerships",
-            "description": "Inquiries about business opportunities",
+            "description": "Business inquiries",
             "detail": "Response within 3–5 business days",
-            "action": "partnerships@Vehivio.com"
+            "action": "partnerships@AutoMobility.com"
           },
           {
             "title": "Technical Issues",
-            "description": "Assistance with technical problems",
+            "description": "Technical help",
             "detail": "Response within 24 hours",
-            "action": "tech@Vehivio.com"
+            "action": "tech@AutoMobility.com"
           }
         ]
       },
@@ -188,11 +188,11 @@ export const SITE = {
         "items": [
           {
             "question": "How do I get started?",
-            "answer": "Start by exploring our resources."
+            "answer": "Start by exploring our resources on the website."
           },
           {
             "question": "Is this service free?",
-            "answer": "Yes, basic access is free."
+            "answer": "Yes, basic access is free for all users."
           },
           {
             "question": "How can I contribute?",
@@ -204,17 +204,17 @@ export const SITE = {
           },
           {
             "question": "How often is content updated?",
-            "answer": "We update content regularly."
+            "answer": "We update our content regularly to ensure accuracy."
           }
         ]
       }
     },
     "terms": {
       "title": "Terms of Service",
-      "description": "Terms and conditions for using Vehivio's website and services.",
-      "subtitle": "By using Vehivio.com, you agree to these terms.",
+      "description": "Terms and conditions for using AutoMobility's website and services.",
+      "subtitle": "By using AutoMobility.com, you agree to these terms.",
       "lastUpdated": "January 2025",
-      "introduction": "Welcome to Vehivio. These Terms of Service govern your use of our website.",
+      "introduction": "Welcome to AutoMobility. These Terms of Service govern your use of our website.",
       "sections": [
         {
           "id": "acceptance",
@@ -292,16 +292,16 @@ export const SITE = {
         {
           "id": "contact",
           "title": "10. Contact Information",
-          "content": "Contact legal@Vehivio.com for questions."
+          "content": "Contact legal@AutoMobility.com for questions."
         }
       ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Learn how Vehivio collects, uses, and protects your personal information.",
+      "description": "Learn how AutoMobility collects, uses, and protects your personal information.",
       "subtitle": "Your privacy and data security are our priorities.",
       "lastUpdated": "January 2025",
-      "introduction": "Vehivio is committed to protecting your privacy.",
+      "introduction": "AutoMobility is committed to protecting your privacy.",
       "sections": [
         {
           "id": "information-collect",
@@ -377,7 +377,7 @@ export const SITE = {
         {
           "id": "contact",
           "title": "9. Contact Us",
-          "content": "Contact privacy@Vehivio.com with questions."
+          "content": "Contact privacy@AutoMobility.com with questions."
         }
       ]
     }
@@ -536,184 +536,192 @@ export const SOCIAL_LINKS: Link[] = [
 export const CATEGORY_INFO = {
   "electric-vehicles": {
     "name": "Electric Vehicles",
-    "description": "Explore the latest developments, reviews, and insights on electric vehicles.",
-    "shortDescription": "Everything about electric vehicles.",
+    "description": "Explore the latest in electric vehicle technology, reviews, and tips for EV owners.",
+    "shortDescription": "Latest news and reviews for electric vehicles.",
     "icon": "⚡",
     "color": "#00FF00",
-    "aboutContent": "This category covers everything related to electric vehicles, including in-depth reviews, comparisons, and tips for potential owners.",
-    "detailedDescription": "Stay informed about the latest electric vehicle models, innovations, and how they fit into the future of sustainable mobility. Find expert reviews, comparisons, and industry news.",
+    "aboutContent": "This category covers everything related to electric vehicles, from comprehensive reviews to how-to guides on maximizing your EV's performance.",
+    "detailedDescription": "Dive into the world of electric vehicles with in-depth reviews, comparisons, and tips to help you make informed decisions. Stay updated on the latest trends in the EV market.",
     "popularTopics": [
-      "Tesla Model Y",
-      "Chevrolet Bolt",
-      "Hyundai Ioniq"
+      "Electric SUVs",
+      "Charging Tips",
+      "EV Comparisons"
     ],
-    "seoKeywords": "electric vehicles, EV reviews, best electric cars, sustainable transport",
+    "seoKeywords": "electric vehicles, EV reviews, charging tips, sustainable transportation",
     "keywords": [
-      "electric vehicle reviews",
+      "electric cars",
+      "EV technology",
       "latest EV news",
-      "electric car comparisons"
-    ]
-  },
-  "sustainable-mobility": {
-    "name": "Sustainable Mobility",
-    "description": "Discover innovative solutions and trends in sustainable transportation.",
-    "shortDescription": "Focus on eco-friendly transport options.",
-    "icon": "🌍",
-    "color": "#008000",
-    "aboutContent": "This category explores the various aspects of sustainable mobility, including public transport, cycling, and electric vehicles.",
-    "detailedDescription": "Learn about the latest trends and innovations in sustainable transportation options that are shaping the future of urban mobility. Find guides, tips, and expert insights.",
-    "popularTopics": [
-      "urban mobility",
-      "sustainable transport solutions",
-      "electric vehicle benefits"
-    ],
-    "seoKeywords": "sustainable mobility, eco-friendly transport, urban transport, green vehicles",
-    "keywords": [
-      "sustainable transport trends",
-      "best eco-friendly solutions",
-      "current urban mobility options"
+      "electric vehicle reviews"
     ]
   },
   "car-reviews": {
     "name": "Car Reviews",
-    "description": "In-depth reviews and comparisons of the latest car models.",
-    "shortDescription": "Your guide to car reviews.",
+    "description": "Detailed reviews and comparisons of the latest cars on the market.",
+    "shortDescription": "Honest reviews and comparisons of cars.",
     "icon": "🚗",
-    "color": "#FFD700",
-    "aboutContent": "This category features comprehensive reviews of various car models, including performance, features, and user experiences.",
-    "detailedDescription": "Find detailed reviews that help you decide which car is right for you. From electric vehicles to hybrids and traditional cars, we cover them all.",
+    "color": "#0000FF",
+    "aboutContent": "In this category, we provide thorough reviews of various cars, comparing their features, performance, and value.",
+    "detailedDescription": "Get insights into the latest car models with our comprehensive reviews and comparisons. Whether you're looking for electric, hybrid, or traditional vehicles, we've got you covered.",
     "popularTopics": [
-      "latest car reviews",
-      "best SUVs",
-      "electric car reviews"
+      "Electric Car Reviews",
+      "Hybrid Comparisons",
+      "SUV Reviews"
     ],
-    "seoKeywords": "car reviews, vehicle comparisons, automotive ratings, car buying guide",
+    "seoKeywords": "car reviews, vehicle comparisons, latest car models, automotive insights",
     "keywords": [
-      "latest car reviews",
-      "best vehicle comparisons",
-      "car performance analysis"
+      "car reviews",
+      "vehicle features",
+      "car comparisons",
+      "best cars"
     ]
   },
-  "industry-news": {
-    "name": "Industry News",
-    "description": "Stay updated with the latest news and trends in the automotive industry.",
-    "shortDescription": "Latest automotive industry news.",
+  "mobility-tech": {
+    "name": "Mobility Tech",
+    "description": "Discover the latest technology shaping the future of transportation.",
+    "shortDescription": "Innovations and trends in mobility technology.",
+    "icon": "🔧",
+    "color": "#FFA500",
+    "aboutContent": "This category focuses on technology innovations in the mobility sector, including autonomous vehicles, ride-sharing, and more.",
+    "detailedDescription": "Stay updated with the latest trends and technologies that are transforming how we move. From autonomous vehicles to smart transportation solutions, explore the future of mobility.",
+    "popularTopics": [
+      "Autonomous Vehicles",
+      "Ride-Sharing Innovations",
+      "Mobility Apps"
+    ],
+    "seoKeywords": "mobility technology, transportation innovations, autonomous vehicles, smart transport",
+    "keywords": [
+      "mobility tech",
+      "transportation innovations",
+      "future of mobility",
+      "latest tech trends"
+    ]
+  },
+  "sustainable-transport": {
+    "name": "Sustainable Transport",
+    "description": "Explore eco-friendly transportation options and innovations.",
+    "shortDescription": "Sustainable solutions for modern transport.",
+    "icon": "🌍",
+    "color": "#32CD32",
+    "aboutContent": "This category highlights sustainable transportation methods, including public transit, biking, and electric solutions.",
+    "detailedDescription": "Discover ways to reduce your carbon footprint with sustainable transport options. Learn about the latest innovations and practices that promote eco-friendly commuting.",
+    "popularTopics": [
+      "Public Transport Benefits",
+      "Electric Biking",
+      "Sustainable Commuting"
+    ],
+    "seoKeywords": "sustainable transport, eco-friendly commuting, green transportation, public transit",
+    "keywords": [
+      "sustainable transport",
+      "eco-friendly options",
+      "green commuting",
+      "latest transport news"
+    ]
+  },
+  "auto-industry-news": {
+    "name": "Auto Industry News",
+    "description": "Stay informed about the latest happenings in the automotive industry.",
+    "shortDescription": "Latest news and trends in the automotive world.",
     "icon": "📰",
-    "color": "#FF4500",
-    "aboutContent": "This category provides the latest news, trends, and developments in the automotive industry.",
-    "detailedDescription": "Get insights into the automotive world with updates on new technologies, market trends, and industry events that shape the future of transportation.",
+    "color": "#FF6347",
+    "aboutContent": "This category provides updates and insights on the automotive industry, including market trends and major developments.",
+    "detailedDescription": "Get the latest news on automotive innovations, industry shifts, and market trends. Stay informed about what's happening in the world of cars and transportation.",
     "popularTopics": [
-      "latest automotive trends",
-      "industry innovations",
-      "vehicle technology news"
+      "Market Trends",
+      "Industry Innovations",
+      "Electric Vehicle News"
     ],
-    "seoKeywords": "automotive news, industry updates, car technology, transportation trends",
+    "seoKeywords": "auto industry news, automotive trends, vehicle market, latest car developments",
     "keywords": [
-      "latest industry news",
-      "current automotive trends",
-      "vehicle technology updates"
+      "auto industry",
+      "latest news",
+      "automotive trends",
+      "market insights"
     ]
   },
-  "autonomous-driving": {
-    "name": "Autonomous Driving",
-    "description": "Explore the world of self-driving technology and its impact on transportation.",
-    "shortDescription": "Insights on autonomous vehicles.",
-    "icon": "🤖",
-    "color": "#1E90FF",
-    "aboutContent": "This category focuses on the advancements in autonomous driving technology and its implications for the future of mobility.",
-    "detailedDescription": "Learn about the different levels of autonomy in vehicles, the technology behind self-driving cars, and how it will change urban landscapes.",
+  "driving-tips": {
+    "name": "Driving Tips",
+    "description": "Practical advice for safe and efficient driving.",
+    "shortDescription": "Essential tips for drivers of all levels.",
+    "icon": "🚦",
+    "color": "#FFD700",
+    "aboutContent": "This category offers valuable tips and guides for drivers to enhance their skills and safety on the road.",
+    "detailedDescription": "Learn how to drive safely and efficiently with our expert driving tips. From winter preparation to long road trip advice, find everything you need to become a better driver.",
     "popularTopics": [
-      "self-driving technology",
-      "autonomous vehicle trends",
-      "AI in driving"
+      "Winter Driving Tips",
+      "Road Trip Planning",
+      "Beginner Driving Tips"
     ],
-    "seoKeywords": "autonomous driving, self-driving cars, AI technology, future mobility",
+    "seoKeywords": "driving tips, safe driving, road trip advice, driving skills",
     "keywords": [
-      "autonomous vehicle technology",
-      "current self-driving trends",
-      "future of transportation"
+      "driving tips",
+      "safe driving",
+      "road trip",
+      "driving advice"
     ]
   },
   "car-maintenance": {
     "name": "Car Maintenance",
-    "description": "Essential tips and guides to keep your vehicle in top shape.",
-    "shortDescription": "Car care and maintenance tips.",
+    "description": "Essential advice for keeping your vehicle in top condition.",
+    "shortDescription": "Guides and tips for vehicle maintenance.",
     "icon": "🔧",
-    "color": "#FFA500",
-    "aboutContent": "This category provides valuable information on how to maintain and care for your vehicle effectively.",
-    "detailedDescription": "Find tips and guides on car maintenance, from routine checks to troubleshooting common issues, ensuring your vehicle stays in great condition.",
+    "color": "#8B4513",
+    "aboutContent": "This category covers everything related to car maintenance, helping you keep your vehicle running smoothly.",
+    "detailedDescription": "Find practical guides and tips for maintaining your vehicle. From routine checks to troubleshooting common issues, ensure your car stays in optimal condition.",
     "popularTopics": [
-      "car maintenance tips",
-      "vehicle troubleshooting",
-      "seasonal car care"
+      "Maintenance Tips",
+      "Troubleshooting Guides",
+      "New Owner Advice"
     ],
-    "seoKeywords": "car maintenance, vehicle care, troubleshooting tips, auto repair",
+    "seoKeywords": "car maintenance, vehicle upkeep, maintenance tips, troubleshooting car issues",
     "keywords": [
-      "car care tips",
-      "vehicle maintenance guide",
-      "troubleshooting vehicle issues"
+      "car maintenance",
+      "vehicle care",
+      "maintenance advice",
+      "troubleshooting tips"
     ]
   },
-  "traffic-safety": {
-    "name": "Traffic Safety",
-    "description": "Learn about traffic safety measures and best practices.",
-    "shortDescription": "Focus on traffic safety insights.",
-    "icon": "🚦",
-    "color": "#FF69B4",
-    "aboutContent": "This category covers traffic safety initiatives, guidelines, and tips to promote safer roads.",
-    "detailedDescription": "Stay informed about traffic safety measures, best practices, and how to reduce accidents on the road for all types of vehicles.",
+  "future-transportation": {
+    "name": "Future Transportation",
+    "description": "Explore visionary concepts and technologies shaping tomorrow's transport.",
+    "shortDescription": "Innovations that will define the future of transportation.",
+    "icon": "🚀",
+    "color": "#4682B4",
+    "aboutContent": "This category delves into the innovative concepts and technologies that will shape the future of transportation.",
+    "detailedDescription": "Stay ahead of the curve with insights into future transportation technologies and concepts. Explore trends and innovations that promise to redefine how we travel.",
     "popularTopics": [
-      "traffic safety tips",
-      "accident prevention",
-      "autonomous vehicle safety"
+      "Future Mobility Trends",
+      "Transportation Innovations",
+      "Smart Cities"
     ],
-    "seoKeywords": "traffic safety, road safety tips, accident prevention, vehicle safety standards",
+    "seoKeywords": "future transportation, transportation innovations, mobility solutions, visionary transport",
     "keywords": [
-      "current traffic safety measures",
-      "best practices for road safety",
-      "how to improve traffic safety"
-    ]
-  },
-  "vehicle-technology": {
-    "name": "Vehicle Technology",
-    "description": "Explore the latest innovations in vehicle technology.",
-    "shortDescription": "Innovations in automotive technology.",
-    "icon": "🔍",
-    "color": "#8A2BE2",
-    "aboutContent": "This category highlights the latest developments in automotive technology and how they impact vehicle performance.",
-    "detailedDescription": "Discover the cutting-edge technologies that are transforming the automotive industry, including AI, connectivity, and advanced safety features.",
-    "popularTopics": [
-      "latest vehicle technology",
-      "innovations in automotive",
-      "AI in vehicles"
-    ],
-    "seoKeywords": "vehicle technology, automotive innovations, tech trends, car technology updates",
-    "keywords": [
-      "latest automotive technology",
-      "current vehicle innovations",
-      "best tech in cars"
+      "future transportation",
+      "transport trends",
+      "mobility innovations",
+      "latest transportation tech"
     ]
   }
 };
 
 // Site References
 export const SITE_REFERENCES = {
-  "homeTitle": "Vehivio",
+  "homeTitle": "AutoMobility",
   "homeDescription": "Your destination for Automotive & Mobility insights.",
-  "homeWelcome": "Welcome to Vehivio",
-  "domain": "Vehivio.com",
-  "generalEmail": "hello@Vehivio.com",
-  "privacyEmail": "privacy@Vehivio.com",
-  "legalEmail": "legal@Vehivio.com",
-  "supportEmail": "support@Vehivio.com",
-  "techEmail": "tech@Vehivio.com",
-  "businessEmail": "partnerships@Vehivio.com",
-  "contentEmail": "content@Vehivio.com",
-  "faqSiteName": "Vehivio",
-  "privacyCompanyStatement": "At Vehivio, we are committed to protecting your privacy and securing your data.",
-  "privacyServiceDescription": "Automotive & Mobility education and resources.",
-  "githubRepo": "https://github.com/vehivio/vehivio",
-  "liveDemoUrl": "https://Vehivio.com"
+  "homeWelcome": "Welcome to AutoMobility",
+  "domain": "AutoMobility.com",
+  "generalEmail": "hello@AutoMobility.com",
+  "privacyEmail": "privacy@AutoMobility.com",
+  "legalEmail": "legal@AutoMobility.com",
+  "supportEmail": "support@AutoMobility.com",
+  "techEmail": "tech@AutoMobility.com",
+  "businessEmail": "partnerships@AutoMobility.com",
+  "contentEmail": "content@AutoMobility.com",
+  "faqSiteName": "AutoMobility",
+  "privacyCompanyStatement": "At AutoMobility, we are committed to protecting your privacy and securing your data.",
+  "privacyServiceDescription": "Automotive & Mobility education and resources",
+  "githubRepo": "https://github.com/automobility/automobility",
+  "liveDemoUrl": "https://AutoMobility.com"
 };
 
 // Hero Configuration
@@ -722,9 +730,9 @@ export const HERO_CONFIG = {};
 // Overview Configuration
 export const OVERVIEW_CONFIG = {
   "title": "What is Automotive & Mobility?",
-  "description": "Understanding the dynamics of Automotive & Mobility.",
-  "footerTagline": "Vehivio — Your trusted guide.",
-  "footerDescription": "Explore the future of transportation and mobility.",
+  "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
+  "footerTagline": "AutoMobility — Driving the future.",
+  "footerDescription": "Learn how innovation is shaping transportation.",
   "footerFocus": "Focus: Advancing sustainable transportation.",
   "sections": {
     "blog": "Articles",
@@ -735,7 +743,7 @@ export const OVERVIEW_CONFIG = {
 
 // Newsletter Configuration
 export const NEWSLETTER_CONFIG = {
-  "title": "Vehivio Newsletter",
+  "title": "AutoMobility Newsletter",
   "description": "Get weekly Automotive & Mobility insights and updates.",
   "emailPlaceholder": "Enter your email",
   "subscribeButton": "Subscribe",
@@ -747,11 +755,11 @@ export const LEGAL_LINKS_CONFIG = {};
 
 // SEO Configuration
 export const SEO_CONFIG = {
-  "defaultTitle": "Vehivio - Automotive & Mobility",
-  "titleTemplate": "%s | Vehivio",
-  "defaultDescription": "Explore the latest trends and insights in the Automotive & Mobility industry.",
-  "defaultImage": "/images/og/vehivio-1200x630.jpg",
-  "twitterHandle": "@vehivio",
+  "defaultTitle": "AutoMobility - Automotive & Mobility",
+  "titleTemplate": "%s | AutoMobility",
+  "defaultDescription": "Explore the cutting-edge of automotive technology and mobility solutions.",
+  "defaultImage": "/images/og/automobility-1200x630.jpg",
+  "twitterHandle": "@automobility",
   "locale": "en_US",
   "type": "website"
 };
@@ -772,8 +780,8 @@ export const IMAGE_CONFIG = {
   "lazyLoading": true,
   "placeholder": "blur",
   "paths": {
-    "og": "/images/og/vehivio-1200x630.jpg",
-    "hero": "/images/hero/vehivio-hero.png"
+    "og": "/images/og/automobility-1200x630.jpg",
+    "hero": "/images/hero/automobility-hero.png"
   }
 };
 
@@ -794,7 +802,7 @@ export const UI_CONFIG = {
     "showNewsletter": true,
     "showSocialLinks": true,
     "showCategories": true,
-    "copyrightText": "© 2025 Vehivio. All rights reserved.",
+    "copyrightText": "© 2025 AutoMobility. All rights reserved.",
     "accessibilityNote": "Images include descriptive alt text; emoji have accessible labels."
   },
   "homepage": {
@@ -802,14 +810,14 @@ export const UI_CONFIG = {
     "showFeaturedPosts": true,
     "showCategories": true,
     "showLatestPosts": true,
-    "heroTitle": "Welcome to Vehivio",
-    "heroSubtitle": "Your trusted source for Automotive & Mobility.",
-    "heroImage": "/images/hero/vehivio-hero.png",
+    "heroTitle": "Welcome to AutoMobility",
+    "heroSubtitle": "Explore the future of transportation.",
+    "heroImage": "/images/hero/automobility-hero.png",
     "heroImageAlt": "Automotive & Mobility hero image"
   },
   "categoriesPage": {
     "title": "Content Categories",
-    "description": "Explore our diverse categories related to Automotive & Mobility.",
+    "description": "Explore our categories of automotive and mobility content.",
     "subtitle": "Find what interests you"
   },
   "images": {
@@ -843,23 +851,23 @@ export const BRANDING_CONFIG = {
 // Pages Configuration (About, Overview, Support, Terms, Privacy, etc.)
 export const PAGES_CONFIG = {
   "about": {
-    "title": "About Vehivio",
-    "subtitle": "Driving the Future of Mobility",
-    "mission": "To empower individuals with knowledge and resources in the Automotive & Mobility sector.",
+    "title": "About AutoMobility",
+    "subtitle": "Driving innovation in transportation.",
+    "mission": "To provide comprehensive insights and resources on automotive and mobility solutions.",
     "whatWeDo": {
       "title": "What We Do",
       "services": [
         {
           "title": "Vehicle Reviews",
-          "description": "Comprehensive reviews on the latest vehicles."
+          "description": "In-depth reviews of the latest vehicles."
         },
         {
-          "title": "Industry Insights",
-          "description": "Stay updated with the latest trends and news."
+          "title": "Mobility Insights",
+          "description": "Analysis of emerging mobility trends."
         },
         {
-          "title": "Sustainability Resources",
-          "description": "Explore sustainable practices in mobility."
+          "title": "Sustainability Initiatives",
+          "description": "Promoting eco-friendly transportation solutions."
         }
       ]
     },
@@ -868,34 +876,34 @@ export const PAGES_CONFIG = {
       "values": [
         {
           "title": "Innovation",
-          "description": "Leading the way in automotive technology."
+          "description": "Constantly pushing the boundaries of technology."
+        },
+        {
+          "title": "Sustainability",
+          "description": "Committed to a greener future."
+        },
+        {
+          "title": "Community",
+          "description": "Building a community of automotive enthusiasts."
         },
         {
           "title": "Integrity",
           "description": "Providing honest and unbiased information."
-        },
-        {
-          "title": "Community",
-          "description": "Building a network of automotive enthusiasts."
-        },
-        {
-          "title": "Sustainability",
-          "description": "Promoting eco-friendly mobility solutions."
         }
       ]
     },
     "callToAction": {
       "title": "Join Us",
-      "description": "Start your journey today in the world of Automotive & Mobility.",
+      "description": "Start your journey today",
       "buttonText": "Explore Resources",
       "buttonLink": "/blog"
     }
   },
   "overview": {
     "title": "What is Automotive & Mobility?",
-    "description": "Understanding the dynamics of Automotive & Mobility.",
-    "footerTagline": "Vehivio — Your trusted guide.",
-    "footerDescription": "Explore the future of transportation and mobility.",
+    "description": "Understanding the evolving landscape of automotive technology and mobility solutions.",
+    "footerTagline": "AutoMobility — Driving the future.",
+    "footerDescription": "Learn how innovation is shaping transportation.",
     "footerFocus": "Focus: Advancing sustainable transportation.",
     "sections": {
       "blog": "Articles",
@@ -923,29 +931,29 @@ export const PAGES_CONFIG = {
       {
         "id": "getting-started",
         "title": "Getting Started",
-        "description": "Learn the basics of Automotive & Mobility.",
-        "email": "learn@Vehivio.com",
+        "description": "Learn the basics of automotive and mobility.",
+        "email": "learn@AutoMobility.com",
         "icon": "rocket"
       },
       {
         "id": "content",
         "title": "Content Questions",
-        "description": "Get help with our content.",
-        "email": "content@Vehivio.com",
+        "description": "Content help regarding articles and resources.",
+        "email": "content@AutoMobility.com",
         "icon": "pencil"
       },
       {
         "id": "community",
         "title": "Community Support",
-        "description": "Engage with our community.",
-        "email": "community@Vehivio.com",
+        "description": "Support from fellow automotive enthusiasts.",
+        "email": "community@AutoMobility.com",
         "icon": "users"
       },
       {
         "id": "partnerships",
         "title": "Partnerships & Press",
-        "description": "Inquiries related to business partnerships.",
-        "email": "partnerships@Vehivio.com",
+        "description": "Business inquiries related to partnerships.",
+        "email": "partnerships@AutoMobility.com",
         "icon": "handshake"
       }
     ],
@@ -957,25 +965,25 @@ export const PAGES_CONFIG = {
           "title": "General Support",
           "description": "General questions",
           "detail": "Response within 24–48 hours",
-          "action": "support@Vehivio.com"
+          "action": "support@AutoMobility.com"
         },
         {
           "title": "Content Inquiries",
-          "description": "Questions about our content",
+          "description": "Content questions",
           "detail": "Response within 2–3 business days",
-          "action": "content@Vehivio.com"
+          "action": "content@AutoMobility.com"
         },
         {
           "title": "Business & Partnerships",
-          "description": "Inquiries about business opportunities",
+          "description": "Business inquiries",
           "detail": "Response within 3–5 business days",
-          "action": "partnerships@Vehivio.com"
+          "action": "partnerships@AutoMobility.com"
         },
         {
           "title": "Technical Issues",
-          "description": "Assistance with technical problems",
+          "description": "Technical help",
           "detail": "Response within 24 hours",
-          "action": "tech@Vehivio.com"
+          "action": "tech@AutoMobility.com"
         }
       ]
     },
@@ -984,11 +992,11 @@ export const PAGES_CONFIG = {
       "items": [
         {
           "question": "How do I get started?",
-          "answer": "Start by exploring our resources."
+          "answer": "Start by exploring our resources on the website."
         },
         {
           "question": "Is this service free?",
-          "answer": "Yes, basic access is free."
+          "answer": "Yes, basic access is free for all users."
         },
         {
           "question": "How can I contribute?",
@@ -1000,17 +1008,17 @@ export const PAGES_CONFIG = {
         },
         {
           "question": "How often is content updated?",
-          "answer": "We update content regularly."
+          "answer": "We update our content regularly to ensure accuracy."
         }
       ]
     }
   },
   "terms": {
     "title": "Terms of Service",
-    "description": "Terms and conditions for using Vehivio's website and services.",
-    "subtitle": "By using Vehivio.com, you agree to these terms.",
+    "description": "Terms and conditions for using AutoMobility's website and services.",
+    "subtitle": "By using AutoMobility.com, you agree to these terms.",
     "lastUpdated": "January 2025",
-    "introduction": "Welcome to Vehivio. These Terms of Service govern your use of our website.",
+    "introduction": "Welcome to AutoMobility. These Terms of Service govern your use of our website.",
     "sections": [
       {
         "id": "acceptance",
@@ -1088,16 +1096,16 @@ export const PAGES_CONFIG = {
       {
         "id": "contact",
         "title": "10. Contact Information",
-        "content": "Contact legal@Vehivio.com for questions."
+        "content": "Contact legal@AutoMobility.com for questions."
       }
     ]
   },
   "privacy": {
     "title": "Privacy Policy",
-    "description": "Learn how Vehivio collects, uses, and protects your personal information.",
+    "description": "Learn how AutoMobility collects, uses, and protects your personal information.",
     "subtitle": "Your privacy and data security are our priorities.",
     "lastUpdated": "January 2025",
-    "introduction": "Vehivio is committed to protecting your privacy.",
+    "introduction": "AutoMobility is committed to protecting your privacy.",
     "sections": [
       {
         "id": "information-collect",
@@ -1173,7 +1181,7 @@ export const PAGES_CONFIG = {
       {
         "id": "contact",
         "title": "9. Contact Us",
-        "content": "Contact privacy@Vehivio.com with questions."
+        "content": "Contact privacy@AutoMobility.com with questions."
       }
     ]
   }

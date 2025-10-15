@@ -111,7 +111,8 @@
       "Bash(while read hash size path)",
       "Bash(git verify-pack:*)",
       "Bash(git gc:*)",
-      "Bash(git repack:*)"
+      "Bash(git repack:*)",
+      "Bash(\"C:\\Program Files\\GitHub CLI\\gh.exe\" auth status)"
     ],
     "deny": [],
     "ask": [],

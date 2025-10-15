@@ -1,21 +1,22 @@
 {
   "id": "electric-vehicles",
   "name": "Electric Vehicles",
-  "description": "Explore the latest developments, reviews, and insights on electric vehicles.",
-  "shortDescription": "Everything about electric vehicles.",
+  "description": "Explore the latest in electric vehicle technology, reviews, and tips for EV owners.",
+  "shortDescription": "Latest news and reviews for electric vehicles.",
   "icon": "⚡",
   "color": "#00FF00",
-  "aboutContent": "This category covers everything related to electric vehicles, including in-depth reviews, comparisons, and tips for potential owners.",
-  "detailedDescription": "Stay informed about the latest electric vehicle models, innovations, and how they fit into the future of sustainable mobility. Find expert reviews, comparisons, and industry news.",
+  "aboutContent": "This category covers everything related to electric vehicles, from comprehensive reviews to how-to guides on maximizing your EV's performance.",
+  "detailedDescription": "Dive into the world of electric vehicles with in-depth reviews, comparisons, and tips to help you make informed decisions. Stay updated on the latest trends in the EV market.",
   "popularTopics": [
-    "Tesla Model Y",
-    "Chevrolet Bolt",
-    "Hyundai Ioniq"
+    "Electric SUVs",
+    "Charging Tips",
+    "EV Comparisons"
   ],
-  "seoKeywords": "electric vehicles, EV reviews, best electric cars, sustainable transport",
+  "seoKeywords": "electric vehicles, EV reviews, charging tips, sustainable transportation",
   "keywords": [
-    "electric vehicle reviews",
+    "electric cars",
+    "EV technology",
     "latest EV news",
-    "electric car comparisons"
+    "electric vehicle reviews"
   ]
 }

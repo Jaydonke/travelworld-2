@@ -2,22 +2,22 @@ import { type SiteDataProps } from "../types/configDataTypes";
 
 // Update this file with your site specific information
 const siteData: SiteDataProps = {
-	name: "Vehivio",
+	name: "AutoMobility",
 	// Your website's title and description (meta fields)
-	title: "Vehivio - Automotive & Mobility",
+	title: "AutoMobility - Automotive & Mobility",
 	description:
-		"Your go-to resource for all things Automotive & Mobility, providing insights, reviews, and news.",
+		"Your destination for the latest in automotive and mobility solutions.",
 	// Your information!
 	author: {
-		name: "Vehivio Team",
-		email: "hello@Vehivio.com",
-		twitter: "vehivio",
+		name: "AutoMobility Team",
+		email: "hello@AutoMobility.com",
+		twitter: "automobility",
 	},
 
 	// default image for meta tags if the page doesn't have an image already
 	defaultImage: {
-		src: "/images/og/vehivio-1200x630.jpg",
-		alt: "Vehivio logo",
+		src: "/images/og/automobility-1200x630.jpg",
+		alt: "AutoMobility logo",
 	},
 };
 

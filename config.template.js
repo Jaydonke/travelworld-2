@@ -8,8 +8,8 @@
 
 export const CURRENT_WEBSITE_CONTENT = {
   "title": "AutoMobility",
-  "description": "Your destination for the latest in Automotive & Mobility innovations, trends, and resources.",
-  "tagline": "Driving the Future of Mobility",
+  "description": "Your go-to resource for the latest in Automotive & Mobility innovations.",
+  "tagline": "Driving the Future",
   "author": "AutoMobility Team",
   "url": "https://AutoMobility.com",
   "locale": "en-US",
@@ -46,7 +46,7 @@ export const CURRENT_WEBSITE_CONTENT = {
   "seo": {
     "defaultTitle": "AutoMobility - Automotive & Mobility",
     "titleTemplate": "%s | AutoMobility",
-    "defaultDescription": "Explore the latest developments in automotive technology, mobility solutions, and industry insights.",
+    "defaultDescription": "Explore the latest trends, tips, and innovations in Automotive & Mobility.",
     "defaultImage": "/images/og/automobility-1200x630.jpg",
     "twitterHandle": "@automobility",
     "locale": "en_US",
@@ -60,18 +60,18 @@ export const CURRENT_WEBSITE_CONTENT = {
   "theme": {
     "name": "AutoMobility",
     "category": "Automotive & Mobility",
-    "focus": "Innovative solutions for modern transportation challenges.",
-    "targetAudience": "Automotive enthusiasts, industry professionals, and mobility innovators."
+    "focus": "Connecting enthusiasts with the latest automotive technology and mobility solutions.",
+    "targetAudience": "Car enthusiasts, technology adopters, and mobility innovators."
   },
   "categories": [
     "electric-vehicles",
     "autonomous-driving",
     "car-reviews",
-    "mobility-trends",
-    "sustainable-transportation",
-    "automotive-tech",
-    "vehicle-maintenance",
-    "industry-news"
+    "mobility-solutions",
+    "automotive-technology",
+    "sustainability",
+    "industry-news",
+    "driving-tips"
   ],
   "images": {
     "optimization": {
@@ -108,13 +108,13 @@ export const CURRENT_WEBSITE_CONTENT = {
       "showCategories": true,
       "showLatestPosts": true,
       "heroTitle": "Welcome to AutoMobility",
-      "heroSubtitle": "Your hub for all things automotive and mobility.",
+      "heroSubtitle": "Your gateway to the future of driving.",
       "heroImage": "/images/hero/automobility-hero.png",
       "heroImageAlt": "Automotive & Mobility hero image"
     },
     "categoriesPage": {
       "title": "Content Categories",
-      "description": "Explore our diverse categories in the automotive and mobility sector.",
+      "description": "Explore our categories",
       "subtitle": "Find what interests you"
     },
     "images": {
@@ -145,7 +145,7 @@ export const CURRENT_WEBSITE_CONTENT = {
   },
   "translations": {
     "en": {
-      "hero_description": "Your source for the latest in automotive technology and mobility solutions.",
+      "hero_description": "Stay updated with the latest in Automotive & Mobility.",
       "back_to_all_posts": "Back to all articles",
       "updated_on": "Updated on",
       "read_more": "Read more",
@@ -165,22 +165,22 @@ export const CURRENT_WEBSITE_CONTENT = {
   "pages": {
     "about": {
       "title": "About AutoMobility",
-      "subtitle": "Driving innovation in the automotive industry.",
-      "mission": "To empower individuals and businesses with knowledge and resources in automotive technology and mobility solutions.",
+      "subtitle": "Empowering the automotive community.",
+      "mission": "To bring together enthusiasts, innovators, and industry leaders to shape the future of mobility.",
       "whatWeDo": {
         "title": "What We Do",
         "services": [
           {
-            "title": "Industry Insights",
-            "description": "Providing expert analysis on automotive trends."
+            "title": "Latest News",
+            "description": "Stay informed about the automotive industry."
           },
           {
             "title": "Product Reviews",
-            "description": "In-depth reviews of the latest vehicles and technologies."
+            "description": "In-depth reviews of the latest vehicles and tech."
           },
           {
-            "title": "Sustainability Initiatives",
-            "description": "Promoting green transportation solutions."
+            "title": "Expert Tips",
+            "description": "Get advice on driving, maintenance, and more."
           }
         ]
       },
@@ -189,35 +189,35 @@ export const CURRENT_WEBSITE_CONTENT = {
         "values": [
           {
             "title": "Innovation",
-            "description": "We embrace new technologies that improve mobility."
-          },
-          {
-            "title": "Sustainability",
-            "description": "We prioritize eco-friendly transportation solutions."
+            "description": "Leading the charge in automotive technology."
           },
           {
             "title": "Community",
-            "description": "We foster a community of automotive enthusiasts and professionals."
+            "description": "Building connections among automotive enthusiasts."
           },
           {
-            "title": "Integrity",
-            "description": "We uphold transparency and honesty in our content."
+            "title": "Sustainability",
+            "description": "Promoting eco-friendly mobility solutions."
+          },
+          {
+            "title": "Education",
+            "description": "Empowering users with knowledge and resources."
           }
         ]
       },
       "callToAction": {
         "title": "Join Us",
-        "description": "Be part of the future of mobility.",
+        "description": "Start your journey today",
         "buttonText": "Explore Resources",
         "buttonLink": "/blog"
       }
     },
     "overview": {
       "title": "What is Automotive & Mobility?",
-      "description": "A comprehensive look into the evolving landscape of automotive technology and mobility solutions.",
-      "footerTagline": "AutoMobility — Your guide to the future.",
-      "footerDescription": "Join us as we explore the advancements in transportation.",
-      "footerFocus": "Focus: Innovating transportation for a sustainable future.",
+      "description": "Understanding the dynamics of the automotive industry and emerging mobility solutions.",
+      "footerTagline": "AutoMobility — Driving innovation forward.",
+      "footerDescription": "Discover insights and trends that shape the future of transportation.",
+      "footerFocus": "Focus: Innovative mobility solutions for a sustainable future.",
       "sections": {
         "blog": "Articles",
         "info": "Resources",
@@ -226,7 +226,7 @@ export const CURRENT_WEBSITE_CONTENT = {
     },
     "support": {
       "title": "Help & Support",
-      "description": "Get assistance with Automotive & Mobility.",
+      "description": "Get assistance with Automotive & Mobility",
       "subtitle": "Expert guidance for your journey.",
       "quickActions": [
         {
@@ -244,21 +244,21 @@ export const CURRENT_WEBSITE_CONTENT = {
         {
           "id": "getting-started",
           "title": "Getting Started",
-          "description": "Learn the basics of automotive technology.",
+          "description": "Learn the basics of Automotive & Mobility.",
           "email": "learn@AutoMobility.com",
           "icon": "rocket"
         },
         {
           "id": "content",
           "title": "Content Questions",
-          "description": "Inquiries about our articles and resources.",
+          "description": "Content help",
           "email": "content@AutoMobility.com",
           "icon": "pencil"
         },
         {
           "id": "community",
           "title": "Community Support",
-          "description": "Join discussions and find help from others.",
+          "description": "Community help and discussions.",
           "email": "community@AutoMobility.com",
           "icon": "users"
         },
@@ -272,7 +272,7 @@ export const CURRENT_WEBSITE_CONTENT = {
       ],
       "contactChannels": {
         "title": "Contact Channels",
-        "description": "Choose the best way to reach our team.",
+        "description": "Choose the best way to reach our team",
         "channels": [
           {
             "title": "General Support",
@@ -282,19 +282,19 @@ export const CURRENT_WEBSITE_CONTENT = {
           },
           {
             "title": "Content Inquiries",
-            "description": "Questions about our content",
+            "description": "Content questions",
             "detail": "Response within 2–3 business days",
             "action": "content@AutoMobility.com"
           },
           {
             "title": "Business & Partnerships",
-            "description": "Inquiries regarding business opportunities",
+            "description": "Business inquiries",
             "detail": "Response within 3–5 business days",
             "action": "partnerships@AutoMobility.com"
           },
           {
             "title": "Technical Issues",
-            "description": "Support for technical problems",
+            "description": "Technical help",
             "detail": "Response within 24 hours",
             "action": "tech@AutoMobility.com"
           }
@@ -305,11 +305,11 @@ export const CURRENT_WEBSITE_CONTENT = {
         "items": [
           {
             "question": "How do I get started?",
-            "answer": "Explore our resources to understand automotive technology."
+            "answer": "Start by exploring our resources."
           },
           {
             "question": "Is this service free?",
-            "answer": "Yes, basic access to our resources is free."
+            "answer": "Yes, basic access is free."
           },
           {
             "question": "How can I contribute?",
@@ -321,7 +321,7 @@ export const CURRENT_WEBSITE_CONTENT = {
           },
           {
             "question": "How often is content updated?",
-            "answer": "We regularly update our articles and resources."
+            "answer": "We update content regularly."
           }
         ]
       }
@@ -538,254 +538,254 @@ export const ARTICLE_GENERATION_CONFIG = {
   "enabled": true,
   "articles": [
     {
-      "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+      "topic": "Tesla Model 3 Review: A Comprehensive Overview",
       "keywords": [
         "Tesla Model 3 review",
-        "electric vehicle performance",
         "best electric cars",
-        "latest Tesla features"
+        "latest electric vehicle",
+        "2023 Tesla features"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Ford Mustang Mach-E Review: A Modern Electric Icon",
+      "topic": "Ford Mustang Mach-E Review: Is It Worth the Hype?",
       "keywords": [
         "Ford Mustang Mach-E review",
         "best electric SUVs",
-        "Mach-E performance",
-        "latest Ford technology"
+        "latest Ford electric",
+        "Mustang Mach-E features"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Nissan Leaf Review: Affordable Electric Vehicle Insights",
+      "topic": "Chevrolet Bolt EV Review: Pros and Cons",
       "keywords": [
-        "Nissan Leaf review",
-        "affordable electric cars",
-        "best EV for budget",
-        "latest Leaf features"
+        "Chevrolet Bolt EV review",
+        "best affordable electric cars",
+        "2023 Bolt EV features",
+        "latest electric vehicle"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Lucid Air Review: Luxury Electric Sedan Overview",
-      "keywords": [
-        "Lucid Air review",
-        "luxury electric vehicles",
-        "best EVs 2023",
-        "latest Lucid features"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "Rivian R1T Review: Exploring the Adventure Electric Truck",
+      "topic": "Rivian R1T Review: An In-Depth Look",
       "keywords": [
         "Rivian R1T review",
-        "electric trucks comparison",
-        "best adventure EV",
-        "latest Rivian technology"
+        "best electric trucks",
+        "latest Rivian features",
+        "R1T performance analysis"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Top 10 Electric Cars to Watch in 2023",
+      "topic": "Nissan Leaf Review: Is It Still a Top Contender?",
       "keywords": [
-        "best electric cars",
-        "top electric vehicles",
-        "trending EVs",
-        "latest car trends"
+        "Nissan Leaf review",
+        "best electric vehicles",
+        "2023 Nissan Leaf",
+        "current electric car trends"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Best Electric SUVs for Families: Our Top Picks",
+      "topic": "Top 10 Electric Vehicles for 2023: Best Picks to Consider",
       "keywords": [
-        "best electric SUVs",
-        "family-friendly EVs",
-        "latest SUV reviews",
-        "trending family cars"
+        "best electric vehicles",
+        "top electric cars 2023",
+        "current EV market",
+        "latest electric models"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "5 Must-Read Books on Sustainable Transportation",
+      "topic": "5 Essential Tips for First-Time EV Owners",
       "keywords": [
-        "best transportation books",
-        "sustainable transport literature",
-        "top books on mobility",
-        "latest transport trends"
-      ],
-      "category": "sustainable-transportation"
-    },
-    {
-      "topic": "How to Transition to an Electric Vehicle: A Complete Guide",
-      "keywords": [
-        "how to transition EV",
-        "electric vehicle guide",
-        "best EV tips",
-        "latest EV trends"
+        "tips for electric car owners",
+        "best EV ownership tips",
+        "how to maintain electric vehicle",
+        "current electric vehicle advice"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "How to Choose the Right Electric Car for Your Needs",
+      "topic": "How to Choose the Best Electric Car for Your Needs",
       "keywords": [
         "how to choose electric car",
-        "best EV guide",
-        "electric vehicle tips",
-        "latest car buying advice"
+        "best electric car guide",
+        "tips for buying EV",
+        "latest electric vehicle advice"
       ],
       "category": "electric-vehicles"
     },
     {
-      "topic": "Autonomous Driving vs Manual Driving: Which is Safer?",
+      "topic": "Electric Cars vs Gas Cars: Which is Better for You?",
       "keywords": [
-        "autonomous driving vs manual",
-        "safety comparison cars",
-        "best driving methods",
-        "latest driving technology"
+        "electric cars vs gas",
+        "best car comparison",
+        "current vehicle efficiency",
+        "EV vs gasoline cars"
+      ],
+      "category": "electric-vehicles"
+    },
+    {
+      "topic": "Understanding Autonomous Driving: A Beginner's Guide",
+      "keywords": [
+        "beginner's guide autonomous driving",
+        "how autonomous vehicles work",
+        "latest driving technology",
+        "understanding self-driving cars"
       ],
       "category": "autonomous-driving"
     },
     {
-      "topic": "Comparing Tesla Autopilot and Full Self-Driving Features",
+      "topic": "The Future of Autonomous Vehicles: Trends and Predictions",
       "keywords": [
-        "Tesla Autopilot comparison",
+        "future of autonomous vehicles",
+        "trends in self-driving technology",
+        "latest autonomous driving news",
+        "current vehicle automation"
+      ],
+      "category": "autonomous-driving"
+    },
+    {
+      "topic": "Top 5 Autonomous Vehicles to Watch in 2023",
+      "keywords": [
+        "best autonomous vehicles",
+        "top self-driving cars",
+        "latest autonomous models",
+        "current self-driving trends"
+      ],
+      "category": "autonomous-driving"
+    },
+    {
+      "topic": "How Self-Driving Technology Works: A Detailed Explanation",
+      "keywords": [
+        "how self-driving technology works",
+        "understanding autonomous driving",
+        "current vehicle technology",
+        "latest driving innovations"
+      ],
+      "category": "autonomous-driving"
+    },
+    {
+      "topic": "Comparing Tesla Autopilot vs Other Autonomous Systems",
+      "keywords": [
+        "Tesla Autopilot vs",
+        "autonomous driving comparison",
         "best self-driving features",
-        "latest Tesla technology",
-        "autonomous driving overview"
+        "current vehicle automation"
       ],
       "category": "autonomous-driving"
     },
     {
-      "topic": "Beginner's Guide to Understanding Autonomous Vehicles",
+      "topic": "Latest Trends in Automotive Technology: What to Expect",
       "keywords": [
-        "beginner's guide autonomous",
-        "understanding self-driving cars",
-        "autonomous vehicle tutorial",
-        "latest mobility trends"
-      ],
-      "category": "autonomous-driving"
-    },
-    {
-      "topic": "Top Mobility Trends Shaping the Future of Transportation",
-      "keywords": [
-        "mobility trends 2023",
-        "future transportation trends",
-        "latest transport innovations",
-        "trending mobility solutions"
-      ],
-      "category": "mobility-trends"
-    },
-    {
-      "topic": "Expert Insights into the Future of Electric Vehicle Technology",
-      "keywords": [
-        "expert insights EV",
-        "future electric vehicle tech",
         "latest automotive technology",
-        "trending EV innovations"
+        "trends in car tech",
+        "current vehicle innovations",
+        "automotive tech updates"
       ],
-      "category": "automotive-tech"
+      "category": "automotive-technology"
     },
     {
-      "topic": "Troubleshooting Common Electric Vehicle Charging Issues",
+      "topic": "How to Upgrade Your Car with Modern Technology",
       "keywords": [
-        "troubleshooting EV charging",
-        "common electric vehicle issues",
-        "how to fix EV problems",
-        "latest EV tips"
+        "upgrade car technology",
+        "how to modernize vehicle",
+        "best car tech upgrades",
+        "current automotive improvements"
       ],
-      "category": "vehicle-maintenance"
+      "category": "automotive-technology"
     },
     {
-      "topic": "The Latest Innovations in Automotive Technology: What to Expect",
+      "topic": "Understanding Vehicle Connectivity: A Beginner's Guide",
       "keywords": [
-        "latest automotive innovations",
-        "best automotive technology",
-        "trending car tech",
-        "future vehicle technologies"
+        "beginner's guide vehicle connectivity",
+        "how connected cars work",
+        "current automotive technology",
+        "understanding car networks"
       ],
-      "category": "automotive-tech"
+      "category": "automotive-technology"
     },
     {
-      "topic": "Vehicle Maintenance Tips for Electric Cars: What You Need to Know",
+      "topic": "Top 5 Automotive Technologies Revolutionizing the Industry",
       "keywords": [
-        "electric car maintenance tips",
-        "how to maintain EV",
-        "best vehicle maintenance",
-        "latest EV care advice"
+        "best automotive technologies",
+        "latest car innovations",
+        "automotive technology trends",
+        "current vehicle advancements"
       ],
-      "category": "vehicle-maintenance"
+      "category": "automotive-technology"
     },
     {
-      "topic": "How to Maintain Your Electric Vehicle: Essential Tips",
+      "topic": "Sustainable Driving: Tips for Eco-Friendly Transportation",
       "keywords": [
-        "how to maintain EV",
-        "electric vehicle care tips",
-        "best maintenance practices",
-        "latest EV maintenance advice"
+        "sustainable driving tips",
+        "eco-friendly transportation",
+        "how to drive sustainably",
+        "current sustainability trends"
       ],
-      "category": "vehicle-maintenance"
+      "category": "sustainability"
     },
     {
-      "topic": "Industry News: The Latest Developments in Electric Vehicles",
+      "topic": "The Impact of Electric Vehicles on the Environment",
       "keywords": [
-        "latest electric vehicle news",
-        "current automotive industry updates",
-        "trending EV news",
-        "latest car developments"
+        "impact of electric vehicles",
+        "sustainable vehicle analysis",
+        "current environmental issues",
+        "electric cars environment"
+      ],
+      "category": "sustainability"
+    },
+    {
+      "topic": "How to Reduce Your Carbon Footprint While Driving",
+      "keywords": [
+        "reduce carbon footprint driving",
+        "sustainability tips for drivers",
+        "eco-friendly driving guide",
+        "current driving practices"
+      ],
+      "category": "sustainability"
+    },
+    {
+      "topic": "Industry News: Latest Developments in Automotive Sustainability",
+      "keywords": [
+        "latest automotive sustainability news",
+        "current industry developments",
+        "sustainability in automotive",
+        "trending automotive practices"
       ],
       "category": "industry-news"
     },
     {
-      "topic": "Comparing Electric and Gasoline Vehicles: Pros and Cons",
+      "topic": "Driving Tips for New Car Owners: What You Need to Know",
       "keywords": [
-        "electric vs gasoline cars",
-        "pros and cons comparison",
-        "best vehicle types",
-        "latest car comparisons"
+        "driving tips for new owners",
+        "best practices for driving",
+        "how to drive safely",
+        "current driving advice"
       ],
-      "category": "sustainable-transportation"
+      "category": "driving-tips"
     },
     {
-      "topic": "The Future of Sustainable Transportation: What Lies Ahead",
+      "topic": "How to Prepare Your Car for a Long Road Trip",
       "keywords": [
-        "future sustainable transportation",
-        "latest transport innovations",
-        "trending eco-friendly vehicles",
-        "best transportation solutions"
+        "prepare car for road trip",
+        "best road trip tips",
+        "how to maintain vehicle",
+        "current travel advice"
       ],
-      "category": "sustainable-transportation"
+      "category": "driving-tips"
     },
     {
-      "topic": "Expert Analysis of Current Automotive Industry Trends",
+      "topic": "Essential Car Maintenance Tips for New Drivers",
       "keywords": [
-        "expert analysis automotive trends",
-        "current industry insights",
-        "latest car trends",
-        "best automotive news"
+        "car maintenance tips",
+        "how to maintain vehicle",
+        "best practices for new drivers",
+        "current car care advice"
       ],
-      "category": "industry-news"
-    },
-    {
-      "topic": "The Latest Trends in Vehicle Technology: Keeping Up",
-      "keywords": [
-        "latest vehicle technology trends",
-        "trending automotive tech",
-        "best car innovations",
-        "current technology updates"
-      ],
-      "category": "automotive-tech"
-    },
-    {
-      "topic": "Understanding Electric Vehicle Incentives: What You Should Know",
-      "keywords": [
-        "electric vehicle incentives guide",
-        "how to understand EV benefits",
-        "latest EV policies",
-        "best electric car savings"
-      ],
-      "category": "sustainable-transportation"
+      "category": "driving-tips"
     }
   ]
 };
@@ -894,162 +894,162 @@ export const CURRENT_SOCIAL_LINKS = [
 export const CATEGORY_INFO = {
   "electric-vehicles": {
     "name": "Electric Vehicles",
-    "description": "Explore the latest advancements, reviews, and comparisons in the world of electric vehicles.",
-    "shortDescription": "All about electric vehicles and their impact.",
+    "description": "Explore the latest in electric vehicle technology, reviews, and comparisons.",
+    "shortDescription": "Your guide to electric vehicles and trends.",
     "icon": "⚡",
-    "color": "#00FF00",
-    "aboutContent": "This category covers everything related to electric vehicles, including reviews, buying guides, and industry news.",
-    "detailedDescription": "Delve into comprehensive reviews, comparisons, and guides on electric vehicles. Stay updated on the latest models and innovations that are shaping the future of sustainable transportation.",
+    "color": "#4CAF50",
+    "aboutContent": "Discover everything about electric vehicles from reviews to maintenance tips.",
+    "detailedDescription": "This category covers comprehensive reviews of electric vehicles, tips for first-time owners, and the latest trends in the EV market.",
     "popularTopics": [
       "Best Electric Cars",
-      "Electric Vehicle Reviews",
-      "EV Maintenance Tips"
+      "EV Maintenance Tips",
+      "Latest Electric Vehicle News"
     ],
-    "seoKeywords": "electric cars, EV reviews, electric vehicle technology",
+    "seoKeywords": "electric vehicles, EV reviews, electric car trends",
     "keywords": [
       "electric cars",
       "EV technology",
-      "electric vehicle reviews"
+      "sustainable transport"
     ]
   },
   "autonomous-driving": {
     "name": "Autonomous Driving",
-    "description": "Learn about the latest developments in self-driving technology and its implications for the future.",
-    "shortDescription": "Insights into autonomous vehicles and technology.",
+    "description": "Learn about self-driving technology, its benefits, and its future.",
+    "shortDescription": "Everything about autonomous vehicles and technology.",
     "icon": "🤖",
-    "color": "#0000FF",
-    "aboutContent": "This category provides insights and information on autonomous driving technology, including safety, comparisons, and industry trends.",
-    "detailedDescription": "Explore the advancements in autonomous driving technology, safety comparisons, and guides for understanding self-driving vehicles. This category is perfect for anyone interested in the future of mobility.",
+    "color": "#FF9800",
+    "aboutContent": "Dive into the world of autonomous vehicles and explore how they work and their impact on the future.",
+    "detailedDescription": "This category provides insights into the latest advancements in autonomous driving, comparisons of different systems, and beginner guides.",
     "popularTopics": [
-      "Autonomous Vehicle Safety",
       "Self-Driving Technology",
-      "Comparisons of Autonomous Systems"
+      "Autonomous Vehicle Trends",
+      "Best Autonomous Cars"
     ],
-    "seoKeywords": "self-driving cars, autonomous technology, vehicle safety",
+    "seoKeywords": "autonomous driving, self-driving cars, latest driving technology",
     "keywords": [
+      "self-driving",
       "autonomous vehicles",
-      "self-driving technology",
-      "vehicle safety"
+      "vehicle automation"
     ]
   },
   "car-reviews": {
     "name": "Car Reviews",
-    "description": "Detailed reviews of the latest cars, including performance, features, and value.",
-    "shortDescription": "In-depth car reviews for informed buyers.",
+    "description": "In-depth reviews and comparisons of the latest cars on the market.",
+    "shortDescription": "Detailed reviews of various car models.",
     "icon": "🚗",
-    "color": "#FFFF00",
-    "aboutContent": "This category features comprehensive reviews of various vehicles, helping readers make informed purchasing decisions.",
-    "detailedDescription": "From electric vehicles to traditional cars, our reviews cover performance, features, and value to assist buyers in choosing the right vehicle.",
+    "color": "#2196F3",
+    "aboutContent": "Read detailed reviews of new and popular car models to help you make informed purchasing decisions.",
+    "detailedDescription": "This category features comprehensive reviews of various car models, highlighting their strengths and weaknesses.",
     "popularTopics": [
-      "Latest Car Reviews",
-      "Electric Vehicle Reviews",
-      "SUV Comparisons"
+      "Best Car Reviews",
+      "Latest Car Models",
+      "Car Comparisons"
     ],
-    "seoKeywords": "car reviews, vehicle performance, automotive features",
+    "seoKeywords": "car reviews, vehicle comparisons, auto analysis",
     "keywords": [
       "car reviews",
       "vehicle performance",
-      "automotive features"
+      "auto features"
     ]
   },
-  "mobility-trends": {
-    "name": "Mobility Trends",
-    "description": "Stay updated on the latest trends and innovations in the mobility sector.",
-    "shortDescription": "Current trends shaping the future of transportation.",
-    "icon": "🚀",
-    "color": "#FF7F50",
-    "aboutContent": "This category highlights the trends that are shaping the future of mobility, from electric vehicles to urban transportation solutions.",
-    "detailedDescription": "Discover the latest mobility trends, including innovations in transportation, sustainable solutions, and how technology is changing the way we move.",
+  "mobility-solutions": {
+    "name": "Mobility Solutions",
+    "description": "Explore innovative solutions for modern mobility challenges.",
+    "shortDescription": "Innovative solutions for transportation and mobility.",
+    "icon": "🛴",
+    "color": "#9C27B0",
+    "aboutContent": "Discover various mobility solutions that can enhance your transportation experience.",
+    "detailedDescription": "This category covers a range of topics from shared mobility solutions to innovative transport technologies.",
     "popularTopics": [
-      "Future of Mobility",
-      "Sustainable Transport Trends",
-      "Urban Transportation Innovations"
+      "Best Mobility Solutions",
+      "Shared Transport Innovations",
+      "Urban Mobility Trends"
     ],
-    "seoKeywords": "mobility trends, transportation innovations, future mobility",
+    "seoKeywords": "mobility solutions, transportation innovations, urban mobility",
     "keywords": [
-      "mobility trends",
-      "transportation innovations",
-      "future mobility"
+      "mobility solutions",
+      "transportation technology",
+      "urban transport"
     ]
   },
-  "sustainable-transportation": {
-    "name": "Sustainable Transportation",
-    "description": "Explore eco-friendly transport solutions and the future of green mobility.",
-    "shortDescription": "Focus on sustainable and eco-friendly transportation options.",
-    "icon": "🌱",
-    "color": "#008000",
-    "aboutContent": "This category discusses sustainable transportation methods, innovations, and the importance of eco-friendly practices in the automotive industry.",
-    "detailedDescription": "Learn about sustainable transportation solutions, including electric vehicles, public transport improvements, and policies promoting eco-friendly practices in the automotive industry.",
-    "popularTopics": [
-      "Green Mobility Solutions",
-      "Electric Vehicle Incentives",
-      "Sustainable Transport Innovations"
-    ],
-    "seoKeywords": "sustainable transportation, eco-friendly vehicles, green mobility",
-    "keywords": [
-      "sustainable transportation",
-      "eco-friendly vehicles",
-      "green mobility"
-    ]
-  },
-  "automotive-tech": {
+  "automotive-technology": {
     "name": "Automotive Technology",
-    "description": "Discover the latest technological innovations in the automotive industry.",
-    "shortDescription": "Insights into cutting-edge automotive tech.",
+    "description": "Stay updated on the latest automotive technologies and their applications.",
+    "shortDescription": "Latest technologies transforming the automotive industry.",
     "icon": "🔧",
-    "color": "#A52A2A",
-    "aboutContent": "This category covers the latest technologies in the automotive sector, including advancements in vehicle design, performance, and safety.",
-    "detailedDescription": "Stay informed about the latest automotive technologies, from electric vehicle advancements to smart driving systems, and how these innovations are transforming the industry.",
+    "color": "#FFC107",
+    "aboutContent": "Explore the latest technologies that are shaping the automotive industry and enhancing vehicle performance.",
+    "detailedDescription": "This category focuses on automotive technology innovations, from connectivity to advanced driver assistance systems.",
     "popularTopics": [
-      "Latest Automotive Innovations",
-      "Electric Vehicle Technology",
-      "Smart Driving Systems"
+      "Latest Automotive Trends",
+      "Vehicle Technology Innovations",
+      "Tech Upgrades"
     ],
-    "seoKeywords": "automotive technology, car innovations, vehicle advancements",
+    "seoKeywords": "automotive technology, car innovations, vehicle tech",
     "keywords": [
-      "automotive technology",
-      "car innovations",
+      "car technology",
+      "automotive innovations",
       "vehicle advancements"
     ]
   },
-  "vehicle-maintenance": {
-    "name": "Vehicle Maintenance",
-    "description": "Helpful tips and guides for maintaining your vehicle in top condition.",
-    "shortDescription": "Essential maintenance tips for all vehicle types.",
-    "icon": "🛠️",
-    "color": "#FFD700",
-    "aboutContent": "This category provides practical advice and guides for maintaining various types of vehicles, ensuring they run smoothly and efficiently.",
-    "detailedDescription": "Find helpful tips and tutorials on vehicle maintenance, covering everything from electric vehicle care to traditional car upkeep. Keep your vehicle in optimal condition with our expert advice.",
+  "sustainability": {
+    "name": "Sustainability",
+    "description": "Learn about sustainable practices in the automotive industry.",
+    "shortDescription": "Sustainable practices for a greener future.",
+    "icon": "🌱",
+    "color": "#8BC34A",
+    "aboutContent": "Discover how the automotive industry is evolving towards sustainability and eco-friendliness.",
+    "detailedDescription": "This category emphasizes sustainable practices, eco-friendly driving tips, and the impact of vehicles on the environment.",
     "popularTopics": [
-      "Electric Vehicle Maintenance",
-      "Car Care Tips",
-      "Maintenance Guides"
+      "Sustainable Driving Tips",
+      "Eco-Friendly Innovations",
+      "Environmental Impact"
     ],
-    "seoKeywords": "vehicle maintenance, car upkeep, maintenance tips",
+    "seoKeywords": "sustainability, eco-friendly transport, green automotive",
     "keywords": [
-      "vehicle maintenance",
-      "car upkeep",
-      "maintenance tips"
+      "sustainable driving",
+      "eco-friendly vehicles",
+      "green technology"
     ]
   },
   "industry-news": {
     "name": "Industry News",
-    "description": "Stay informed with the latest news and updates in the automotive industry.",
-    "shortDescription": "Current news and updates in the automotive sector.",
+    "description": "Stay informed on the latest news and developments in the automotive industry.",
+    "shortDescription": "Latest updates and news from the automotive world.",
     "icon": "📰",
-    "color": "#FF4500",
-    "aboutContent": "This category features news articles covering the latest developments, trends, and updates in the automotive industry.",
-    "detailedDescription": "Keep up with the latest industry news, including new vehicle launches, technological advancements, and regulatory changes affecting the automotive sector.",
+    "color": "#F44336",
+    "aboutContent": "Get the latest news and updates about the automotive industry, including company announcements and technological advancements.",
+    "detailedDescription": "This category covers news, trends, and major developments within the automotive sector, keeping readers informed and engaged.",
     "popularTopics": [
-      "Latest Automotive News",
-      "Electric Vehicle Developments",
-      "Industry Trends"
+      "Latest Industry Updates",
+      "Automotive Trends",
+      "Market Analysis"
     ],
-    "seoKeywords": "automotive news, industry updates, vehicle trends",
+    "seoKeywords": "automotive news, industry updates, latest trends",
     "keywords": [
-      "automotive news",
-      "industry updates",
-      "vehicle trends"
+      "industry news",
+      "automotive updates",
+      "market trends"
+    ]
+  },
+  "driving-tips": {
+    "name": "Driving Tips",
+    "description": "Helpful tips and advice for safe and efficient driving.",
+    "shortDescription": "Essential tips for drivers of all levels.",
+    "icon": "🚦",
+    "color": "#3F51B5",
+    "aboutContent": "Find valuable tips and tricks to become a better driver and maintain your vehicle effectively.",
+    "detailedDescription": "This category provides essential driving tips, maintenance advice, and safety precautions for all drivers.",
+    "popularTopics": [
+      "Safe Driving Tips",
+      "Vehicle Maintenance",
+      "Road Trip Advice"
+    ],
+    "seoKeywords": "driving tips, vehicle maintenance, safe driving",
+    "keywords": [
+      "driving advice",
+      "maintenance tips",
+      "road safety"
     ]
   }
 };
