@@ -2,22 +2,22 @@ import { type SiteDataProps } from "../types/configDataTypes";
 
 // Update this file with your site specific information
 const siteData: SiteDataProps = {
-	name: "TravelWorld",
+	name: "AutoMobility",
 	// Your website's title and description (meta fields)
-	title: "TravelWorld - Travel & Adventure",
+	title: "AutoMobility - Automotive & Mobility",
 	description:
-		"Explore breathtaking destinations and unforgettable experiences in travel and adventure.",
+		"Your ultimate destination for Automotive & Mobility insights, trends, and resources.",
 	// Your information!
 	author: {
-		name: "TravelWorld Team",
-		email: "hello@TravelWorld.com",
-		twitter: "travelworld",
+		name: "AutoMobility Team",
+		email: "hello@AutoMobility.com",
+		twitter: "automobility",
 	},
 
 	// default image for meta tags if the page doesn't have an image already
 	defaultImage: {
-		src: "/images/og/travelworld-1200x630.jpg",
-		alt: "TravelWorld logo",
+		src: "/images/og/automobility-1200x630.jpg",
+		alt: "AutoMobility logo",
 	},
 };
 

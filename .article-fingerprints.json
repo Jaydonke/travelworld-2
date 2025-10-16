@@ -1,23 +1,23 @@
 {
   "version": "2.0",
-  "generated": "2025-10-15T09:58:31.047Z",
+  "generated": "2025-10-16T01:31:33.169Z",
   "processedPositions": [
     0
   ],
   "totalArticles": 1,
   "processedDetails": {
     "0": {
-      "originalTopic": "Top 10 Thrilling Adventure Activities to Try",
-      "category": "adventures",
+      "originalTopic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+      "category": "electric-vehicles",
       "keywords": [
-        "best adventure activities",
-        "top thrilling adventures",
-        "adventure experiences guide",
-        "popular adventure sports"
+        "Tesla Model 3 review",
+        "best electric vehicle",
+        "Model 3 features",
+        "latest Tesla updates"
       ],
       "generated": {
-        "htmlFile": "Top 10 Thrilling Adventure Activities to Try Your Ultimate Adventure Experiences.html",
-        "timestamp": "2025-10-15T09:58:31.047Z"
+        "htmlFile": "Tesla Model 3 Review Comprehensive Performance Analysis.html",
+        "timestamp": "2025-10-16T01:31:33.169Z"
       }
     }
   }

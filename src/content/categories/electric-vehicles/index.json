@@ -1,0 +1,21 @@
+{
+  "id": "electric-vehicles",
+  "name": "Electric Vehicles",
+  "description": "Explore the latest trends, reviews, and guides in the electric vehicle market.",
+  "shortDescription": "Everything about electric vehicles.",
+  "icon": "⚡",
+  "color": "#00FF00",
+  "aboutContent": "This category covers all aspects of electric vehicles, from in-depth reviews to how-to guides and the latest industry news.",
+  "detailedDescription": "Stay informed about electric vehicles with our comprehensive articles covering reviews, comparisons, maintenance tips, and the latest advancements in EV technology.",
+  "popularTopics": [
+    "Best Electric Vehicles",
+    "Electric Vehicle Maintenance",
+    "Electric Vehicle Trends"
+  ],
+  "seoKeywords": "electric cars, EV reviews, electric vehicle news",
+  "keywords": [
+    "electric vehicles",
+    "EV reviews",
+    "sustainable transport"
+  ]
+}

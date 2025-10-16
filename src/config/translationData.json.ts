@@ -93,7 +93,7 @@ export const localizedCollections = {
  */
 export const textTranslations = {
 	en: {
-		"hero_description": "Your gateway to adventure and discovery.",
+		"hero_description": "Stay updated with the latest in automotive innovations.",
 		"back_to_all_posts": "Back to all articles",
 		"updated_on": "Updated on",
 		"read_more": "Read more",
@@ -103,7 +103,7 @@ export const textTranslations = {
 		"search_placeholder": "Search articles...",
 		"no_posts_found": "No articles found",
 		"showing_results_for": "Showing results for",
-		"newsletter_title": "TravelWorld Newsletter",
+		"newsletter_title": "AutoMobility Newsletter",
 		"newsletter_description": "Get updates delivered to your inbox",
 		"newsletter_placeholder": "Enter your email",
 		"newsletter_button": "Subscribe",
