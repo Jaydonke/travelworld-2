@@ -12,7 +12,7 @@ if (!entry) {
 
 <BaseLayout entry={entry}>
   <div class="container py-4">
-    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <script is:inline src="/travelworld/pagefind/pagefind-ui.js"></script>
 
     <div id="search"></div>
 
@@ -33,6 +33,7 @@ if (!entry) {
               showSubResults: true,
               showImages: false,
               autofocus: true,
+              bundlePath: "/travelworld/pagefind/",
             });
 
             const el = document.querySelector(".pagefind-ui");
