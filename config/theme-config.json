@@ -1,6 +1,6 @@
 {
-  "currentTheme": "automobility-theme",
-  "fallbackTheme": "car-reviews",
+  "currentTheme": "travelworld-theme",
+  "fallbackTheme": "destinations",
   "themeSettings": {
     "enableSmartCategorization": true,
     "enableManualOverride": true,

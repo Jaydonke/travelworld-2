@@ -1,0 +1,21 @@
+{
+  "id": "travel-guides",
+  "name": "Travel Guides",
+  "description": "Comprehensive guides to help you navigate your travel experiences.",
+  "shortDescription": "Your ultimate travel companion.",
+  "icon": "📚",
+  "color": "#4682B4",
+  "aboutContent": "Our travel guides category offers detailed insights and practical advice for travelers of all types. Whether you're planning a weekend getaway or an extended trip, these guides cover everything you need to know, from itineraries to local customs.",
+  "detailedDescription": "Each travel guide provides readers with an overview of destinations, travel tips, and cultural insights. With curated recommendations and suggested itineraries, these articles aim to make travel planning easier and more enjoyable.",
+  "popularTopics": [
+    "Backpacking in Southeast Asia",
+    "Traveling Solo Guide",
+    "Europe Travel Tips"
+  ],
+  "seoKeywords": "travel guides, travel tips, planning your trip, destination insights",
+  "keywords": [
+    "travel planning",
+    "destination guide",
+    "itinerary suggestions"
+  ]
+}

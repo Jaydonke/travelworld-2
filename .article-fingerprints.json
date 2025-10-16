@@ -1,23 +1,23 @@
 {
   "version": "2.0",
-  "generated": "2025-10-16T01:59:51.494Z",
+  "generated": "2025-10-16T02:08:27.686Z",
   "processedPositions": [
     0
   ],
   "totalArticles": 1,
   "processedDetails": {
     "0": {
-      "originalTopic": "Comprehensive Review of the Latest Electric SUVs",
-      "category": "electric-vehicles",
+      "originalTopic": "The Best Hiking Trails in the Rocky Mountains",
+      "category": "destinations",
       "keywords": [
-        "latest electric SUVs",
-        "best electric cars",
-        "SUV reviews",
-        "electric vehicle analysis"
+        "best hiking trails",
+        "Rocky Mountains guide",
+        "top hiking spots",
+        "outdoor adventure tips"
       ],
       "generated": {
-        "htmlFile": "Comprehensive Review of the Latest Electric SUVs.html",
-        "timestamp": "2025-10-16T01:59:51.494Z"
+        "htmlFile": "The Best Hiking Trails in the Rocky Mountains Your Ultimate Guide.html",
+        "timestamp": "2025-10-16T02:08:27.686Z"
       }
     }
   }

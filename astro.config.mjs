@@ -13,7 +13,7 @@ import { fileURLToPath, URL } from 'url';
 // https://astro.build/config
 export default defineConfig({
 	site: "https://Jaydonke.github.io",
-	base: "/automobility-2",
+	base: "/travelworld-1",
 	// 不需要 base 路径，因为部署在根域名
 	// 取消 adapter 配置以支持静态导出到 GitHub Pages
 	// adapter: node({

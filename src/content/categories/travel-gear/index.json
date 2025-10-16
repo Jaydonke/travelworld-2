@@ -1,0 +1,21 @@
+{
+  "id": "travel-gear",
+  "name": "Travel Gear",
+  "description": "Essential gear reviews and recommendations for every traveler.",
+  "shortDescription": "Gear up for your adventures.",
+  "icon": "🧳",
+  "color": "#4682B4",
+  "aboutContent": "Our travel gear category provides readers with reviews and recommendations for the best gear to enhance their travel experiences. From backpacks to tech gadgets, we cover essential items that ensure every trip is comfortable and enjoyable.",
+  "detailedDescription": "This section is focused on helping travelers choose the right equipment for their journeys. Articles will include product reviews, buying guides, and tips on how to select the best travel gear for various types of trips.",
+  "popularTopics": [
+    "Lightweight Travel Backpacks",
+    "Must-Have Travel Gadgets",
+    "Packing Light Guide"
+  ],
+  "seoKeywords": "travel gear reviews, best travel equipment, travel accessories, gear recommendations",
+  "keywords": [
+    "travel essentials",
+    "gear reviews",
+    "travel accessories"
+  ]
+}
