@@ -6,7 +6,7 @@ const siteData: SiteDataProps = {
 	// Your website's title and description (meta fields)
 	title: "AutoMobility - Automotive & Mobility",
 	description:
-		"Your ultimate destination for Automotive & Mobility insights, trends, and resources.",
+		"Your comprehensive source for Automotive & Mobility news, insights, and resources.",
 	// Your information!
 	author: {
 		name: "AutoMobility Team",

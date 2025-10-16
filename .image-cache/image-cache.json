@@ -6670,5 +6670,37 @@
     "timestamp": 1760578150084,
     "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
     "name": "Summary Graphic"
+  },
+  "90edfdcc5460c91d05bd15fca4ad1687": {
+    "generated": true,
+    "localPath": "comprehensive-review-of-the-latest-electric-suvs/cover.png",
+    "prompt": "Professional hero image for article about Comprehensive Review of the Latest Electric SUVs. \n        Key concepts: latest electric SUVs, best electric cars, SUV reviews. \n        Style: modern business illustration, clean corporate design, vibrant colors, high quality, \n        visual metaphors representing Comprehensive Review of the Latest Electric SUVs, professional and engaging",
+    "timestamp": 1760579780316,
+    "topic": "Comprehensive Review of the Latest Electric SUVs",
+    "name": "Hero Image"
+  },
+  "b0577c17fb805156cf6bc4028ab8a9ce": {
+    "generated": true,
+    "localPath": "comprehensive-review-of-the-latest-electric-suvs/img_0.jpg",
+    "prompt": "Detailed process diagram or flowchart showing how Comprehensive Review of the Latest Electric SUVs works. \n        Include: latest electric SUVs and best electric cars concepts. \n        Style: clean infographic design, professional business illustration, \n        educational and clear, modern tech aesthetic",
+    "timestamp": 1760579797143,
+    "topic": "Comprehensive Review of the Latest Electric SUVs",
+    "name": "Process Illustration"
+  },
+  "0ef5690e78aac102ad19dc8ce3f3a215": {
+    "generated": true,
+    "localPath": "comprehensive-review-of-the-latest-electric-suvs/img_1.jpg",
+    "prompt": "Visual representation of benefits and advantages of Comprehensive Review of the Latest Electric SUVs. \n        Focus on: positive outcomes, growth, success metrics related to latest electric SUVs, best electric cars, SUV reviews, electric vehicle analysis. \n        Style: optimistic business illustration, data visualization elements, \n        modern corporate design, engaging and informative",
+    "timestamp": 1760579817897,
+    "topic": "Comprehensive Review of the Latest Electric SUVs",
+    "name": "Benefits Visualization"
+  },
+  "492a1d52081b637a5ef38be269370b3a": {
+    "generated": true,
+    "localPath": "comprehensive-review-of-the-latest-electric-suvs/img_2.jpg",
+    "prompt": "Comprehensive summary illustration for Comprehensive Review of the Latest Electric SUVs article conclusion. \n        Combine key elements: latest electric SUVs and best electric cars. \n        Style: professional closing graphic, modern business aesthetic, \n        forward-looking design, inspiring and memorable",
+    "timestamp": 1760579836181,
+    "topic": "Comprehensive Review of the Latest Electric SUVs",
+    "name": "Summary Graphic"
   }
 }

@@ -93,7 +93,7 @@ export const localizedCollections = {
  */
 export const textTranslations = {
 	en: {
-		"hero_description": "Stay updated with the latest in automotive innovations.",
+		"hero_description": "Explore the latest in Automotive & Mobility.",
 		"back_to_all_posts": "Back to all articles",
 		"updated_on": "Updated on",
 		"read_more": "Read more",

@@ -1,0 +1,20 @@
+{
+  "id": "auto-maintenance",
+  "name": "Auto Maintenance",
+  "description": "Guides and tips for maintaining your vehicle in top condition.",
+  "shortDescription": "Essential maintenance tips for vehicle owners.",
+  "icon": "🛠️",
+  "color": "#ff9933",
+  "aboutContent": "Our Auto Maintenance category provides valuable tips and guides for keeping your vehicle in optimal condition. From routine checks to advanced repairs, we cover everything you need to know to extend the life of your car.",
+  "detailedDescription": "Explore comprehensive guides and tips on all aspects of vehicle maintenance. Whether you're a seasoned car owner or a beginner, our articles equip you with the knowledge to care for your vehicle effectively.",
+  "popularTopics": [
+    "How to Maintain Your Electric Vehicle for Longevity",
+    "How to Prepare Your Vehicle for Winter Driving"
+  ],
+  "seoKeywords": "vehicle maintenance, car care tips, maintenance guides, auto repair",
+  "keywords": [
+    "vehicle care",
+    "car maintenance",
+    "auto tips"
+  ]
+}

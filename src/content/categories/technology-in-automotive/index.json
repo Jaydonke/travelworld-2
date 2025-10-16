@@ -1,0 +1,20 @@
+{
+  "id": "technology-in-automotive",
+  "name": "Technology in Automotive",
+  "description": "Insights into the latest technologies shaping the automotive industry.",
+  "shortDescription": "Discover the tech behind modern vehicles.",
+  "icon": "💻",
+  "color": "#33ccff",
+  "aboutContent": "Explore the cutting-edge technology that is revolutionizing the automotive industry. From advanced safety systems to electric drivetrains, our technology section keeps you informed about the innovations that are driving the future of cars.",
+  "detailedDescription": "In our Technology in Automotive category, you'll find articles that delve into the latest technological advancements affecting vehicles today. Whether it's features enhancing safety, improving efficiency, or transforming the driving experience, we provide in-depth insights.",
+  "popularTopics": [
+    "Expert Guide to the Best Car Maintenance Practices",
+    "The Impact of Technology on Modern Automotive Design"
+  ],
+  "seoKeywords": "automotive technology, vehicle innovation, car features, tech trends",
+  "keywords": [
+    "automotive tech",
+    "vehicle innovations",
+    "latest technology"
+  ]
+}

@@ -1,23 +1,23 @@
 {
   "version": "2.0",
-  "generated": "2025-10-16T01:31:33.169Z",
+  "generated": "2025-10-16T01:59:51.494Z",
   "processedPositions": [
     0
   ],
   "totalArticles": 1,
   "processedDetails": {
     "0": {
-      "originalTopic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+      "originalTopic": "Comprehensive Review of the Latest Electric SUVs",
       "category": "electric-vehicles",
       "keywords": [
-        "Tesla Model 3 review",
-        "best electric vehicle",
-        "Model 3 features",
-        "latest Tesla updates"
+        "latest electric SUVs",
+        "best electric cars",
+        "SUV reviews",
+        "electric vehicle analysis"
       ],
       "generated": {
-        "htmlFile": "Tesla Model 3 Review Comprehensive Performance Analysis.html",
-        "timestamp": "2025-10-16T01:31:33.169Z"
+        "htmlFile": "Comprehensive Review of the Latest Electric SUVs.html",
+        "timestamp": "2025-10-16T01:59:51.494Z"
       }
     }
   }

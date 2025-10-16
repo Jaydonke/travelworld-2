@@ -538,394 +538,254 @@ export const ARTICLE_GENERATION_CONFIG = {
   "enabled": true,
   "articles": [
     {
-      "topic": "Comprehensive Review of the Latest Electric SUVs",
+      "topic": "Top 10 Hidden Gems to Explore in Europe",
       "keywords": [
-        "latest electric SUVs",
-        "best electric cars",
-        "SUV reviews",
-        "electric vehicle analysis"
+        "best hidden gems",
+        "travel destinations Europe",
+        "explore Europe",
+        "must-visit places"
       ],
-      "category": "electric-vehicles"
+      "category": "destinations"
     },
     {
-      "topic": "Top 10 Safety Features to Look for in New Cars",
+      "topic": "How to Choose the Best Hiking Trails for Beginners",
       "keywords": [
-        "best car safety features",
-        "latest safety tips",
-        "car buying guide",
-        "safety technology"
+        "how to hike",
+        "best hiking trails",
+        "beginner hiking tips",
+        "hiking guide"
       ],
-      "category": "safety-tips"
+      "category": "travel-tips"
     },
     {
-      "topic": "How to Maintain Your Electric Vehicle for Longevity",
+      "topic": "Ultimate Guide to Backpacking Gear for Adventure Seekers",
       "keywords": [
-        "how to maintain electric vehicle",
-        "EV maintenance tips",
-        "long-lasting electric cars",
-        "vehicle care guide"
+        "backpacking gear guide",
+        "best adventure gear",
+        "outdoor gear tips",
+        "backpacking essentials"
       ],
-      "category": "auto-maintenance"
+      "category": "adventure-gear"
     },
     {
-      "topic": "Comparison of Tesla Model 3 vs Ford Mustang Mach-E",
+      "topic": "Review of the Top 5 Eco-Resorts Around the World",
       "keywords": [
-        "Tesla Model 3 review",
-        "Ford Mustang Mach-E analysis",
-        "electric car comparison",
-        "best EVs"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "Beginner's Guide to Understanding Hybrid Vehicles",
-      "keywords": [
-        "hybrid vehicles guide",
-        "understanding hybrids",
-        "best hybrid cars",
-        "hybrid technology explained"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "Expert Insights on the Future of Autonomous Driving",
-      "keywords": [
-        "autonomous driving future",
-        "self-driving cars analysis",
-        "automotive technology trends",
-        "expert insights"
-      ],
-      "category": "technology-in-automotive"
-    },
-    {
-      "topic": "How to Choose the Right Car Insurance for Your Needs",
-      "keywords": [
-        "choose car insurance",
-        "best car insurance tips",
-        "car insurance guide",
-        "insurance comparison"
-      ],
-      "category": "safety-tips"
-    },
-    {
-      "topic": "The Best Electric Bikes for Urban Commuting",
-      "keywords": [
-        "best electric bikes",
-        "urban commute solutions",
-        "electric bicycle review",
-        "trending e-bikes"
-      ],
-      "category": "trends-in-mobility"
-    },
-    {
-      "topic": "Top 5 Most Reliable Cars of the Current Market",
-      "keywords": [
-        "most reliable cars",
-        "best car reviews",
-        "current car models",
-        "vehicle reliability"
-      ],
-      "category": "car-reviews"
-    },
-    {
-      "topic": "How to Prepare Your Vehicle for Winter Driving",
-      "keywords": [
-        "prepare vehicle for winter",
-        "winter driving tips",
-        "car maintenance guide",
-        "safe winter driving"
-      ],
-      "category": "auto-maintenance"
-    },
-    {
-      "topic": "Latest Trends in Sustainable Automotive Practices",
-      "keywords": [
-        "sustainable automotive trends",
-        "eco-friendly cars",
-        "latest automotive sustainability",
-        "green vehicle technology"
+        "eco-resorts review",
+        "sustainable travel options",
+        "best eco-friendly resorts",
+        "luxury eco-resorts"
       ],
       "category": "sustainability"
     },
     {
-      "topic": "Comparing Electric vs Gasoline Cars: Which is Better?",
+      "topic": "Best Street Foods to Try in Southeast Asia",
       "keywords": [
-        "electric vs gasoline cars",
-        "car comparison guide",
-        "best car options",
-        "fuel efficiency analysis"
+        "best street foods",
+        "Southeast Asia food guide",
+        "local food tips",
+        "food travel guide"
       ],
-      "category": "electric-vehicles"
+      "category": "food-and-drink"
     },
     {
-      "topic": "Expert Guide to the Best Car Maintenance Practices",
+      "topic": "How to Capture Stunning Travel Photography",
       "keywords": [
-        "best car maintenance practices",
-        "car care tutorial",
-        "vehicle maintenance tips",
-        "expert auto care"
+        "travel photography tips",
+        "how to take travel photos",
+        "photography guide",
+        "best travel photography"
       ],
-      "category": "auto-maintenance"
+      "category": "travel-photography"
     },
     {
-      "topic": "The Impact of Technology on Modern Automotive Design",
+      "topic": "5 Must-Visit National Parks for Outdoor Adventures",
       "keywords": [
-        "technology in automotive design",
-        "modern car technology",
-        "automotive design trends",
-        "future car technology"
+        "best national parks",
+        "outdoor adventures guide",
+        "visit national parks",
+        "nature travel tips"
       ],
-      "category": "technology-in-automotive"
+      "category": "destinations"
     },
     {
-      "topic": "How to Troubleshoot Common Car Problems",
+      "topic": "Comparing Popular Travel Insurance Options",
       "keywords": [
-        "troubleshoot car problems",
-        "common vehicle issues",
-        "car repair tips",
-        "vehicle troubleshooting guide"
+        "travel insurance comparison",
+        "best travel insurance",
+        "insurance for travelers",
+        "travel safety tips"
       ],
-      "category": "auto-maintenance"
+      "category": "travel-tips"
     },
     {
-      "topic": "The Best Apps for Electric Vehicle Owners",
+      "topic": "Beginner’s Guide to Traveling Alone Safely",
       "keywords": [
-        "best EV owner apps",
-        "electric vehicle tools",
-        "app recommendations",
-        "EV management apps"
+        "traveling alone guide",
+        "solo travel tips",
+        "how to travel safely",
+        "beginner travel advice"
       ],
-      "category": "trends-in-mobility"
+      "category": "travel-tips"
     },
     {
-      "topic": "Essential Tips for First-Time Car Buyers",
+      "topic": "Expert Insights on Sustainable Travel Practices",
       "keywords": [
-        "first-time car buyer tips",
-        "car buying guide",
-        "new car advice",
-        "best buying practices"
-      ],
-      "category": "automotive-news"
-    },
-    {
-      "topic": "The Future of Mobility: Trends Shaping the Industry",
-      "keywords": [
-        "future of mobility",
-        "trends in automotive",
-        "mobility industry insights",
-        "transportation trends"
-      ],
-      "category": "trends-in-mobility"
-    },
-    {
-      "topic": "Reviewing the Latest High-Performance Sports Cars",
-      "keywords": [
-        "latest sports cars review",
-        "high-performance cars",
-        "car performance analysis",
-        "best sports vehicles"
-      ],
-      "category": "car-reviews"
-    },
-    {
-      "topic": "How to Improve Fuel Efficiency in Your Vehicle",
-      "keywords": [
-        "improve fuel efficiency",
-        "vehicle fuel tips",
-        "car efficiency guide",
-        "best fuel-saving techniques"
+        "sustainable travel insights",
+        "travel expert advice",
+        "eco-friendly travel tips",
+        "green travel practices"
       ],
       "category": "sustainability"
     },
     {
-      "topic": "The Best Sustainable Car Brands to Support",
+      "topic": "How to Plan a Road Trip Across America",
       "keywords": [
-        "best sustainable car brands",
-        "eco-friendly vehicles",
-        "sustainable automotive options",
-        "green car manufacturers"
+        "road trip planning",
+        "USA road trip tips",
+        "travel guide USA",
+        "best road trip routes"
+      ],
+      "category": "destinations"
+    },
+    {
+      "topic": "Review of Top 5 Travel Apps for Your Next Adventure",
+      "keywords": [
+        "travel apps review",
+        "best travel apps",
+        "travel planning apps",
+        "apps for travelers"
+      ],
+      "category": "travel-tips"
+    },
+    {
+      "topic": "Comparing Camping Gear: Tent vs Hammock",
+      "keywords": [
+        "tent vs hammock",
+        "camping gear comparison",
+        "best camping setup",
+        "outdoor sleeping options"
+      ],
+      "category": "adventure-gear"
+    },
+    {
+      "topic": "Top 5 Cultural Festivals Around the World",
+      "keywords": [
+        "best cultural festivals",
+        "world festivals guide",
+        "cultural travel tips",
+        "top festivals to visit"
+      ],
+      "category": "culture"
+    },
+    {
+      "topic": "How to Experience Local Culture While Traveling",
+      "keywords": [
+        "experience local culture",
+        "travel culture tips",
+        "cultural immersion guide",
+        "local culture travel"
+      ],
+      "category": "culture"
+    },
+    {
+      "topic": "Review of the Latest Eco-Friendly Travel Gear",
+      "keywords": [
+        "eco-friendly gear review",
+        "sustainable travel gear",
+        "best travel products",
+        "green travel gear"
+      ],
+      "category": "adventure-gear"
+    },
+    {
+      "topic": "Beginner’s Guide to Understanding Travel Insurance",
+      "keywords": [
+        "travel insurance guide",
+        "beginner travel insurance",
+        "how to choose insurance",
+        "travel protection tips"
+      ],
+      "category": "travel-tips"
+    },
+    {
+      "topic": "How to Find the Best Local Restaurants When Traveling",
+      "keywords": [
+        "finding local restaurants",
+        "best food tips",
+        "travel dining guide",
+        "food recommendations travel"
+      ],
+      "category": "food-and-drink"
+    },
+    {
+      "topic": "5 Best Photography Spots in Iceland",
+      "keywords": [
+        "photography spots Iceland",
+        "best places to photograph",
+        "Iceland travel guide",
+        "travel photography tips"
+      ],
+      "category": "travel-photography"
+    },
+    {
+      "topic": "Expert Analysis of Trends in Adventure Travel",
+      "keywords": [
+        "adventure travel trends",
+        "expert travel insights",
+        "current travel trends",
+        "adventure tourism analysis"
+      ],
+      "category": "adventure-gear"
+    },
+    {
+      "topic": "Top 10 Tips for Sustainable Travel Practices",
+      "keywords": [
+        "sustainable travel tips",
+        "eco-friendly travel advice",
+        "best travel practices",
+        "green travel tips"
       ],
       "category": "sustainability"
     },
     {
-      "topic": "Understanding the Latest in Automotive Safety Technology",
+      "topic": "How to Pack Light for Any Adventure",
       "keywords": [
-        "automotive safety technology",
-        "latest safety systems",
-        "car safety guide",
-        "best safety features"
+        "packing tips for travel",
+        "how to pack light",
+        "travel packing guide",
+        "minimalist packing tips"
       ],
-      "category": "safety-tips"
+      "category": "travel-tips"
     },
     {
-      "topic": "How to Choose Between Electric and Hybrid Cars",
+      "topic": "Comparing Major Airlines: Which is Best for Travelers?",
       "keywords": [
-        "choose electric vs hybrid",
-        "car buying decisions",
-        "electric hybrid comparison",
-        "best vehicle options"
+        "airlines comparison",
+        "best airlines for travel",
+        "travel comfort tips",
+        "airline reviews"
       ],
-      "category": "electric-vehicles"
+      "category": "travel-tips"
     },
     {
-      "topic": "Current Trends in Automotive Sustainability Practices",
+      "topic": "The Ultimate Guide to Exploring Ancient Ruins",
       "keywords": [
-        "current automotive sustainability",
-        "trending eco-friendly cars",
-        "sustainable practices analysis",
-        "green automotive initiatives"
+        "exploring ancient ruins",
+        "travel guide ruins",
+        "best ancient sites",
+        "historical travel tips"
       ],
-      "category": "sustainability"
+      "category": "destinations"
     },
     {
-      "topic": "The Best Resources for Learning About Automotive Technology",
+      "topic": "Top 5 Most Scenic Train Journeys in the World",
       "keywords": [
-        "automotive technology resources",
-        "learn about cars",
-        "best automotive tutorials",
-        "car tech education"
+        "scenic train journeys",
+        "best train routes",
+        "travel by train guide",
+        "train travel tips"
       ],
-      "category": "technology-in-automotive"
-    },
-    {
-      "topic": "A Beginner's Guide to Electric Vehicle Charging Stations",
-      "keywords": [
-        "electric vehicle charging",
-        "how to charge electric cars",
-        "EV charging station types",
-        "charging tips for EVs"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "Top 10 Essential Safety Features in Modern Cars",
-      "keywords": [
-        "safety features in cars",
-        "best car safety technology",
-        "car safety ratings",
-        "automotive safety innovations"
-      ],
-      "category": "safety-tips"
-    },
-    {
-      "topic": "Comparing Hybrid Cars vs Conventional Vehicles",
-      "keywords": [
-        "hybrid cars vs gasoline",
-        "benefits of hybrid vehicles",
-        "hybrid vehicle comparisons",
-        "fuel efficiency hybrid cars"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "How to Perform Basic Car Maintenance at Home",
-      "keywords": [
-        "basic car maintenance guide",
-        "how to maintain your car",
-        "DIY car maintenance tips",
-        "essential car care tasks"
-      ],
-      "category": "auto-maintenance"
-    },
-    {
-      "topic": "Discovering the Most Underrated Electric Cars on the Market",
-      "keywords": [
-        "underrated electric cars",
-        "hidden gems electric vehicles",
-        "lesser-known EV models",
-        "affordable electric cars"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "Event Coverage: Highlights from the Latest Auto Show",
-      "keywords": [
-        "latest auto show highlights",
-        "auto show news",
-        "car reveals from auto show",
-        "automotive event coverage"
-      ],
-      "category": "automotive-news"
-    },
-    {
-      "topic": "The Evolution of Autonomous Vehicle Technology Explained",
-      "keywords": [
-        "autonomous vehicle technology",
-        "history of self-driving cars",
-        "how autonomous cars work",
-        "impact of autonomous technology"
-      ],
-      "category": "technology-in-automotive"
-    },
-    {
-      "topic": "Top 10 Must-Have Apps for Car Owners",
-      "keywords": [
-        "best apps for car owners",
-        "car maintenance apps",
-        "vehicle tracking applications",
-        "car owner tools"
-      ],
-      "category": "technology-in-automotive"
-    },
-    {
-      "topic": "Essential Tips for Maximizing Your Electric Vehicle's Range",
-      "keywords": [
-        "maximize EV range",
-        "electric vehicle range tips",
-        "improve EV efficiency",
-        "electric car driving tips"
-      ],
-      "category": "electric-vehicles"
-    },
-    {
-      "topic": "A Comprehensive Guide to Automotive Sustainability Practices",
-      "keywords": [
-        "automotive sustainability practices",
-        "eco-friendly car production",
-        "sustainable automotive solutions",
-        "green car technology"
-      ],
-      "category": "sustainability"
-    },
-    {
-      "topic": "Understanding the Impact of Connected Cars on Daily Life",
-      "keywords": [
-        "connected cars impact",
-        "smart vehicle technology",
-        "daily life connected vehicles",
-        "future of smart cars"
-      ],
-      "category": "trends-in-mobility"
-    },
-    {
-      "topic": "How to Choose the Right Car for Your Lifestyle",
-      "keywords": [
-        "choosing the right car",
-        "best cars for lifestyle",
-        "car buying guide",
-        "find the perfect car"
-      ],
-      "category": "car-reviews"
-    },
-    {
-      "topic": "The Latest Innovations in Automotive Safety Technology",
-      "keywords": [
-        "automotive safety innovations",
-        "latest safety technology cars",
-        "cutting-edge car safety features",
-        "advancements in vehicle safety"
-      ],
-      "category": "safety-tips"
-    },
-    {
-      "topic": "Exploring the Future of Mobility: New Transportation Trends",
-      "keywords": [
-        "future of mobility trends",
-        "transportation innovations",
-        "mobility solutions of tomorrow",
-        "evolving transportation landscape"
-      ],
-      "category": "trends-in-mobility"
+      "category": "destinations"
     }
   ]
 };
@@ -1032,159 +892,172 @@ export const CURRENT_SOCIAL_LINKS = [
 
 // Category metadata
 export const CATEGORY_INFO = {
-  "car-reviews": {
-    "name": "Car Reviews",
-    "description": "In-depth reviews and analyses of the latest cars in the market.",
-    "shortDescription": "Comprehensive reviews of modern vehicles.",
-    "icon": "🚗",
-    "color": "#ff5733",
-    "aboutContent": "Explore detailed reviews of various car models, focusing on performance, design, and features. Our expert analysis helps you make informed buying decisions.",
-    "detailedDescription": "Dive into our extensive collection of car reviews, where you will find detailed evaluations of the latest models, comparisons, and insights into performance and technology. Whether you're looking for a family-friendly SUV or a high-performance sports car, our reviews cover it all.",
+  "destinations": {
+    "name": "Destinations",
+    "description": "Explore breathtaking locations and hidden gems around the world.",
+    "shortDescription": "Discover the best travel destinations.",
+    "icon": "🌍",
+    "color": "#FF5733",
+    "aboutContent": "This category offers readers insights into the most captivating places to visit, from bustling cities to serene nature spots.",
+    "detailedDescription": "Whether you are looking for popular tourist attractions or off-the-beaten-path locations, our Destinations category provides in-depth guides, reviews, and travel tips to help you plan your perfect trip.",
     "popularTopics": [
-      "Latest Electric SUVs",
-      "High-Performance Sports Cars",
-      "Most Reliable Cars"
+      "Hidden Gems",
+      "National Parks",
+      "Cultural Festivals"
     ],
-    "seoKeywords": "car reviews, vehicle analysis, car performance, auto comparisons",
+    "seoKeywords": "travel destinations, best places to visit, hidden gems, tourist attractions",
     "keywords": [
-      "car reviews",
-      "vehicle performance",
-      "latest models"
+      "hidden gems",
+      "travel guides",
+      "attractions",
+      "exploration"
     ]
   },
-  "electric-vehicles": {
-    "name": "Electric Vehicles",
-    "description": "All you need to know about electric cars, their technology, and future trends.",
-    "shortDescription": "Explore the world of electric vehicles.",
-    "icon": "🔋",
-    "color": "#33ff57",
-    "aboutContent": "Get the latest news and reviews on electric vehicles, including comparisons, maintenance tips, and the evolving technology behind EVs. Stay informed about the future of automotive mobility.",
-    "detailedDescription": "Our Electric Vehicles category provides insights into the rapidly growing market of EVs. From comprehensive reviews to the latest technological advancements, we cover everything you need to know to make informed decisions about electric cars and their place in the future of transportation.",
+  "travel-tips": {
+    "name": "Travel Tips",
+    "description": "Essential advice and tips for a smooth travel experience.",
+    "shortDescription": "Get expert travel tips and advice.",
+    "icon": "🧳",
+    "color": "#C70039",
+    "aboutContent": "This category is dedicated to providing essential travel tips that enhance your travel experience, from packing light to navigating airports.",
+    "detailedDescription": "Learn practical tips, guides, and advice that every traveler should know to make their journeys enjoyable and stress-free. Whether you are a first-time traveler or a seasoned explorer, you'll find valuable insights here.",
     "popularTopics": [
-      "Comparison of Tesla Model 3 vs Ford Mustang Mach-E",
-      "How to Choose Between Electric and Hybrid Cars",
-      "Best Electric Bikes for Urban Commuting"
+      "Packing Tips",
+      "Travel Insurance",
+      "Solo Travel"
     ],
-    "seoKeywords": "electric vehicles, EV technology, car comparisons, sustainable driving",
+    "seoKeywords": "travel tips, travel advice, packing, solo travel",
     "keywords": [
-      "electric cars",
-      "EV reviews",
-      "sustainable vehicles"
+      "how to travel",
+      "packing advice",
+      "safety tips",
+      "insurance"
     ]
   },
-  "automotive-news": {
-    "name": "Automotive News",
-    "description": "Stay updated with the latest happenings in the automotive industry.",
-    "shortDescription": "Latest news and updates in automotive.",
-    "icon": "📰",
-    "color": "#3357ff",
-    "aboutContent": "Stay informed with the latest automotive news, trends, and updates on new car releases, industry changes, and technological advancements. Our news section keeps you ahead of the curve in the automotive world.",
-    "detailedDescription": "Our Automotive News category offers timely updates and insights into the automotive industry. From breaking news about new car launches to analysis of market trends and changes, this is your go-to source for staying current in the fast-paced world of cars.",
+  "adventure-gear": {
+    "name": "Adventure Gear",
+    "description": "Gear and equipment for your next outdoor adventure.",
+    "shortDescription": "Explore the best adventure gear.",
+    "icon": "🏕️",
+    "color": "#FFC300",
+    "aboutContent": "This category covers the essential gear and equipment needed for various outdoor activities, from hiking to camping.",
+    "detailedDescription": "Find reviews, comparisons, and guides on the latest adventure gear that will enhance your outdoor experiences, ensuring you are well-prepared for whatever adventure awaits.",
     "popularTopics": [
-      "Essential Tips for First-Time Car Buyers",
-      "The Future of Mobility: Trends Shaping the Industry"
+      "Camping Gear",
+      "Backpacking Essentials",
+      "Eco-Friendly Gear"
     ],
-    "seoKeywords": "automotive news, car industry updates, latest trends, vehicle announcements",
+    "seoKeywords": "adventure gear, outdoor equipment, hiking gear, camping supplies",
     "keywords": [
-      "automotive news",
-      "vehicle trends",
-      "latest releases"
+      "gear reviews",
+      "adventure essentials",
+      "outdoor gear",
+      "comparison"
     ]
   },
-  "safety-tips": {
-    "name": "Safety Tips",
-    "description": "Helpful tips and guidelines to ensure safe driving and vehicle maintenance.",
-    "shortDescription": "Essential safety tips for drivers.",
-    "icon": "🛡️",
-    "color": "#ff33a1",
-    "aboutContent": "Our Safety Tips category provides essential information to help you stay safe on the road. From vehicle maintenance advice to driving tips, we cover all aspects of automotive safety.",
-    "detailedDescription": "Explore our collection of safety tips designed to enhance your driving experience and ensure you are well-prepared for any situation. Whether you're a seasoned driver or a new car owner, our guides will provide valuable insights into maintaining vehicle safety and best practices for safe driving.",
+  "food-and-drink": {
+    "name": "Food and Drink",
+    "description": "Savor local flavors and culinary delights from around the world.",
+    "shortDescription": "Discover the best food experiences.",
+    "icon": "🍽️",
+    "color": "#581845",
+    "aboutContent": "This category showcases the diverse culinary experiences travelers can enjoy, from street food to fine dining.",
+    "detailedDescription": "Explore guides, reviews, and tips on the best food and drink experiences to enjoy during your travels. Discover local specialties, popular eateries, and hidden gems that will tantalize your taste buds.",
     "popularTopics": [
-      "Top 10 Safety Features to Look for in New Cars",
-      "How to Prepare Your Vehicle for Winter Driving",
-      "Understanding the Latest in Automotive Safety Technology"
+      "Street Food",
+      "Local Restaurants",
+      "Culinary Tours"
     ],
-    "seoKeywords": "safety tips, driving safety, vehicle maintenance, safe driving practices",
+    "seoKeywords": "food travel, culinary experiences, local cuisine, street food",
     "keywords": [
-      "driving safety",
-      "vehicle care",
-      "safety tips"
+      "food tips",
+      "local dining",
+      "cuisine exploration",
+      "taste travel"
     ]
   },
-  "trends-in-mobility": {
-    "name": "Trends in Mobility",
-    "description": "Explore the latest trends and innovations in mobility solutions.",
-    "shortDescription": "Current trends in automotive mobility.",
-    "icon": "🚀",
-    "color": "#ffcc33",
-    "aboutContent": "Our Trends in Mobility section covers the latest innovations and developments in the automotive landscape. Discover how technology is shaping the future of transportation and what it means for you.",
-    "detailedDescription": "Stay ahead of the curve with insights into the latest trends in mobility. From electric vehicles to autonomous driving, our articles explore how these innovations are changing the way we think about transportation and personal mobility.",
+  "travel-blogs": {
+    "name": "Travel Blogs",
+    "description": "Inspiration and stories from fellow travelers.",
+    "shortDescription": "Read engaging travel blogs.",
+    "icon": "✈️",
+    "color": "#900C3F",
+    "aboutContent": "This category features personal stories and insights shared by travelers from all walks of life.",
+    "detailedDescription": "Dive into a collection of travel blogs that capture the essence of adventure, exploration, and cultural encounters. These narratives provide inspiration and practical advice for your own travels.",
     "popularTopics": [
-      "The Best Electric Bikes for Urban Commuting",
-      "The Future of Mobility: Trends Shaping the Industry"
+      "Travel Stories",
+      "Adventure Chronicles",
+      "Cultural Experiences"
     ],
-    "seoKeywords": "mobility trends, transportation innovations, future of driving, automotive technology",
+    "seoKeywords": "travel blogs, travel stories, adventures, cultural insights",
     "keywords": [
-      "mobility solutions",
-      "transportation trends",
-      "latest innovations"
+      "blogging travel",
+      "personal stories",
+      "adventure tales",
+      "cultural narratives"
     ]
   },
-  "technology-in-automotive": {
-    "name": "Technology in Automotive",
-    "description": "Insights into the latest technologies shaping the automotive industry.",
-    "shortDescription": "Discover the tech behind modern vehicles.",
-    "icon": "💻",
-    "color": "#33ccff",
-    "aboutContent": "Explore the cutting-edge technology that is revolutionizing the automotive industry. From advanced safety systems to electric drivetrains, our technology section keeps you informed about the innovations that are driving the future of cars.",
-    "detailedDescription": "In our Technology in Automotive category, you'll find articles that delve into the latest technological advancements affecting vehicles today. Whether it's features enhancing safety, improving efficiency, or transforming the driving experience, we provide in-depth insights.",
+  "culture": {
+    "name": "Culture",
+    "description": "Understand and appreciate the diverse cultures around the globe.",
+    "shortDescription": "Explore global cultural experiences.",
+    "icon": "🌎",
+    "color": "#581845",
+    "aboutContent": "This category is dedicated to exploring the rich cultures and traditions that make each destination unique.",
+    "detailedDescription": "Learn about cultural practices, festivals, and the people behind them. This category aims to deepen your understanding and appreciation of the world's diverse cultures.",
     "popularTopics": [
-      "Expert Guide to the Best Car Maintenance Practices",
-      "The Impact of Technology on Modern Automotive Design"
+      "Cultural Festivals",
+      "Local Traditions",
+      "Cultural Immersion"
     ],
-    "seoKeywords": "automotive technology, vehicle innovation, car features, tech trends",
+    "seoKeywords": "cultural experiences, traditions, festivals, local customs",
     "keywords": [
-      "automotive tech",
-      "vehicle innovations",
-      "latest technology"
+      "cultural travel",
+      "understanding cultures",
+      "local customs",
+      "immersion"
     ]
   },
   "sustainability": {
     "name": "Sustainability",
-    "description": "Explore sustainable practices and eco-friendly solutions in automotive.",
-    "shortDescription": "Eco-friendly automotive practices.",
-    "icon": "🌍",
-    "color": "#33ff85",
-    "aboutContent": "Our Sustainability category focuses on the green initiatives and practices within the automotive industry. Learn about eco-friendly vehicles, sustainable manufacturing, and the future of automotive sustainability.",
-    "detailedDescription": "Dive into our Sustainability section to understand how the automotive industry is adapting to meet environmental challenges. From electric vehicles to sustainable production practices, we cover the innovations and trends that are shaping a greener future.",
+    "description": "Travel responsibly and make a positive impact.",
+    "shortDescription": "Learn about sustainable travel practices.",
+    "icon": "♻️",
+    "color": "#28B463",
+    "aboutContent": "This category focuses on sustainable travel practices that minimize environmental impact and promote responsible tourism.",
+    "detailedDescription": "Discover tips, insights, and guides on how to travel sustainably, ensuring that your adventures contribute positively to the destinations you visit.",
     "popularTopics": [
-      "The Best Sustainable Car Brands to Support",
-      "Current Trends in Automotive Sustainability Practices"
+      "Eco-Friendly Travel",
+      "Sustainable Practices",
+      "Green Tips"
     ],
-    "seoKeywords": "automotive sustainability, eco-friendly vehicles, green practices, sustainable driving",
+    "seoKeywords": "sustainable travel, eco-friendly tourism, responsible travel, green practices",
     "keywords": [
-      "sustainable vehicles",
-      "eco-friendly practices",
-      "green automotive"
+      "sustainability tips",
+      "eco-friendly travel",
+      "green travel options",
+      "responsible tourism"
     ]
   },
-  "auto-maintenance": {
-    "name": "Auto Maintenance",
-    "description": "Guides and tips for maintaining your vehicle in top condition.",
-    "shortDescription": "Essential maintenance tips for vehicle owners.",
-    "icon": "🛠️",
-    "color": "#ff9933",
-    "aboutContent": "Our Auto Maintenance category provides valuable tips and guides for keeping your vehicle in optimal condition. From routine checks to advanced repairs, we cover everything you need to know to extend the life of your car.",
-    "detailedDescription": "Explore comprehensive guides and tips on all aspects of vehicle maintenance. Whether you're a seasoned car owner or a beginner, our articles equip you with the knowledge to care for your vehicle effectively.",
+  "travel-photography": {
+    "name": "Travel Photography",
+    "description": "Capture and share your travel experiences through photography.",
+    "shortDescription": "Enhance your travel photography skills.",
+    "icon": "📸",
+    "color": "#FFC300",
+    "aboutContent": "This category provides tips, techniques, and inspiration for capturing beautiful travel photographs.",
+    "detailedDescription": "From beginner to expert, find resources that will help you improve your photography skills and create stunning visual stories of your travel adventures.",
     "popularTopics": [
-      "How to Maintain Your Electric Vehicle for Longevity",
-      "How to Prepare Your Vehicle for Winter Driving"
+      "Photography Tips",
+      "Best Locations",
+      "Cameras and Gear"
     ],
-    "seoKeywords": "vehicle maintenance, car care tips, maintenance guides, auto repair",
+    "seoKeywords": "travel photography, photography tips, capturing moments, visual storytelling",
     "keywords": [
-      "vehicle care",
-      "car maintenance",
-      "auto tips"
+      "photography techniques",
+      "travel photos",
+      "capturing travel",
+      "visual stories"
     ]
   }
 };

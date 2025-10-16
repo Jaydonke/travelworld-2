@@ -1,21 +1,21 @@
 {
   "id": "electric-vehicles",
   "name": "Electric Vehicles",
-  "description": "Explore the latest trends, reviews, and guides in the electric vehicle market.",
-  "shortDescription": "Everything about electric vehicles.",
-  "icon": "⚡",
-  "color": "#00FF00",
-  "aboutContent": "This category covers all aspects of electric vehicles, from in-depth reviews to how-to guides and the latest industry news.",
-  "detailedDescription": "Stay informed about electric vehicles with our comprehensive articles covering reviews, comparisons, maintenance tips, and the latest advancements in EV technology.",
+  "description": "All you need to know about electric cars, their technology, and future trends.",
+  "shortDescription": "Explore the world of electric vehicles.",
+  "icon": "🔋",
+  "color": "#33ff57",
+  "aboutContent": "Get the latest news and reviews on electric vehicles, including comparisons, maintenance tips, and the evolving technology behind EVs. Stay informed about the future of automotive mobility.",
+  "detailedDescription": "Our Electric Vehicles category provides insights into the rapidly growing market of EVs. From comprehensive reviews to the latest technological advancements, we cover everything you need to know to make informed decisions about electric cars and their place in the future of transportation.",
   "popularTopics": [
-    "Best Electric Vehicles",
-    "Electric Vehicle Maintenance",
-    "Electric Vehicle Trends"
+    "Comparison of Tesla Model 3 vs Ford Mustang Mach-E",
+    "How to Choose Between Electric and Hybrid Cars",
+    "Best Electric Bikes for Urban Commuting"
   ],
-  "seoKeywords": "electric cars, EV reviews, electric vehicle news",
+  "seoKeywords": "electric vehicles, EV technology, car comparisons, sustainable driving",
   "keywords": [
-    "electric vehicles",
+    "electric cars",
     "EV reviews",
-    "sustainable transport"
+    "sustainable vehicles"
   ]
 }

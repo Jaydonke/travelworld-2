@@ -1,7 +1,7 @@
 
 from PIL import Image
 
-img = Image.open('d:\\mul\\adtrotemp-mul-main\\favicon_io\\site-theme.png.temp2').convert('RGBA')
+img = Image.open('D:\\mul\\adtrotemp-mul-main\\favicon_io\\site-theme.png.temp2').convert('RGBA')
 pixels = img.load()
 width, height = img.size
 
@@ -24,4 +24,4 @@ for x in range(width):
             elif (r + g + b) // 3 > 200 and max(r, g, b) - min(r, g, b) < 60:
                 pixels[x, y] = (255, 255, 255, 0)
 
-img.save('d:\\mul\\adtrotemp-mul-main\\favicon_io\\site-theme.png', 'PNG', optimize=True)
+img.save('D:\\mul\\adtrotemp-mul-main\\favicon_io\\site-theme.png', 'PNG', optimize=True)
