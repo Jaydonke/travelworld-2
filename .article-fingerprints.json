@@ -1,23 +1,23 @@
 {
   "version": "2.0",
-  "generated": "2025-10-16T02:08:27.686Z",
+  "generated": "2025-10-17T02:09:36.100Z",
   "processedPositions": [
     0
   ],
   "totalArticles": 1,
   "processedDetails": {
     "0": {
-      "originalTopic": "The Best Hiking Trails in the Rocky Mountains",
-      "category": "destinations",
+      "originalTopic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+      "category": "car-reviews",
       "keywords": [
-        "best hiking trails",
-        "Rocky Mountains guide",
-        "top hiking spots",
-        "outdoor adventure tips"
+        "Tesla Model 3 review",
+        "electric vehicle performance",
+        "latest car reviews",
+        "best electric cars"
       ],
       "generated": {
-        "htmlFile": "The Best Hiking Trails in the Rocky Mountains Your Ultimate Guide.html",
-        "timestamp": "2025-10-16T02:08:27.686Z"
+        "htmlFile": "Tesla Model 3 Review Comprehensive Performance Analysis.html",
+        "timestamp": "2025-10-17T02:09:36.100Z"
       }
     }
   }

@@ -6734,5 +6734,37 @@
     "timestamp": 1760580376515,
     "topic": "The Best Hiking Trails in the Rocky Mountains",
     "name": "Summary Graphic"
+  },
+  "e5c4b85b269de03e96b439c763d5cf14": {
+    "generated": true,
+    "localPath": "tesla-model-3-review-comprehensive-performance-analysis/cover.png",
+    "prompt": "Professional hero image for article about Tesla Model 3 Review: Comprehensive Performance Analysis. \n        Key concepts: Tesla Model 3 review, electric vehicle performance, latest car reviews. \n        Style: modern business illustration, clean corporate design, vibrant colors, high quality, \n        visual metaphors representing Tesla Model 3 Review: Comprehensive Performance Analysis, professional and engaging",
+    "timestamp": 1760666777669,
+    "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+    "name": "Hero Image"
+  },
+  "d700791d2841a65e80afd6e8a1767a85": {
+    "generated": true,
+    "localPath": "tesla-model-3-review-comprehensive-performance-analysis/img_0.jpg",
+    "prompt": "Detailed process diagram or flowchart showing how Tesla Model 3 Review: Comprehensive Performance Analysis works. \n        Include: Tesla Model 3 review and electric vehicle performance concepts. \n        Style: clean infographic design, professional business illustration, \n        educational and clear, modern tech aesthetic",
+    "timestamp": 1760666796110,
+    "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+    "name": "Process Illustration"
+  },
+  "55c3f16522c270459eb0afa1739f9951": {
+    "generated": true,
+    "localPath": "tesla-model-3-review-comprehensive-performance-analysis/img_1.jpg",
+    "prompt": "Visual representation of benefits and advantages of Tesla Model 3 Review: Comprehensive Performance Analysis. \n        Focus on: positive outcomes, growth, success metrics related to Tesla Model 3 review, electric vehicle performance, latest car reviews, best electric cars. \n        Style: optimistic business illustration, data visualization elements, \n        modern corporate design, engaging and informative",
+    "timestamp": 1760666815707,
+    "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+    "name": "Benefits Visualization"
+  },
+  "a6caae58e37235e9b3677cd1f99997da": {
+    "generated": true,
+    "localPath": "tesla-model-3-review-comprehensive-performance-analysis/img_2.jpg",
+    "prompt": "Comprehensive summary illustration for Tesla Model 3 Review: Comprehensive Performance Analysis article conclusion. \n        Combine key elements: Tesla Model 3 review and electric vehicle performance. \n        Style: professional closing graphic, modern business aesthetic, \n        forward-looking design, inspiring and memorable",
+    "timestamp": 1760666833091,
+    "topic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
+    "name": "Summary Graphic"
   }
 }

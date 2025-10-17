@@ -1,0 +1,21 @@
+{
+  "id": "autonomous-driving",
+  "name": "Autonomous Driving",
+  "description": "Learn about the latest advancements in autonomous driving technology and how it impacts the future of transportation.",
+  "shortDescription": "Explore the world of self-driving technology.",
+  "icon": "🤖",
+  "color": "#FF4500",
+  "aboutContent": "This category covers everything related to autonomous vehicles, including technology advancements, industry insights, and comparisons with traditional driving. Discover how self-driving technology is reshaping the way we think about transportation.",
+  "detailedDescription": "Stay updated on the latest developments in autonomous driving technology. From beginner guides to expert insights, our Autonomous Driving category offers comprehensive information on how self-driving cars work and their potential impact on the future of mobility.",
+  "popularTopics": [
+    "Future of Autonomous Vehicles",
+    "Self-Driving Technology Insights",
+    "Autonomous vs Traditional Driving"
+  ],
+  "seoKeywords": "autonomous driving, self-driving cars, transport technology, future mobility",
+  "keywords": [
+    "autonomous driving",
+    "self-driving cars",
+    "transport technology"
+  ]
+}

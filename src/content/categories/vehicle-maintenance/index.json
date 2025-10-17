@@ -1,0 +1,21 @@
+{
+  "id": "vehicle-maintenance",
+  "name": "Vehicle Maintenance",
+  "description": "Essential tips and guides for maintaining your vehicle in top condition.",
+  "shortDescription": "Guides for effective vehicle maintenance.",
+  "icon": "🔧",
+  "color": "#000000",
+  "aboutContent": "This category focuses on vehicle maintenance tips, guides, and troubleshooting common issues. Ensure your vehicle runs smoothly with our expert advice.",
+  "detailedDescription": "Our Vehicle Maintenance category offers comprehensive guides to keep your vehicle in excellent condition. From routine maintenance tips to troubleshooting common car problems, we provide the knowledge you need to care for your vehicle.",
+  "popularTopics": [
+    "Maintenance Tips for Electric Vehicles",
+    "Troubleshooting Common Car Issues",
+    "Vehicle Care Practices"
+  ],
+  "seoKeywords": "vehicle maintenance, car care tips, troubleshooting, maintenance guides",
+  "keywords": [
+    "vehicle maintenance",
+    "car care tips",
+    "troubleshooting"
+  ]
+}
