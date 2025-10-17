@@ -1,23 +1,23 @@
 {
   "version": "2.0",
-  "generated": "2025-10-17T02:09:36.100Z",
+  "generated": "2025-10-17T02:18:51.809Z",
   "processedPositions": [
     0
   ],
   "totalArticles": 1,
   "processedDetails": {
     "0": {
-      "originalTopic": "Tesla Model 3 Review: Comprehensive Performance Analysis",
-      "category": "car-reviews",
+      "originalTopic": "How to Find the Best Hiking Trails Near You",
+      "category": "adventure",
       "keywords": [
-        "Tesla Model 3 review",
-        "electric vehicle performance",
-        "latest car reviews",
-        "best electric cars"
+        "best hiking trails",
+        "how to find trails",
+        "local hiking spots",
+        "hiking tips"
       ],
       "generated": {
-        "htmlFile": "Tesla Model 3 Review Comprehensive Performance Analysis.html",
-        "timestamp": "2025-10-17T02:09:36.100Z"
+        "htmlFile": "How to Find the Best Hiking Trails Near You A Comprehensive Guide.html",
+        "timestamp": "2025-10-17T02:18:51.809Z"
       }
     }
   }

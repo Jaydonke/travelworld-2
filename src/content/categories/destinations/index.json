@@ -1,0 +1,21 @@
+{
+  "id": "destinations",
+  "name": "Destinations",
+  "description": "Explore a range of captivating travel destinations that will inspire your next adventure.",
+  "shortDescription": "Discover your next travel destination.",
+  "icon": "🌍",
+  "color": "#28B463",
+  "aboutContent": "This category highlights exciting travel destinations, from exotic locales to hidden gems, providing insights on what to see, do, and eat while you're there.",
+  "detailedDescription": "Whether you're looking for well-known attractions or off-the-beaten-path experiences, our destination articles will guide you to your next travel adventure. Immerse yourself in the culture, cuisine, and sights of each location.",
+  "popularTopics": [
+    "Best National Parks",
+    "Culinary Tours",
+    "Urban Culture Exploration"
+  ],
+  "seoKeywords": "travel destinations, explore the world, travel guides, local experiences",
+  "keywords": [
+    "best national parks",
+    "cultural experiences",
+    "travel destinations"
+  ]
+}

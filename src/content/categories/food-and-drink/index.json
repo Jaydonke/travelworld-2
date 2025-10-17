@@ -1,0 +1,21 @@
+{
+  "id": "food-and-drink",
+  "name": "Food and Drink",
+  "description": "Savor the flavors of the world with our guides and tips on food and drink experiences.",
+  "shortDescription": "Discover culinary delights around the globe.",
+  "icon": "🍽️",
+  "color": "#D35400",
+  "aboutContent": "This category is dedicated to food lovers, featuring articles on the best culinary experiences, local dishes, and food tours that offer a taste of each destination.",
+  "detailedDescription": "Indulge your palate with our curated food and drink articles. From street food to fine dining, discover the flavors that define cultures and enhance your travel experience.",
+  "popularTopics": [
+    "Foodie’s Guide to Street Food",
+    "Best Culinary Tours",
+    "Food Experiences in Southeast Asia"
+  ],
+  "seoKeywords": "food travel, culinary experiences, global cuisine, local dishes",
+  "keywords": [
+    "best street food",
+    "culinary tours",
+    "food experiences"
+  ]
+}

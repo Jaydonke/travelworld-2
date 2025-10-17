@@ -115,7 +115,7 @@
 
 	/* main gradient. Used for tags and some headings */
 	.main-text-gradient {
-		@apply bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent;
+		@apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
 	}
 
 	/* used with select field */

@@ -7,7 +7,7 @@
 }
 
 .button--primary {
-	@apply text-base-100 bg-gradient-to-r from-blue-500 to-blue-600 transition-opacity;
+	@apply text-base-100 bg-gradient-to-r from-orange-500 to-orange-600 transition-opacity;
 	@apply hover:opacity-90;
 	@apply focus-visible:ring-primary-700 focus-visible:ring-offset-2;
 }

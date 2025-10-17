@@ -1,0 +1,21 @@
+{
+  "id": "travel-tips",
+  "name": "Travel Tips",
+  "description": "Practical advice and tips to help you navigate your travels with ease and confidence.",
+  "shortDescription": "Essential travel tips for every journey.",
+  "icon": "🧳",
+  "color": "#FFC300",
+  "aboutContent": "This category provides essential travel advice, including packing tips, how to travel with kids, and planning multi-city trips, ensuring you have a smooth experience.",
+  "detailedDescription": "Unlock the secrets to efficient travel with our expert tips. From packing smart to navigating new cities, discover practical advice that will enhance your travel experience.",
+  "popularTopics": [
+    "How to Plan a Multi-City Trip",
+    "Traveling with Kids Tips",
+    "Troubleshooting Common Travel Issues"
+  ],
+  "seoKeywords": "travel advice, packing tips, travel planning, family travel",
+  "keywords": [
+    "traveling with kids",
+    "multi-city travel",
+    "travel tips"
+  ]
+}

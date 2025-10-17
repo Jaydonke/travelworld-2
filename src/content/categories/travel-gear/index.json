@@ -1,0 +1,21 @@
+{
+  "id": "travel-gear",
+  "name": "Travel Gear",
+  "description": "Find the best gear to enhance your travel experiences and make adventures easier.",
+  "shortDescription": "Essential gear for every traveler.",
+  "icon": "🎒",
+  "color": "#F39C12",
+  "aboutContent": "This category covers essential travel gear, providing reviews and guides to help you choose the right equipment for your adventures.",
+  "detailedDescription": "Optimize your travel experience with our comprehensive gear reviews and buying guides. From backpacks to cameras, find out what you need for your journey.",
+  "popularTopics": [
+    "Mountain Climbing Gear Review",
+    "Best Hiking Gear for Beginners",
+    "Travel Gear Comparison"
+  ],
+  "seoKeywords": "travel gear, equipment reviews, gear recommendations, essential travel items",
+  "keywords": [
+    "best hiking gear",
+    "travel gear comparison",
+    "essential travel items"
+  ]
+}

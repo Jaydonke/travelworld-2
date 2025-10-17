@@ -1,0 +1,21 @@
+{
+  "id": "adventure",
+  "name": "Adventure",
+  "description": "Discover thrilling activities, outdoor explorations, and heart-pounding adventures around the globe.",
+  "shortDescription": "Exciting adventures await you!",
+  "icon": "🏞️",
+  "color": "#FF5733",
+  "aboutContent": "This category focuses on all things adventurous, from extreme sports to serene hikes, providing readers with ideas and inspiration for their next thrill-seeking journey.",
+  "detailedDescription": "Explore the world of adventure with our curated articles covering everything from the best hiking trails to extreme sports. Whether you are a seasoned adventurer or a beginner looking for your first thrill, you'll find valuable insights and recommendations here.",
+  "popularTopics": [
+    "Best Hiking Trails",
+    "Top Adventure Destinations",
+    "Outdoor Activities for Families"
+  ],
+  "seoKeywords": "adventure travel, outdoor activities, thrill-seeking, extreme sports",
+  "keywords": [
+    "hiking trails",
+    "adventure destinations",
+    "outdoor activities"
+  ]
+}
